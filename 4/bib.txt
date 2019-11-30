@@ -1,0 +1,6 @@
+Müllensiefen, Daniel and Klaus Frieler. “Modelling experts notions of melodic similarity.” (2007).
+@inproceedings{Mllensiefen2007ModellingEN,
+  title={Modelling experts notions of melodic similarity},
+  author={Daniel M{\"u}llensiefen and Klaus Frieler},
+  year={2007}
+}

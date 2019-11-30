@@ -1,13 +1,14 @@
 \documentclass{article}
 
 \usepackage{verbatim}
+\usepackage{amsmath}
 
 \author{Paul Kröger \and Ali Bektas}
-\title{Measures That Distinguish Inspiration from Plagiarism Using Melodical Similarity Approaches in Music Information Retrieval}
+\title{Symbolic Music Similarity and Music Plagiarism}
 
 
 \usepackage{graphicx}
-\graphicspath{ {./images/} }
+\graphicspath{ {../images/} }
 
 \begin{comment}
 	Bitte zuerst hier lesen!
@@ -27,8 +28,6 @@
 	\maketitle
 
 	\section*{Abstract} 
-
-	Melody is 
 
 	As it becomes ever more easy to produce music from one's own home, the challenge of detecting plagiarized 
 	parts becomes more important. Detection of such plagiarism through subjective reasoning is a time consuming 
@@ -79,17 +78,20 @@
 	\end{comment}
 	
 
-	\section*{Approaches for symbolic data}
+	\section{Approaches for symbolic data}
 		Symbolic data in music are representations of a musical structure usually based on pitch related and temporal informations. Modern western techniques date back to ...
 
 		In modern digitalized techniques used in representing a musical piece there are more than the two abovementioned dimensions. 
 
 		Rhytmical structure is as important since depending on the rhythm  , notes become more significant within a piece.
 		
-		\includegraphics{figure_1_of_3}
- 
 
-		\subsection*{Symbolic Music Similarity}
+		\begin{figure}[h!]
+			\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figure_1_of_3}
+			\caption{Even though the notes are the same they are heard different since rhythm changes how a melodic sequence is percieved.}
+ 		\end{figure}
+
+		\subsection{Symbolic Music Similarity}
 			\begin{comment}
 
 			Given two or more sequences of notes, symbolic melodic similarity (SMS) 
@@ -105,44 +107,66 @@
 					\item Music Theory
 				\end{enumerate}
 
-			\subsubsection*{Algorithms of Category 1}
+			\subsubsection{Algorithms of Category 1}
 				The algorithm proposed by \cite{one} aims to convert melodies into "orthagonal polygonal chains" and then "find the minimum area of 
 				minimum area between two lines and two horizontal edges".
 
-				\includegraphics{figure_1_of_1}
  
+ 				\begin{figure}[h!]
+					\includegraphics[width=\textwidth,height=\textheight,keepaspectratio]{figure_1_of_1}
+					\caption{Source: \cite{one}}
+				\end{figure}
 
-
-			\subsubsection*{Hybrid Algorithms}
+			\newpage
+			\subsubsection{Hybrid Algorithms}
 				Hybrid algorithms are the algorithms , that it incorporate all of the abovementioned (See \ref{categories}) categories. This is done by taking a linear combination of several single algorithms.
  
 				The SIMILE \cite{two_point_two}:
 					The algorithms that are used 
 						\begin{itemize}
-							\item Edit Distance: e.g. Mongeau & Sankoff, (1990)
+							\item Edit Distance: e.g. Mongeau \& Sankoff, (1990)
 							\item n-grams: e.g. Downie (1999)
 							\item Geometric distance: Steinbeck (1982);O'Maidin (1998)
 							\item Correlation coefficient: e.g. Steinbeck, (1982)
 						\end{itemize}
 
-					\[
-						optP = 0.31·joint412 + 1.37·rawEd·connEd (1) + 0.643·rawEd·harmCoEA
-						– 1.55·connEd·bGrCoorF
-						+ 0.65·bGrCoorF·rhytFuzz
-						– 0.39·harmCoEA·rhytFuzz – 0.133	
-					\]
+					\begin{align*}
+						optP = 0.31 \cdot joint412 &+ 1.37 \cdot rawEd \cdot connEd (1) + 0.643 \cdot rawEd \cdot harmCoEA\\
+						&– 1.55\cdot connEd \cdot bGrCoorF\\
+						&+ 0.65\cdot bGrCoorF\cdot rhytFuzz\\
+						&– 0.39\cdot harmCoEA\cdot rhytFuzz – 0.133	
+					\end{align*}
 
 					We will explain what these are.
 
 
 
 
-	\section*{Approaches for audio data}
+	\section{Approaches for plagiarism detection}
 			
 
 	\section*{Conclusion}
 
+		In this paper we have reviewed various algorithms for measuring symbolic melodic similarity and algorithms for detecting music plagiarism...
+
+		A pair of sentences about why plagiarism being a Yes/No question makes trouble since general algorithms in music similarity are not yet well established to be able to provide a unified solution to music of all genres.
 
 
+	\begin{thebibliography}{9}
+		\bibitem[1]{one}
+		G.Aloupis,T.Fevens,S.Langerman,T.Matsui,A.Mesa, Y. Nufiez, D. Rappaport, G. Toussaint. Computer Music Journal , 30:3, pp. 67-76, Fall 2006.
+		\bibitem[2]{one_point_one}
+		Cronin, C. 1998. "Concepts of Melodic Similarity in
+		Music-Copyright Infringement Suits."InW.B.Hewlett and E. Selfridge-Field,eds. Melodic Similarity: Concepts, Procedures,and Applications. Cambridge, Massachusetts:MITPress,pp. 187-209.
+		\bibitem[3]{two}
+		Symbolic Melodic Similarity: State of the Art and Future Challenges
+		Valerio Velardo,Mauro Vallati and Steven Jan
+		Computer Music Journal, 40:2, pp. 70–83, Summer 2016 doi:10.1162/COMJ a 00359
+		2016 Massachusetts Institute of Technology.
+		\bibitem[4]{two_point_two}
+		Velardo, Valerio, Mauro Vallati, Steven Jan.
+		"Symbolic melodic similarity: State of the art and future challenges." Computer Music Journal 40.2 (2016): 70-83.
+
+	\end{thebibliography}
 
 \end{document}
