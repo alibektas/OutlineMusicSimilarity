@@ -161,6 +161,29 @@
 
 
 	\section{Approaches for plagiarism detection}
+	
+        Here we will introduce different approaches to automatically detecting plagiarisms in music.
+	
+        \subsection{Fuzzy vectorial-based similarity detection}
+            An algorithm proposed by \cite{five} that constructs a vectorial representation of a melody consisting of its intervalic changes and the corresponding rhythm. These representations are then used to calculate a fuzzy number to determine similarity between melodies. 
+            Vectorial melodic distance between two subvectors of length k  is then calculated by the following formula : 
+            \begin{equation}
+                D(s1,s2)=(D_m(s1,s2),D_r(s1,s2))
+            \end{equation}
+            where
+            \begin{equation}
+             D_m(s1,s2) = \sqrt{\sum_{i=1}^k |n_i * V_{M_1} * getPos(n_i) - m_i * V_{M_2} * getPos(m_i)|^2}
+            \end{equation}
+            and
+            \begin{equation}
+               D_r(s1,s2) = \sqrt{\sum_{i=1}^k |d_i * R_{M_1} * getPos(d_i) - t_i * R_{M_2} * getPos(t_i)|^2}
+            \end{equation}
+
+
+
+            
+        
+        
 			
 
 	\section*{Conclusion}
@@ -188,6 +211,11 @@
 		Sakurako Yazawa, Yuhei Hasegawa, Kohei Kanamori and Masatoshi Hamanaka
 		Melodic Similarity based on Extension Implication-Realization Model
 		Music Information Retrieval Exchange , 2013.
+		\bibitem[6]{five}
+		R. D. Prisco, D. Malandrino, G. Zaccagnino, and R. Zaccagnino, “Fuzzy
+        vectorial-based similarity detection of music plagiarism,” in 2017 IEEE
+        International Conference on Fuzzy Systems, FUZZ-IEEE 2017, Naples,
+        Italy, July 9-12, 2017, 2017, pp. 1–6.
 
 
 	\end{thebibliography}
