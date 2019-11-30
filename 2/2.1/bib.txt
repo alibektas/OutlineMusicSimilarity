@@ -1,0 +1,5 @@
+Downie J.S., Ehmann A.F., Bay M., Jones M.C. (2010) The Music Information Retrieval Evaluation eXchange: Some Observations and Insights. In: Raś Z.W., Wieczorkowska A.A. (eds) Advances in Music Information Retrieval. Studies in Computational Intelligence, vol 274. Springer, Berlin, Heidelberg
+
+	What can we use?
+	page 16 in pdf. 
+The EMD is a useful measure for music similarity, as was demonstrated at the annual MIREX comparison of music retrieval algorithms in 2006 ( http://www.music-ir.org/mirex/2006/index.php/Symbolic_ Melodic_Similarity_Results).

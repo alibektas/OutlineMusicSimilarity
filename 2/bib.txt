@@ -1,0 +1,4 @@
+Symbolic Melodic Similarity: State of the Art and Future Challenges
+Valerio Velardo,Mauro Vallati and Steven Jan
+Computer Music Journal, 40:2, pp. 70–83, Summer 2016 doi:10.1162/COMJ a 00359
+2016MassachusettsInstituteofTechnology.

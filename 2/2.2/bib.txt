@@ -1,0 +1,11 @@
+Velardo, Valerio, Mauro Vallati, and Steven Jan. "Symbolic melodic similarity: State of the art and future challenges." Computer Music Journal 40.2 (2016): 70-83.
+@article{velardo2016symbolic,
+  title={Symbolic melodic similarity: State of the art and future challenges},
+  author={Velardo, Valerio and Vallati, Mauro and Jan, Steven},
+  journal={Computer Music Journal},
+  volume={40},
+  number={2},
+  pages={70--83},
+  year={2016},
+  publisher={MIT Press}
+}
