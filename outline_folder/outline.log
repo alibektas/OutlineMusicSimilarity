@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.25)  30 NOV 2019 19:34
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2019.11.25)  30 NOV 2019 21:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -231,19 +231,19 @@ Overfull \hbox (7.35548pt too wide) detected at line 156
  []
 
 [4]
-Underfull \hbox (badness 1107) in paragraph at lines 200--202
+Underfull \hbox (badness 1107) in paragraph at lines 202--204
 \OT1/cmr/m/n/10 In-fringe-ment Suits."InW.B.Hewlett and E. Selfridge-Field,eds.
  Melodic
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 200--202
+Underfull \hbox (badness 1502) in paragraph at lines 202--204
 \OT1/cmr/m/n/10 Sim-i-lar-ity: Con-cepts, Pro-ce-dures,and Ap-pli-ca-tions. Cam
 -bridge, Mas-
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 211--214
+Underfull \hbox (badness 1466) in paragraph at lines 213--216
 []\OT1/cmr/m/n/10 Sakurako Yazawa, Yuhei Hasegawa, Ko-hei Kanamori and Masatosh
 i
  []
@@ -270,7 +270,7 @@ cmmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr
 st/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/share/texmf-dist/fonts/type1/
 public/amsfonts/cm/cmr5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/
 cm/cmr7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on outline.pdf (5 pages, 258793 bytes).
+Output written on outline.pdf (5 pages, 258890 bytes).
 PDF statistics:
  69 PDF objects out of 1000 (max. 8388607)
  46 compressed objects within 1 object stream
