@@ -1,0 +1,6 @@
+Yazawa, Sakurako et al. “Melodic Similarity based on Extension Implication-Realization Model.” (2013).
+@inproceedings{Yazawa2013MelodicSB,
+  title={Melodic Similarity based on Extension Implication-Realization Model},
+  author={Sakurako Yazawa and Yuhei Hasegawa and Kohei Kanamori and Masatoshi Hamanaka},
+  year={2013}
+}

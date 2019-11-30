@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.29)  30 NOV 2019 13:28
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.29)  30 NOV 2019 15:35
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -210,49 +210,55 @@ Package pdftex.def Info: ../images/figure_1_of_1.png  used on input line 112.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[2 <../images/figure_1_of_3.png>]
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 123.
+[2 <../images/figure_1_of_3.png>] [3 <../images/figure_1_of_1.png>]
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 145.
 
 
 (/usr/local/texlive/2019/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 123.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 145.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 134.
+LaTeX Warning: Command \textendash invalid in math mode on input line 156.
 
 
-LaTeX Warning: Command \textendash invalid in math mode on input line 134.
+LaTeX Warning: Command \textendash invalid in math mode on input line 156.
 
 
-Overfull \hbox (7.35548pt too wide) detected at line 134
+Overfull \hbox (7.35548pt too wide) detected at line 156
 []
  []
 
-[3 <../images/figure_1_of_1.png>]
-Underfull \hbox (badness 1107) in paragraph at lines 155--157
+
+Underfull \hbox (badness 1107) in paragraph at lines 177--179
 \OT1/cmr/m/n/10 In-fringe-ment Suits."InW.B.Hewlett and E. Selfridge-Field,eds.
  Melodic
  []
 
 
-Underfull \hbox (badness 1502) in paragraph at lines 155--157
+Underfull \hbox (badness 1502) in paragraph at lines 177--179
 \OT1/cmr/m/n/10 Sim-i-lar-ity: Con-cepts, Pro-ce-dures,and Ap-pli-ca-tions. Cam
 -bridge, Mas-
  []
 
-[4] (./outline.aux)
+[4]
+Underfull \hbox (badness 1466) in paragraph at lines 188--191
+[]\OT1/cmr/m/n/10 Sakurako Yazawa, Yuhei Hasegawa, Ko-hei Kanamori and Masatosh
+i
+ []
+
+[5] (./outline.aux)
 
 LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 2104 strings out of 492616
- 28919 string characters out of 6129480
- 95465 words of memory out of 5000000
- 6006 multiletter control sequences out of 15000+600000
+ 2105 strings out of 492616
+ 28935 string characters out of 6129480
+ 97468 words of memory out of 5000000
+ 6007 multiletter control sequences out of 15000+600000
  9023 words of font info for 33 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  41i,8n,25p,306b,228s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -263,10 +269,10 @@ Here is how much of TeX's memory you used:
 sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr
 /local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr17.pfb></usr/l
 ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb>
-Output written on outline.pdf (4 pages, 221403 bytes).
+Output written on outline.pdf (5 pages, 224499 bytes).
 PDF statistics:
- 50 PDF objects out of 1000 (max. 8388607)
- 32 compressed objects within 1 object stream
+ 53 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  11 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -113,6 +113,28 @@
 					\caption{Source: \cite{one}}
 				\end{figure}
 
+			\vspace{200px}
+			\subsubsection{Algorithms of Category 2}
+					An algorithm proposed by \cite{two_point_five} uses the Implication/Realization Model (IMR).
+					We will discuss IMR.
+
+					A MIDI-formatted input undergoes Melody Seperator , which as the name suggests turns melody into segments.
+					This paper emphasizes that the intervalic information between two notes must be further detailed by the direction of pitch change.
+
+
+					This algorithms incorporates n-gram method.
+					What is n-gram method?
+
+					Similarity is finally calculated by
+
+					\begin{equation}
+						S(query , comparison) = \frac{n}{max(a,b)}
+					\end{equation}
+					{Where a and b are reprectively element count of query melody and melody compared.}
+
+
+					
+
 			\newpage
 			\subsubsection{Hybrid Algorithms}
 				Hybrid algorithms are the algorithms , that it incorporate all of the abovementioned (See \ref{categories}) categories. This is done by taking a linear combination of several single algorithms.
@@ -162,6 +184,11 @@
 		\bibitem[4]{two_point_two}
 		Velardo, Valerio, Mauro Vallati, Steven Jan.
 		"Symbolic melodic similarity: State of the art and future challenges." Computer Music Journal 40.2 (2016): 70-83.
+		\bibitem[5]{two_point_five}
+		Sakurako Yazawa, Yuhei Hasegawa, Kohei Kanamori and Masatoshi Hamanaka
+		Melodic Similarity based on Extension Implication-Realization Model
+		Music Information Retrieval Exchange , 2013.
+
 
 	\end{thebibliography}
 
