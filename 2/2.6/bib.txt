@@ -1,0 +1,9 @@
+Frieler, Klaus. (2006). Generalized N-gram Measures for Melodic Similarity. 10.1007/3-540-34416-0_31. 
+@article{article,
+author = {Frieler, Klaus},
+year = {2006},
+month = {01},
+pages = {},
+title = {Generalized N-gram Measures for Melodic Similarity},
+doi = {10.1007/3-540-34416-0_31}
+}

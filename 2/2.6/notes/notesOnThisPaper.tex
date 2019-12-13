@@ -1,0 +1,80 @@
+\documentclass{article}
+
+\usepackage{amsmath}
+
+\usepackage{amsthm}
+\newtheorem{theorem}{Theorem}
+\newtheorem{definition}{Definition}[section]
+\newtheorem{corollary}{Corollary}[theorem]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{example}[theorem]{Example}
+\newtheorem{proposition}[theorem]{Proposition}
+
+
+\begin{document}
+	Definitions are crucial to understand this paper.
+
+	\begin{definition}{Sequence}:
+		E is a set.$N \leq M$.A sequence over E is a discrete map.
+		\begin{align*}
+			\phi : [N:M] &\rightarrow E\\
+			k &\maps \phi(k)
+		\end{align*}
+	\end{definition}
+
+	\begin{definition}{N-gram}:
+		Let $s \in F_N(E)$ (Sequences of length n) and $0 \leq i \leq j < N$. Then 
+		\begin{align*}
+			\phi_j^i : [i:j] &\rightarrow E\\
+			&k\maps \phi(k)
+		\end{align*}
+	\end{definition}
+
+	\begin{definition}{Melody}
+		Let E be an event space. A \texbf{finite} , \texbf{discrete} map
+		\begin{align*}
+			\mu : [0:N-1] &\rightarrow R x E\\
+				n&\maps (t_n , p_n)
+		\end{align*}
+		is called melody iff \[ t_n < t_m \iff n < m\].
+	\end{definition}
+
+	\section*{N-gram measures}
+		Three measure being introduced
+		\begin{enumerate}
+			\item Count-Distinct
+			\item Sum-Common
+			\item Ukkonen measure
+		\end{enumerate}
+
+		\begin{definition}{Frequency of an N-gram r w.r.t a sequence s}
+			\[
+				f_s(r) \sum_{u\in \underbrace{S_n(s)}_{\text{set of all N-grams of s}}} \\ \underbrace{\delta(u,r)}_{\delta \text{as in Kronecker}}
+			\]
+		\end{definition}
+		The set of all distinct N-grams of a sequence s will be written \textbf{n}(s).
+
+
+		\begin{definition}{Count-Distinct}
+			Let s and t be two sequences over an event space E and let $0 < n \leq min(|s|,|t|)$.
+
+			The CDM is the count of N-grams common to both sequences:
+
+			\[
+				S_d(s,t) = \sum_{r\in n(s) \cup n(t)} 1
+			\]
+		\end{definition}
+
+		\begin{definition}{Sum-Common}
+			SCM is the sum of frequencies of N-grams common to both sequences.
+
+			\[
+				S_c(s,t) = \sum_{r\in n(s) \cup n(t)} f_s(r) + f_t(r)
+			\]
+
+		\end{definition}
+			
+
+
+
+\end{document}
