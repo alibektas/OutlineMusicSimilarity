@@ -1,1 +1,1 @@
-G.Aloupis,T.Fevens,S.Langerman,T.Matsui,A.Mesa, Y. Nufiez, D. Rappaport, G. Toussaint. Computer Music Journal , 30:3, pp. 67-76, Fall 2006.
+"Algorithms for Computing Geometric Measures of  Melodic Similarity" , G.Aloupis,T.Fevens,S.Langerman,T.Matsui,A.Mesa, Y. Nufiez, D. Rappaport, G. Toussaint. Computer Music Journal , 30:3, pp. 67-76, Fall 2006.
