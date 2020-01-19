@@ -1,0 +1,11 @@
+The RISM A/II collection contains 476,600 incipts (meaning : Opening of a composition)
+
+Supposition:
+	A music retrieval system that does not work well with this collection probably also does not perform well for real-wolrd applications in general.
+Ground truth shouldn't contain binary/ternary ratings(relevant , irrelevant , (+highly relevant))
+
+Filtering was applied on the collection.(Why? Because there are 476,600 incipts.)
+	"We used different filtering steps and features for every query since every query has its own characteristic features.Every filtering step had the aim of reducing the number of candidates for matches for a given query by excluding incipts with features that make them different from the query"
+
+Resulting ground truth tables
+	We visualize the ranks assigned to each candidate with a box-and-whisker plot. The box extends from the first to the third quartile. The whiskers mark the bottom and top 10 percent. Every data point is shown as a little dot. The median is marked with a fat dot, the mean is shown as a vertical line. The dashed horizontal line around the mean marks one standard deviation below and above the mean. The numbers on the scales reflect ranks.

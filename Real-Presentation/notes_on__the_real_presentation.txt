@@ -1,0 +1,5 @@
+Das letzte Mal meinte Leser , dass wenn man Algorithmen miteinander vergleicht man zuerst einige Wege zum Vergleich geben. Das ist mir in dem Moment aufgefallen und danach habe ich geguckt wie Algorithmen in Wettbewerben (hier fällt einem nur eins : MIREX) verglichen werden. MIREX Ergebnisse werden im Gestalt von Tabellen bekanntgegeben , deren Spalten jeweils die zu vergleichenden Algorithmen sind. Die Zeilen sind hingegen auf zwei Klassen eingeteilt : Headings , Calculating Summary Measures.
+
+Headings listen verschiedene Ansätze (das muss natürlich ergänzt werden) auf.
+
+Zu ADR (Average Dynamic Recall) findet man in ../1/take_away.txt

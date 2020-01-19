@@ -1,0 +1,21 @@
+Outline.txt
+_______________________________________________
+
+
+An Table of Contents
+What is Music?
+Elements of Music (Melody ,Harmony , Timbre etc.)
+Introduction to Symbols Used in Music Notation
+Introduction to Digital Formats (xml,MIDI etc.)
+
+Introduction to MIREX ~1 min
+MIREX Table Headings ~ 6 min
+	ADR -- 	~3 min
+	NRGB 	~1 min
+	AP		
+	PND		~1 min
+	Calculating Summary Measures ~ 1 min
+
+
+
+
