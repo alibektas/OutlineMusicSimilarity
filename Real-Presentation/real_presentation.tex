@@ -10,11 +10,27 @@
 \graphicspath{{./images/}}
 \usepackage{verbatim}
 
+\usetheme{Antibes}
+\setbeamertemplate{section in toc}[sections numbered]
+\setbeamertemplate{subsection in toc}[subsections numbered]
+
+
+\AtBeginSubsection[]
+{
+   \begin{frame}
+        \frametitle{Inhalts\"ubersicht}
+        \tableofcontents[currentsection,currentsubsection]
+   \end{frame}
+}
+
 \begin{document}
-	\begin{frame}
-		\maketitle
-	\end{frame}
 	
+
+	\begin{frame}\maketitle\end{frame}
+	\begin{frame}{Überblick} \tableofcontents \end{frame}
+
+	\section{Grundlegendes}
+
 	\begin{frame}
   		\frametitle{Darstellung von Noten}
   		\begin{minipage}{0.45\textwidth}
@@ -36,10 +52,75 @@
 		\frametitle{Darstellung von Noten}
 		Im Grunde genommen , ermöglicht die herkömmliche Methode von Notendarstellung , Informationen über Rhytmus , Tonlage , Gefühl beim Spielen , vortragsbetreffliche Elemente zu übermitteln.
 		\begin{figure}[h!]
-			\includegraphics[width=300px,height=150px,keepaspectratio]{bach_adagio}
+			\includegraphics[width=250px,height=125px,keepaspectratio]{bach_adagio}
 			\caption{Source: IMLSP Archive}
 		\end{figure}
 	\end{frame}
+
+	\begin{frame}
+		\frametitle{Darstellung von Noten}
+			\textit{"Representing music as a weighted point set in a two-dimensional space has a tradition of many centuries. Since approximately the 10th century, one popular way of writing music has been to use a set of notes (points) in a two-dimensional space, with time and pitch as coordinates."}\cite{three}
+	\end{frame}
+
+	\section{A Section Name To Say "Different Approaches"}
+
+	\begin{frame}
+		\frametitle{Insert Title }
+		\begin{minipage}{0.45\textwidth}
+			\begin{center}
+				\textit{"A Measure of Melodic Similarity Based on a Graph Representation of the Music Structure"} 
+				\cite{two_point_four}  \\ 
+				von Nicola Orio und Antonio Rodá.
+			\end{center}
+		\end{minipage}%
+		\begin{minipage}{0.45\textwidth}
+			\begin{figure}[h!]
+				\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{a_measure_of_melodic_similarity_based_on_a_graoh_representation_of_the_music_structure}}
+			\end{figure}
+		\end{minipage}
+	\end{frame}
+
+
+	\begin{frame}
+		\frametitle{Insert Title}
+		\begin{itemize}
+				\item Der Inhalt wird schrittweise vereinfacht.
+				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung.
+					\begin{itemize}
+						\item die unterliegende harmonische Funktion (harmonic weight)
+						\item die metrische Position (metric weight)
+						\item die Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
+					\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+
+	\begin{frame}
+		\frametitle{Insert Title}
+		\begin{figure}[h!]
+			\includegraphics[width=250px,height=125px,keepaspectratio]{functional_degrees}
+			\caption{Funktionen der Noten im Skala \cite{functional_degrees_source}} 
+		\end{figure}
+	\end{frame}
+
+
+	\begin{frame}
+		\frametitle{Insert Title}
+		\begin{itemize}
+				\item Der Inhalt wird schrittweise vereinfacht.
+				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung.
+					\begin{itemize}
+						\item die unterliegende harmonische Funktion (harmonic weight)
+						\item die metrische Position (metric weight)
+						\item die Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
+					\end{itemize}
+		\end{itemize}
+	\end{frame}
+
+
+
+
+	\section{MIREX : Algorithmen treten gegeneinander an}
 
 	\begin{frame}
 		\frametitle{MIREX}
@@ -76,11 +157,9 @@
 		\end{figure}
 	\end{frame}
 
-	\begin{frame}
-		\frametitle{Average Dynamic Recall - ADR}
-		
-	\end{frame}
+	\subsection{Average Dynamic Recall}
 
+	
 	\begin{frame}
 		\frametitle{MIREX}
 		\begin{figure}[h!]
@@ -89,6 +168,13 @@
 	\end{frame}
 
 	\begin{frame}
+		\frametitle{Average Dynamic Recall - ADR}
+		
+	\end{frame}
+
+	\section{Bibliographie}
+
+	\begin{frame}[allowframebreaks]
 		\frametitle{Bibliographie}
 		\begin{thebibliography}{5}
 			\setbeamertemplate{bibliography item}[text]
@@ -99,6 +185,9 @@
 			\bibitem[3]{def_schlussel} “Notenschlüssel.” Wikipedia, Wikimedia Foundation, 11 Dec. 2019, de.wikipedia.org/wiki/Notenschlüssel.
 			\bibitem[4]{mirex_website} MIREX,Symbolic Melodic Similarity 2005,https://www.music-ir.org/mirex/wiki/2005:Symbolic\_Melodic.
 			\bibitem[5]{mirex_website_2007_results} MIREX,Symbolic Melodic Similarity Results 2007, https://www.music-ir.org/mirex/wiki/2007:Symbolic\_Melodic\_Similarity\_Results.
+			\bibitem[6]{three} Typke, Rainer. (2007). Music Retrieval based on Melodic Similarity.
+			\bibitem[7]{two_point_four} Orio, N., and A. Rodá. 2009. “A Measure of Melodic Similarity Based on a Graph Representation of the Music Structure.” In Proceedings of the International Conference for Music Information Retrieval, pp. 543– 548.
+			\bibitem[8]{functional_degrees_source} Tonal Degrees [Online]. [Accessed 30 Jan 2020]. Available from : http://www.piano-play-it.com/musical-scales.html
 		\end{thebibliography}
 	\end{frame}
 \end{document}
