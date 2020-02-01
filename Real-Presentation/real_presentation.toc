@@ -1,5 +1,5 @@
 \beamer@sectionintoc {1}{Grundlegendes}{3}{0}{1}
 \beamer@sectionintoc {2}{A Section Name To Say "Different Approaches"}{6}{0}{2}
-\beamer@sectionintoc {3}{MIREX : Algorithmen treten gegeneinander an}{10}{0}{3}
-\beamer@subsectionintoc {3}{1}{Average Dynamic Recall}{13}{0}{3}
-\beamer@sectionintoc {4}{Bibliographie}{16}{0}{4}
+\beamer@sectionintoc {3}{MIREX : Algorithmen treten gegeneinander an}{14}{0}{3}
+\beamer@subsectionintoc {3}{1}{Average Dynamic Recall}{17}{0}{3}
+\beamer@sectionintoc {4}{Bibliographie}{20}{0}{4}

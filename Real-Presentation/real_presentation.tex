@@ -65,7 +65,7 @@
 	\section{A Section Name To Say "Different Approaches"}
 
 	\begin{frame}
-		\frametitle{Insert Title }
+		\frametitle{Ein graphbasierter Ansatz}
 		\begin{minipage}{0.45\textwidth}
 			\begin{center}
 				\textit{"A Measure of Melodic Similarity Based on a Graph Representation of the Music Structure"} 
@@ -82,21 +82,23 @@
 
 
 	\begin{frame}
-		\frametitle{Insert Title}
+		\frametitle{Ein graphbasierter Ansatz}
 		\begin{itemize}
 				\item Der Inhalt wird schrittweise vereinfacht.
-				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung.
+				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung. Was das Gewicht einer Note ausmacht ist : 
 					\begin{itemize}
-						\item die unterliegende harmonische Funktion (harmonic weight)
-						\item die metrische Position (metric weight)
-						\item die Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
+						\item ihre unterliegende harmonische Funktion (harmonic weight)
+						\item ihre metrische Position (metric weight)
+						\item ihre Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
 					\end{itemize}
 		\end{itemize}
 	\end{frame}
 
 
+
+
 	\begin{frame}
-		\frametitle{Insert Title}
+		\frametitle{Ein graphbasierter Ansatz}
 		\begin{figure}[h!]
 			\includegraphics[width=250px,height=125px,keepaspectratio]{functional_degrees}
 			\caption{Funktionen der Noten im Skala \cite{functional_degrees_source}} 
@@ -105,17 +107,56 @@
 
 
 	\begin{frame}
-		\frametitle{Insert Title}
+		\frametitle{Ein graphbasierter Ansatz}
 		\begin{itemize}
 				\item Der Inhalt wird schrittweise vereinfacht.
-				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung.
+				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung. Was das Gewicht einer Note ausmacht ist : 
 					\begin{itemize}
-						\item die unterliegende harmonische Funktion (harmonic weight)
-						\item die metrische Position (metric weight)
-						\item die Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
+						\item ihre unterliegende harmonische Funktion (harmonic weight)
+						\item ihre metrische Position (metric weight)
+						\item ihre Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
 					\end{itemize}
+				\item Jedesmal wird die doppelte Länge der minimalen Länge in Betracht gezogen.
+				\item Wenn eine Note entfernt wird , die ihre Position durch die andere Note ersetzt , indem sie um ihre Länge verlängert wird.
 		\end{itemize}
 	\end{frame}
+
+	\begin{frame}
+		\frametitle{Ein graphbasierter Ansatz}
+		\begin{figure}[h!]
+					\includegraphics[width=300px,height=100px,keepaspectratio]{one_of_two_point_four}
+		\end{figure}
+		\begin{figure}[h!]
+					\includegraphics[width=300px,height=100px,keepaspectratio]{two_of_two_point_four}
+					\caption{Source: \cite{two_point_four}}
+
+		\end{figure}
+	\end{frame}
+
+
+	\begin{frame}
+		\frametitle{Ein graphbasierter Ansatz - Diskussion}
+		\begin{itemize}
+				\item Experiment zeigt : Der Graph vergrößert sich sublinear , wenn neue Elemente hinzugefügt werden.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Ein graphbasierter Ansatz - Diskussion}
+		\begin{figure}[h!]
+			\includegraphics[width=250px,height=125px,keepaspectratio]{three_of_two_point_four}
+			\caption{Aus der kleinsten Quadrat-Schätzung ergibt sich ein sublinearer Trend \cite{two_point_four}}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Ein graphbasierter Ansatz - Diskussion}
+		\begin{itemize}
+				\item Experiment zeigt : Der Graph vergrößert sich sublinear , wenn neue Elemente hinzugefügt werden.
+				\item Aus harmonischen Aspekten Verallgemeinerungen zu gewinnen , ist noch kein vollständig gelöstes Problem. Manuelle Verarbeitung der Daten kann unter Umständen nötig sein.
+		\end{itemize}
+	\end{frame}
+
 
 
 
@@ -170,6 +211,15 @@
 	\begin{frame}
 		\frametitle{Average Dynamic Recall - ADR}
 		
+	\end{frame}
+
+	\subsection{MIREX 2005}
+
+	\begin{frame}
+		\frametitle{MIREX 2005}
+		\begin{itemize}
+			\item \textit{"Retrieving melodically similar incipits from 500,000 notated real world compositions"}\cite{mirex_website}
+
 	\end{frame}
 
 	\section{Bibliographie}

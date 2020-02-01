@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.29)  31 JAN 2020 02:57
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.29)  31 JAN 2020 22:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -901,58 +901,91 @@ aoh_representation_of_the_music_structure.pdf , page1 used on input line 81.
 he_music_structure.pdf>] [7
 
 ]
-<./images/functional_degrees.png, id=300, 607.26875pt x 190.7125pt>
+<./images/functional_degrees.png, id=301, 607.26875pt x 190.7125pt>
 File: ./images/functional_degrees.png Graphic file (type png)
 <use ./images/functional_degrees.png>
 Package pdftex.def Info: ./images/functional_degrees.png  used on input line 10
-4.
+6.
 (pdftex.def)             Requested size: 250.93697pt x 78.80664pt.
  [8
 
  <./images/functional_degrees.png>] [9
 
 ]
-Overfull \vbox (1.39189pt too high) detected at line 142
+<./images/one_of_two_point_four.png, id=361, 450.68375pt x 237.88875pt>
+File: ./images/one_of_two_point_four.png Graphic file (type png)
+<use ./images/one_of_two_point_four.png>
+Package pdftex.def Info: ./images/one_of_two_point_four.png  used on input line
+ 134.
+(pdftex.def)             Requested size: 190.1661pt x 100.37721pt.
+<./images/two_of_two_point_four.png, id=363, 443.6575pt x 276.03125pt>
+File: ./images/two_of_two_point_four.png Graphic file (type png)
+<use ./images/two_of_two_point_four.png>
+Package pdftex.def Info: ./images/two_of_two_point_four.png  used on input line
+ 134.
+(pdftex.def)             Requested size: 161.33452pt x 100.3778pt.
+
+Overfull \vbox (39.11769pt too high) detected at line 134
  []
 
 [10
 
+ <./images/one_of_two_point_four.png> <./images/two_of_two_point_four.png>]
+[11
+
 ]
-<./images/mirex_result_example.png, id=389, 344.28625pt x 236.885pt>
+<./images/three_of_two_point_four.png, id=424, 512.91624pt x 330.23375pt>
+File: ./images/three_of_two_point_four.png Graphic file (type png)
+<use ./images/three_of_two_point_four.png>
+Package pdftex.def Info: ./images/three_of_two_point_four.png  used on input li
+ne 150.
+(pdftex.def)             Requested size: 194.87889pt x 125.46996pt.
+ [12
+
+ <./images/three_of_two_point_four.png>] [13
+
+]
+Overfull \vbox (1.39189pt too high) detected at line 183
+ []
+
+[14
+
+]
+<./images/mirex_result_example.png, id=514, 344.28625pt x 236.885pt>
 File: ./images/mirex_result_example.png Graphic file (type png)
 <use ./images/mirex_result_example.png>
 Package pdftex.def Info: ./images/mirex_result_example.png  used on input line 
-150.
+191.
 (pdftex.def)             Requested size: 218.83472pt x 150.5685pt.
- [11
+ [15
 
  <./images/mirex_result_example.png>]
-<./images/mirex_result_example_change_one.png, id=421, 344.28625pt x 236.885pt>
+<./images/mirex_result_example_change_one.png, id=545, 344.28625pt x 236.885pt>
 
 File: ./images/mirex_result_example_change_one.png Graphic file (type png)
 <use ./images/mirex_result_example_change_one.png>
 Package pdftex.def Info: ./images/mirex_result_example_change_one.png  used on 
-input line 158.
+input line 199.
 (pdftex.def)             Requested size: 218.83472pt x 150.5685pt.
- [12
+ [16
 
- <./images/mirex_result_example_change_one.png>] (./real_presentation.toc) [13
+ <./images/mirex_result_example_change_one.png>] (./real_presentation.toc) [17
 
 ]
-<./images/mirex_result_example_change_two.png, id=488, 344.28625pt x 236.885pt>
+<./images/mirex_result_example_change_two.png, id=610, 344.28625pt x 236.885pt>
 
 File: ./images/mirex_result_example_change_two.png Graphic file (type png)
 <use ./images/mirex_result_example_change_two.png>
 Package pdftex.def Info: ./images/mirex_result_example_change_two.png  used on 
-input line 168.
+input line 209.
 (pdftex.def)             Requested size: 218.83472pt x 150.5685pt.
- [14
+ [18
 
- <./images/mirex_result_example_change_two.png>] [15
+ <./images/mirex_result_example_change_two.png>] [19
 
-] [16
+] [20
 
-] [17
+] [21
 
 
 ]
@@ -965,43 +998,33 @@ input line 168.
 \tf@snm=\write8
 \openout8 = `real_presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 193.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 193.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 234.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 234.
  (./real_presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 193.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 193.
-
-
-Package rerunfilecheck Warning: File `real_presentation.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `real_presentation.out':
-(rerunfilecheck)             Before: 56BCEC48694701D46E5116E729EAACF9;325
-(rerunfilecheck)             After:  C6404BD365FDEF626016DB3AA3D1BD7E;325.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 234.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 234.
+Package rerunfilecheck Info: File `real_presentation.out' has not changed.
+(rerunfilecheck)             Checksum: 8F47AEAF7C8B187F41A70F30FC885C0B;325.
  ) 
 Here is how much of TeX's memory you used:
- 17435 strings out of 492616
- 336558 string characters out of 6129480
- 409773 words of memory out of 5000000
- 20899 multiletter control sequences out of 15000+600000
+ 17467 strings out of 492616
+ 337249 string characters out of 6129480
+ 409774 words of memory out of 5000000
+ 20921 multiletter control sequences out of 15000+600000
  11639 words of font info for 42 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,55p,786b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{Outline0.3.1.12} has been referenced but does not
- exist, replaced by a fixed one
-
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></
-usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></us
-r/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local/t
-exlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on real_presentation.pdf (17 pages, 591396 bytes).
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb
+></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb>
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/local
+/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on real_presentation.pdf (21 pages, 981105 bytes).
 PDF statistics:
- 639 PDF objects out of 1000 (max. 8388607)
- 563 compressed objects within 6 object streams
- 49 named destinations out of 1000 (max. 500000)
- 118 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 762 PDF objects out of 1000 (max. 8388607)
+ 670 compressed objects within 7 object streams
+ 56 named destinations out of 1000 (max. 500000)
+ 133 words of extra memory for PDF output out of 10000 (max. 10000000)
 
