@@ -2,4 +2,7 @@
 \beamer@sectionintoc {2}{A Section Name To Say "Different Approaches"}{6}{0}{2}
 \beamer@sectionintoc {3}{MIREX : Algorithmen treten gegeneinander an}{14}{0}{3}
 \beamer@subsectionintoc {3}{1}{Average Dynamic Recall}{17}{0}{3}
-\beamer@sectionintoc {4}{Bibliographie}{20}{0}{4}
+\beamer@subsectionintoc {3}{2}{MIREX 2005}{20}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{1}{Ein auf Kognitivwis. beruhender Ansatz}{22}{0}{3}
+\beamer@subsubsectionintoc {3}{2}{2}{Levenshtein Distance}{23}{0}{3}
+\beamer@sectionintoc {4}{Bibliographie}{24}{0}{4}
