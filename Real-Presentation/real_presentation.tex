@@ -9,6 +9,7 @@
 \usepackage{graphicx}
 \graphicspath{{./images/}}
 \usepackage{verbatim}
+\usepackage{mathtools}
 
 \usetheme{Antibes}
 \setbeamertemplate{section in toc}[sections numbered]
@@ -138,8 +139,8 @@
         \begin{minipage}{0.45\textwidth}
             \begin{itemize}
              \item Melodien werden als Polygonalketten dargestellt
-             \item Tonlänge wird durch Länge der wagerechten Kanten modeliert
-             \item Intervalle werden durch Länge der senkrechten Kanten modeliert 
+             \item Tonlänge wird durch Länge der waagerechten Kanten modelliert
+             \item Intervalle werden durch Länge der senkrechten Kanten modelliert 
             \end{itemize}
         \end{minipage}
         \begin{minipage}{0.45\textwidth}
@@ -209,6 +210,73 @@
 		\frametitle{Average Dynamic Recall - ADR}
 		
 	\end{frame}
+	
+	\subsection{Urbano MelodyShape}
+	\begin{frame}
+		\frametitle{Insert Title }
+		\begin{minipage}{0.45\textwidth}
+			\begin{center}
+				\textit{"MelodyShape at MIREX 2014 Symbolic Melodic Similarity"} 
+				\cite{fi ve_point_two}  \\ 
+				von Julian Urbano
+			\end{center}
+		\end{minipage}%
+		\begin{minipage}{0.45\textwidth}
+			\begin{figure}[h!]
+				\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{JU1}}
+			\end{figure}
+		\end{minipage}
+	\end{frame}
+	
+	\begin{frame}
+        \frametitle{Urbano MelodyShape}
+        \begin{minipage}{0.45\textwidth}
+            \begin{itemize}
+             \item Töne werden als Punkt  auf Pitch-Time plane dargestellt.
+             \item Darstellung als Funktion durch Interpolation mithile von Splines.
+            \end{itemize}
+        \end{minipage}
+        \begin{minipage}{0.45\textwidth}
+            \fbox{\includegraphics[width=150px,height=150px,keepaspectratio]{abb_4}}
+        \end{minipage}
+	\end{frame}
+	
+    \begin{frame}
+        \frametitle{Needlemann - Wunsch Algorithmus}
+       \fbox{\includegraphics[width=0.5\textwidth]{abb_7}}%
+        \fbox{\includegraphics[width=0.5\textwidth]{abb_8}}
+	\end{frame}
+	
+	\begin{frame}
+        \frametitle{ShapeH}
+        \begin{minipage}{0.45\textwidth}
+            \begin{itemize}
+             \item Insertion : $ s(-, n) = -(1 - f(n))$
+             \item Deletion: $s(n, -) = -(1 - f(n))$
+             \item Match: $s(n, n) = 1 - f(n)$
+     %        \item Sequence Alignment $H(i,j) = max \{H(i - 1, j - 1) + s(a_i,b_j) \n
+        %     H(i - 1, j) + s(a_i, -) \n H(i, j - 1) + s(i, b_j) \}$
+            \end{itemize}
+        \end{minipage}
+        \begin{minipage}{0.45\textwidth}
+            \fbox{\includegraphics[width=150px,height=150px,keepaspectratio]{abb_5}}
+        \end{minipage}
+	\end{frame}
+	
+	\begin{frame}
+        \frametitle{Time}
+            \begin{itemize}
+             \item Insertion : $ s(-, n) = -diff_p(n,\Theta (n)) - \lambda k_t * diff_t(n,\Theta (n))$
+             \item Deletion: $s(n, -) = -diff_p(n,\Theta (n)) - \lambda k_t * diff_t(n,\Theta (n))$
+             \item Match: $2\mu_p + 2\lambda k_t\mu_t = 2\mu_p(1+k_t)$
+             \item Substitution $s(n,m) = -diff_p(n,m) - \lambda k_t * diff_t(n,m)$
+            \end{itemize}
+            \begin{center}
+            \fbox{\includegraphics[width=150px,height=150px,keepaspectratio]{abb_6}}
+            \end{center}
+	\end{frame}
+	
+
 
 	\section{Bibliographie}
 
@@ -227,6 +295,8 @@
 			\bibitem[7]{two_point_four} Orio, N., and A. Rodá. 2009. “A Measure of Melodic Similarity Based on a Graph Representation of the Music Structure.” In Proceedings of the International Conference for Music Information Retrieval, pp. 543– 548.
 			\bibitem[8]{one} Greg Aloupis, Thomas Fevens, Stefan Langerman, Tomomi Matsui, Antonio Mesa, Yurai Nunez, David Rappaport, and Godfried Toussaint, "Algorithms for Computing Geometric Measures of Melodic Similarity" Computer Music Journal, Vol.30, No. 3 (Autumn, 2006), pp. 67-76
 			\bibitem[9]{functional_degrees_source} Tonal Degrees [Online]. [Accessed 30 Jan 2020]. Available from : http://www.piano-play-it.com/musical-scales.html
+			\bibitem[10]{five_point_two} J. Urbano. MelodyShape at MIREX 2014 Symbolic
+            Melodic Similarity. Technical report, Music Information Retrieval Evaluation eXchange, 2014
 		\end{thebibliography}
 	\end{frame}
 \end{document}
