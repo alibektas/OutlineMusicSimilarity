@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.16)  3 FEB 2020 13:33
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.1.16)  3 FEB 2020 13:53
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -912,55 +912,55 @@ f>]
 <./images/abb_1.png, id=417, 492.84125pt x 402.50375pt>
 File: ./images/abb_1.png Graphic file (type png)
 <use ./images/abb_1.png>
-Package pdftex.def Info: ./images/abb_1.png  used on input line 153.
+Package pdftex.def Info: ./images/abb_1.png  used on input line 156.
 (pdftex.def)             Requested size: 150.56076pt x 122.96306pt.
 
-Overfull \hbox (19.08125pt too wide) in paragraph at lines 153--153
-[][] 
+Overfull \hbox (19.08125pt too wide) in paragraph at lines 156--156
+ [] 
  []
 
 [11
 
  <./images/abb_1.png>]
-<./images/abb_2.png, id=447, 795.97375pt x 264.99pt>
+<./images/abb_2.png, id=448, 795.97375pt x 264.99pt>
 File: ./images/abb_2.png Graphic file (type png)
 <use ./images/abb_2.png>
-Package pdftex.def Info: ./images/abb_2.png  used on input line 159.
+Package pdftex.def Info: ./images/abb_2.png  used on input line 165.
 (pdftex.def)             Requested size: 215.10196pt x 71.6089pt.
-<./images/abb_3.png, id=448, 127.22531pt x 115.18031pt>
+<./images/abb_3.png, id=449, 127.22531pt x 115.18031pt>
 File: ./images/abb_3.png Graphic file (type png)
 <use ./images/abb_3.png>
-Package pdftex.def Info: ./images/abb_3.png  used on input line 159.
+Package pdftex.def Info: ./images/abb_3.png  used on input line 165.
 (pdftex.def)             Requested size: 92.1879pt x 83.46402pt.
 
-Overfull \hbox (13.59996pt too wide) in paragraph at lines 159--159
-[][][]  
+Overfull \hbox (13.59996pt too wide) in paragraph at lines 165--165
+ [][] 
  []
 
 [12
 
  <./images/abb_2.png> <./images/abb_3.png (PNG copy)>]
-Overfull \vbox (1.39189pt too high) detected at line 180
+Overfull \vbox (1.39189pt too high) detected at line 186
  []
 
 [13
 
 ]
-<./images/mirex_result_example.png, id=509, 344.28625pt x 236.885pt>
+<./images/mirex_result_example.png, id=511, 344.28625pt x 236.885pt>
 File: ./images/mirex_result_example.png Graphic file (type png)
 <use ./images/mirex_result_example.png>
 Package pdftex.def Info: ./images/mirex_result_example.png  used on input line 
-188.
+194.
 (pdftex.def)             Requested size: 218.83472pt x 150.5685pt.
  [14
 
  <./images/mirex_result_example.png>]
-<./images/mirex_result_example_change_one.png, id=540, 344.28625pt x 236.885pt>
+<./images/mirex_result_example_change_one.png, id=542, 344.28625pt x 236.885pt>
 
 File: ./images/mirex_result_example_change_one.png Graphic file (type png)
 <use ./images/mirex_result_example_change_one.png>
 Package pdftex.def Info: ./images/mirex_result_example_change_one.png  used on 
-input line 196.
+input line 202.
 (pdftex.def)             Requested size: 218.83472pt x 150.5685pt.
  [15
 
@@ -969,29 +969,29 @@ input line 196.
 ] [17
 
 ]
-<./images/ground_truth_query.png, id=639, 581.17125pt x 90.3375pt>
+<./images/ground_truth_query.png, id=641, 581.17125pt x 90.3375pt>
 File: ./images/ground_truth_query.png Graphic file (type png)
 <use ./images/ground_truth_query.png>
-Package pdftex.def Info: ./images/ground_truth_query.png  used on input line 22
-7.
+Package pdftex.def Info: ./images/ground_truth_query.png  used on input line 23
+3.
 (pdftex.def)             Requested size: 301.12889pt x 46.80759pt.
-<./images/ground_truth_results_one.png, id=640, 595.22375pt x 125.46875pt>
+<./images/ground_truth_results_one.png, id=642, 595.22375pt x 125.46875pt>
 File: ./images/ground_truth_results_one.png Graphic file (type png)
 <use ./images/ground_truth_results_one.png>
 Package pdftex.def Info: ./images/ground_truth_results_one.png  used on input l
-ine 227.
+ine 233.
 (pdftex.def)             Requested size: 301.12602pt x 63.47511pt.
-<./images/ground_truth_results_two.png, id=642, 652.4375pt x 431.6125pt>
+<./images/ground_truth_results_two.png, id=644, 652.4375pt x 431.6125pt>
 File: ./images/ground_truth_results_two.png Graphic file (type png)
 <use ./images/ground_truth_results_two.png>
 Package pdftex.def Info: ./images/ground_truth_results_two.png  used on input l
-ine 227.
+ine 233.
 (pdftex.def)             Requested size: 227.58998pt x 150.55952pt.
-<./images/ground_truth_results_three.png, id=643, 627.34375pt x 436.63126pt>
+<./images/ground_truth_results_three.png, id=645, 627.34375pt x 436.63126pt>
 File: ./images/ground_truth_results_three.png Graphic file (type png)
 <use ./images/ground_truth_results_three.png>
 Package pdftex.def Info: ./images/ground_truth_results_three.png  used on input
- line 227.
+ line 233.
 (pdftex.def)             Requested size: 216.32852pt x 150.56465pt.
  [18
 
@@ -1002,22 +1002,22 @@ Package pdftex.def Info: ./images/ground_truth_results_three.png  used on input
 
 
  <./images/ground_truth_results_three.png>]
-<./images/mirex_result_example_change_two.png, id=739, 344.28625pt x 236.885pt>
+<./images/mirex_result_example_change_two.png, id=741, 344.28625pt x 236.885pt>
 
 File: ./images/mirex_result_example_change_two.png Graphic file (type png)
 <use ./images/mirex_result_example_change_two.png>
 Package pdftex.def Info: ./images/mirex_result_example_change_two.png  used on 
-input line 234.
+input line 240.
 (pdftex.def)             Requested size: 218.83472pt x 150.5685pt.
  [21
 
  <./images/mirex_result_example_change_two.png>] (./real_presentation.toc) [22
 
 ]
-<./images/adr_example.png, id=808, 426.59375pt x 152.57pt>
+<./images/adr_example.png, id=810, 426.59375pt x 152.57pt>
 File: ./images/adr_example.png Graphic file (type png)
 <use ./images/adr_example.png>
-Package pdftex.def Info: ./images/adr_example.png  used on input line 244.
+Package pdftex.def Info: ./images/adr_example.png  used on input line 250.
 (pdftex.def)             Requested size: 301.14569pt x 107.70387pt.
 
 [23
@@ -1025,11 +1025,11 @@ Package pdftex.def Info: ./images/adr_example.png  used on input line 244.
  <./images/adr_example.png>] (./real_presentation.toc) [24
 
 ]
-<./images/mirex_2005_one.pdf, id=881, page=1, 597.50829pt x 845.0471pt>
+<./images/mirex_2005_one.pdf, id=883, page=1, 597.50829pt x 845.0471pt>
 File: ./images/mirex_2005_one.pdf Graphic file (type pdf)
 <use ./images/mirex_2005_one.pdf, page 1>
 Package pdftex.def Info: ./images/mirex_2005_one.pdf , page1 used on input line
- 261.
+ 267.
 (pdftex.def)             Requested size: 70.96852pt x 100.36972pt.
  [25
 
@@ -1038,23 +1038,23 @@ Package pdftex.def Info: ./images/mirex_2005_one.pdf , page1 used on input line
 ] [27
 
 ]
-<./images/mirex_2005_one_img_one.png, id=986, 346.29375pt x 96.36pt>
+<./images/mirex_2005_one_img_one.png, id=988, 346.29375pt x 96.36pt>
 File: ./images/mirex_2005_one_img_one.png Graphic file (type png)
 <use ./images/mirex_2005_one_img_one.png>
 Package pdftex.def Info: ./images/mirex_2005_one_img_one.png  used on input lin
-e 301.
+e 307.
 (pdftex.def)             Requested size: 108.21652pt x 30.11241pt.
-<./images/mirex_2005_one_img_two.png, id=987, 732.7375pt x 358.33875pt>
+<./images/mirex_2005_one_img_two.png, id=989, 732.7375pt x 358.33875pt>
 File: ./images/mirex_2005_one_img_two.png Graphic file (type png)
 <use ./images/mirex_2005_one_img_two.png>
 Package pdftex.def Info: ./images/mirex_2005_one_img_two.png  used on input lin
-e 301.
+e 307.
 (pdftex.def)             Requested size: 301.12871pt x 147.2643pt.
-<./images/mirex_2005_one_img_three.png, id=988, 661.47125pt x 335.2525pt>
+<./images/mirex_2005_one_img_three.png, id=990, 661.47125pt x 335.2525pt>
 File: ./images/mirex_2005_one_img_three.png Graphic file (type png)
 <use ./images/mirex_2005_one_img_three.png>
 Package pdftex.def Info: ./images/mirex_2005_one_img_three.png  used on input l
-ine 301.
+ine 307.
 (pdftex.def)             Requested size: 297.06381pt x 150.56041pt.
  [28
 
@@ -1063,11 +1063,11 @@ ine 301.
 
 
  <./images/mirex_2005_one_img_three.png>]
-<./images/mirex_2005_two.pdf, id=1053, page=1, 597.23125pt x 845.1575pt>
+<./images/mirex_2005_two.pdf, id=1055, page=1, 597.23125pt x 845.1575pt>
 File: ./images/mirex_2005_two.pdf Graphic file (type pdf)
 <use ./images/mirex_2005_two.pdf, page 1>
 Package pdftex.def Info: ./images/mirex_2005_two.pdf , page1 used on input line
- 318.
+ 324.
 (pdftex.def)             Requested size: 70.9265pt x 100.36993pt.
 
 [30
@@ -1075,11 +1075,11 @@ Package pdftex.def Info: ./images/mirex_2005_two.pdf , page1 used on input line
  <./images/mirex_2005_two.pdf>] [31
 
 ]
-<./images/mirex_2005_results.png, id=1124, 945.5325pt x 246.9225pt>
+<./images/mirex_2005_results.png, id=1126, 945.5325pt x 246.9225pt>
 File: ./images/mirex_2005_results.png Graphic file (type png)
 <use ./images/mirex_2005_results.png>
 Package pdftex.def Info: ./images/mirex_2005_results.png  used on input line 33
-1.
+7.
 (pdftex.def)             Requested size: 115.30574pt x 30.11168pt.
  [32
 
@@ -1087,62 +1087,62 @@ Package pdftex.def Info: ./images/mirex_2005_results.png  used on input line 33
 (./real_presentation.toc) [33
 
 ]
-<./images/JU1.pdf, id=1195, page=1, 597.50829pt x 845.0471pt>
+<./images/JU1.pdf, id=1197, page=1, 597.50829pt x 845.0471pt>
 File: ./images/JU1.pdf Graphic file (type pdf)
 <use ./images/JU1.pdf, page 1>
-Package pdftex.def Info: ./images/JU1.pdf , page1 used on input line 350.
+Package pdftex.def Info: ./images/JU1.pdf , page1 used on input line 356.
 (pdftex.def)             Requested size: 70.96852pt x 100.36972pt.
  [34
 
  <./images/JU1.pdf>]
-<./images/abb_4.png, id=1262, 228.855pt x 106.89937pt>
+<./images/abb_4.png, id=1264, 228.855pt x 106.89937pt>
 File: ./images/abb_4.png Graphic file (type png)
 <use ./images/abb_4.png>
-Package pdftex.def Info: ./images/abb_4.png  used on input line 363.
+Package pdftex.def Info: ./images/abb_4.png  used on input line 372.
 (pdftex.def)             Requested size: 150.56984pt x 70.33195pt.
 
-Overfull \hbox (19.09033pt too wide) in paragraph at lines 363--363
-[][] 
+Overfull \hbox (19.09033pt too wide) in paragraph at lines 372--372
+ [] 
  []
 
 [35
 
  <./images/abb_4.png (PNG copy)>]
-<./images/abb_7.png, id=1293, 243.15843pt x 146.04562pt>
+<./images/abb_7.png, id=1296, 243.15843pt x 146.04562pt>
 File: ./images/abb_7.png Graphic file (type png)
 <use ./images/abb_7.png>
-Package pdftex.def Info: ./images/abb_7.png  used on input line 369.
+Package pdftex.def Info: ./images/abb_7.png  used on input line 381.
 (pdftex.def)             Requested size: 153.64493pt x 92.28108pt.
-<./images/abb_8.png, id=1294, 223.58531pt x 124.96687pt>
+<./images/abb_8.png, id=1297, 223.58531pt x 124.96687pt>
 File: ./images/abb_8.png Graphic file (type png)
 <use ./images/abb_8.png>
-Package pdftex.def Info: ./images/abb_8.png  used on input line 369.
+Package pdftex.def Info: ./images/abb_8.png  used on input line 381.
 (pdftex.def)             Requested size: 153.64493pt x 85.87637pt.
 
-Overfull \hbox (13.59996pt too wide) in paragraph at lines 369--369
-[][][]  
+Overfull \hbox (13.59996pt too wide) in paragraph at lines 381--381
+ [][] 
  []
 
 [36
 
  <./images/abb_7.png (PNG copy)> <./images/abb_8.png (PNG copy)>]
-<./images/abb_5.png, id=1326, 246.9225pt x 85.82062pt>
+<./images/abb_5.png, id=1331, 246.9225pt x 85.82062pt>
 File: ./images/abb_5.png Graphic file (type png)
 <use ./images/abb_5.png>
-Package pdftex.def Info: ./images/abb_5.png  used on input line 385.
+Package pdftex.def Info: ./images/abb_5.png  used on input line 400.
 (pdftex.def)             Requested size: 150.56221pt x 52.32953pt.
 
-Overfull \hbox (19.0827pt too wide) in paragraph at lines 385--385
-[][] 
+Overfull \hbox (19.0827pt too wide) in paragraph at lines 400--400
+ [] 
  []
 
 [37
 
  <./images/abb_5.png (PNG copy)>]
-<./images/abb_6.png, id=1359, 191.21437pt x 98.61844pt>
+<./images/abb_6.png, id=1365, 191.21437pt x 98.61844pt>
 File: ./images/abb_6.png Graphic file (type png)
 <use ./images/abb_6.png>
-Package pdftex.def Info: ./images/abb_6.png  used on input line 398.
+Package pdftex.def Info: ./images/abb_6.png  used on input line 416.
 (pdftex.def)             Requested size: 150.57043pt x 77.65639pt.
  [38
 
@@ -1155,6 +1155,9 @@ Package pdftex.def Info: ./images/abb_6.png  used on input line 398.
 ] [41
 
 
+] [42
+
+
 ]
 \tf@nav=\write6
 \openout6 = `real_presentation.nav'.
@@ -1165,19 +1168,19 @@ Package pdftex.def Info: ./images/abb_6.png  used on input line 398.
 \tf@snm=\write8
 \openout8 = `real_presentation.snm'.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 425.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 425.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 444.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 444.
  (./real_presentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 425.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 425.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 444.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 444.
 Package rerunfilecheck Info: File `real_presentation.out' has not changed.
 (rerunfilecheck)             Checksum: 52DF3DB70F9453C2CD27A641A0184A23;515.
  ) 
 Here is how much of TeX's memory you used:
- 18590 strings out of 492167
- 351457 string characters out of 6131558
- 427697 words of memory out of 5000000
- 22439 multiletter control sequences out of 15000+600000
+ 18597 strings out of 492167
+ 351551 string characters out of 6131558
+ 427726 words of memory out of 5000000
+ 22443 multiletter control sequences out of 15000+600000
  11151 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  54i,14n,57p,784b,565s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -1193,10 +1196,10 @@ er/ucrr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/
 share/texmf-dist/fonts/type1/urw/helvetic/uhvr8a.pfb></usr/share/texmf-dist/fon
 ts/type1/urw/times/utmb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr
 8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on real_presentation.pdf (41 pages, 1885475 bytes).
+Output written on real_presentation.pdf (42 pages, 1887989 bytes).
 PDF statistics:
- 1533 PDF objects out of 1728 (max. 8388607)
- 1338 compressed objects within 14 object streams
- 103 named destinations out of 1000 (max. 500000)
+ 1568 PDF objects out of 1728 (max. 8388607)
+ 1371 compressed objects within 14 object streams
+ 106 named destinations out of 1000 (max. 500000)
  247 words of extra memory for PDF output out of 10000 (max. 10000000)
 
