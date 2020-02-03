@@ -9,7 +9,15 @@
 \beamer@sectionintoc {4}{Bibliographie}{24}{0}{4}
 =======
 \beamer@sectionintoc {3}{MIREX : Algorithmen treten gegeneinander an}{13}{0}{3}
+<<<<<<< HEAD
 \beamer@subsectionintoc {3}{1}{Average Dynamic Recall}{16}{0}{3}
 \beamer@subsectionintoc {3}{2}{Urbano MelodyShape}{19}{0}{3}
 \beamer@sectionintoc {4}{Bibliographie}{25}{0}{4}
 >>>>>>> 52dd6f478a0a94f821aaf70f918820b557b245b2
+=======
+\beamer@subsectionintoc {3}{1}{Ground Truth}{16}{0}{3}
+\beamer@subsectionintoc {3}{2}{Average Dynamic Recall}{22}{0}{3}
+\beamer@subsectionintoc {3}{3}{MIREX 2005}{24}{0}{3}
+\beamer@subsectionintoc {3}{4}{Urbano MelodyShape}{26}{0}{3}
+\beamer@sectionintoc {4}{Bibliographie}{32}{0}{4}
+>>>>>>> newbranch

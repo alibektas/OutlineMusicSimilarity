@@ -8,13 +8,17 @@
 
 \usepackage{graphicx}
 \graphicspath{{./images/}}
+
 \usepackage{verbatim}
+
+\usepackage{media9}
+\addmediapath{./audio_files/}
+
 \usepackage{mathtools}
 
 \usetheme{Antibes}
 \setbeamertemplate{section in toc}[sections numbered]
 \setbeamertemplate{subsection in toc}[subsections numbered]
-\setbeamertemplate{subsubsection in toc}[subsubsections numbered]
 
 
 \AtBeginSubsection[]
@@ -27,7 +31,6 @@
 
 \begin{document}
 	
-
 	\begin{frame}\maketitle \end{frame}
 	\begin{frame}{Überblick} \tableofcontents \end{frame}
 
@@ -44,7 +47,7 @@
 		\end{minipage}%
 		\begin{minipage}{0.45\textwidth}
 			\begin{figure}[h!]
-				\includegraphics[width=100px,height=100px,keepaspectratio]{Clefs_chord}
+				\includegraphics[width=100px,height=100px,keepaspectratio]{Clefs_chord.png}
 				\caption{Source: \cite{def_schlussel}}
 			\end{figure}
 		\end{minipage}
@@ -67,7 +70,7 @@
 	\section{A Section Name To Say "Different Approaches"}
 
 	\begin{frame}
-		\frametitle{Ein graphbasierter Ansatz}
+		\frametitle{Ein Graphbasierter Ansatz}
 		\begin{minipage}{0.45\textwidth}
 			\begin{center}
 				\textit{"A Measure of Melodic Similarity Based on a Graph Representation of the Music Structure"} 
@@ -84,23 +87,21 @@
 
 
 	\begin{frame}
-		\frametitle{Ein graphbasierter Ansatz}
+		\frametitle{Ein Graphbasierter Ansatz}
 		\begin{itemize}
 				\item Der Inhalt wird schrittweise vereinfacht.
-				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung. Was das Gewicht einer Note ausmacht ist : 
+				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung.
 					\begin{itemize}
-						\item ihre unterliegende harmonische Funktion (harmonic weight)
-						\item ihre metrische Position (metric weight)
-						\item ihre Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
+						\item die unterliegende harmonische Funktion (harmonic weight)
+						\item die metrische Position (metric weight)
+						\item die Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
 					\end{itemize}
 		\end{itemize}
 	\end{frame}
 
 
-
-
 	\begin{frame}
-		\frametitle{Ein graphbasierter Ansatz}
+		\frametitle{Ein Graphbasierter Ansatz}
 		\begin{figure}[h!]
 			\includegraphics[width=250px,height=125px,keepaspectratio]{functional_degrees}
 			\caption{Funktionen der Noten im Skala \cite{functional_degrees_source}} 
@@ -109,22 +110,20 @@
 
 
 	\begin{frame}
-		\frametitle{Ein graphbasierter Ansatz}
+		\frametitle{Ein auf Graphen beruhender Ansatz}
 		\begin{itemize}
 				\item Der Inhalt wird schrittweise vereinfacht.
-				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung. Was das Gewicht einer Note ausmacht ist : 
+				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung.
 					\begin{itemize}
-						\item ihre unterliegende harmonische Funktion (harmonic weight)
-						\item ihre metrische Position (metric weight)
-						\item ihre Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
+						\item die unterliegende harmonische Funktion (harmonic weight)
+						\item die metrische Position (metric weight)
+						\item die Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
 					\end{itemize}
-				\item Jedesmal wird die doppelte Länge der minimalen Länge in Betracht gezogen.
-				\item Wenn eine Note entfernt wird , die ihre Position durch die andere Note ersetzt , indem sie um ihre Länge verlängert wird.
 		\end{itemize}
 	\end{frame}
 	
     \begin{frame}
-		\frametitle{Insert Title }
+		\frametitle{Ein mathematischer Ansatz}
 		\begin{minipage}{0.45\textwidth}
 			\begin{center}
 				\textit{"Algorithms for Computing Geometric Measures of Melodic Similarity"} 
@@ -140,7 +139,7 @@
 	\end{frame}
 	
 	\begin{frame}
-        \frametitle{Insert Title}
+        \frametitle{Ein mathematischer Ansatz}
         \begin{minipage}{0.45\textwidth}
             \begin{itemize}
              \item Melodien werden als Polygonalketten dargestellt
@@ -155,51 +154,9 @@
 
 	\begin{frame}
         \frametitle{Insert Title}
-       \fbox{\includegraphics[width=0.7\textwidth]{abb_2}}%
+       	\fbox{\includegraphics[width=0.7\textwidth]{abb_2}}%
         \fbox{\includegraphics[width=0.3\textwidth]{abb_3}}
 	\end{frame}
-
-
-
-	\begin{frame}
-		\frametitle{Ein graphbasierter Ansatz}
-		\begin{figure}[h!]
-					\includegraphics[width=300px,height=100px,keepaspectratio]{one_of_two_point_four}
-		\end{figure}
-		\begin{figure}[h!]
-					\includegraphics[width=300px,height=100px,keepaspectratio]{two_of_two_point_four}
-					\caption{Source: \cite{two_point_four}}
-
-		\end{figure}
-	\end{frame}
-
-
-	\begin{frame}
-		\frametitle{Ein graphbasierter Ansatz - Diskussion}
-		\begin{itemize}
-				\item Experiment zeigt : Der Graph vergrößert sich sublinear , wenn neue Elemente hinzugefügt werden.
-		\end{itemize}
-	\end{frame}
-
-	\begin{frame}
-		\frametitle{Ein graphbasierter Ansatz - Diskussion}
-		\begin{figure}[h!]
-			\includegraphics[width=250px,height=125px,keepaspectratio]{three_of_two_point_four}
-			\caption{Aus der kleinsten Quadrat-Schätzung ergibt sich ein sublinearer Trend \cite{two_point_four}}
-		\end{figure}
-	\end{frame}
-
-	\begin{frame}
-		\frametitle{Ein graphbasierter Ansatz - Diskussion}
-		\begin{itemize}
-				\item Experiment zeigt : Der Graph vergrößert sich sublinear , wenn neue Elemente hinzugefügt werden.
-				\item Aus harmonischen Aspekten Verallgemeinerungen zu gewinnen , ist noch kein vollständig gelöstes Problem. Manuelle Verarbeitung der Daten kann unter Umständen nötig sein.
-		\end{itemize}
-	\end{frame}
-
-
-
-
 
 	\section{MIREX : Algorithmen treten gegeneinander an}
 
@@ -238,9 +195,37 @@
 		\end{figure}
 	\end{frame}
 
-	\subsection{Average Dynamic Recall}
+	\subsection{Ground Truth}
+		
+		\begin{frame}
+			\frametitle{Ground Truth}
+			\begin{itemize}
+				\item Experten werden befragt , Stücke aus der RISM A/II Sammlung  nach deren Ähnlichkeiten zu einer Anfrage zu beurteilen.
+				\item Die Sammlungen sind groß deswegen sind einige Techniken zur Eliminierung unrelevanter Elementen vorzunehmen , wie z.B
+					\begin{itemize}
+						\item Nach der Differenz zwischen dem tiefsten und höchsten Ton.
+						\item Nach dem Verhältnis der kürzesten Note zu der längsten.
+						\item usw.
+					\end{itemize}
+				\item Nicht für alle Stücke werden dieselben Elimierungsverfahren vorgenommen. Die Aspekte , durch die sich ein Stück auszeichnet sind beizubehalten. Das ist wiederum für die Experten zu entscheiden.
+			\end{itemize}
+		\end{frame}
 
-	
+		\begin{frame}[allowframebreaks]
+			\frametitle{Ground Truth}
+				\begin{figure}[h!]
+					\includegraphics[width=300px,height=75px,keepaspectratio]{ground_truth_query}
+					\includegraphics[width=300px,height=75px,keepaspectratio]{ground_truth_results_one}
+					\caption{Abbildung: Ergebnisse der Befragung \cite{three}}
+				\end{figure}
+				\begin{figure}[h!]
+					\includegraphics[width=300px,height=150px,keepaspectratio]{ground_truth_results_two}
+				\end{figure}
+				\begin{figure}[h!]
+					\includegraphics[width=300px,height=150px,keepaspectratio]{ground_truth_results_three}
+				\end{figure}
+		\end{frame}
+
 	\begin{frame}
 		\frametitle{MIREX}
 		\begin{figure}[h!]
@@ -248,28 +233,122 @@
 		\end{figure}
 	\end{frame}
 
-	\begin{frame}
-		\frametitle{Average Dynamic Recall - ADR}
-		
-	\end{frame}
+	\subsection{Average Dynamic Recall}
+
+		\begin{frame}
+			\frametitle{Beispiel : Average Dynamic Recall - ADR}
+			\begin{figure}[h!]
+				\includegraphics[width=300px,height=150px,keepaspectratio]{adr_example}
+				\caption{Abbildung: ADR Berechnung \cite{three}}
+			\end{figure}
+		\end{frame}
+
+	\subsection{MIREX 2005}
+		\begin{frame}
+			\frametitle{MIREX 2005}
+			\begin{minipage}{0.45\textwidth}
+				\begin{center}
+					\textit{"Melody Retrieval using the Implication/Realization Model"} 
+					\cite{mirex_2005_one}\\ 
+					Maarten Grachten, Josep Lluis Arcos and Ramon Lopez de Mantaras 
+				\end{center}
+			\end{minipage}%
+			\begin{minipage}{0.45\textwidth}
+				\begin{figure}[h!]
+					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_one.pdf}}
+				\end{figure}
+			\end{minipage}
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{MIREX 2005}
+			
+			\begin{itemize}
+				\item Ein auf Kognitivwissenschaften basierendes Modell : Implication/Realization Model.
+				\item Dies besagt , dass man nach seinen Erfahrungen (sowohl kulturellen , als auch angeborenen) Erwartungen hat , wie ein Musikstück weitergeht. 
+				\item Wir beschäftigen uns hier mit den angeborenen Aspekten.
+				\item I/R Modell besagt : Wir sind dazu geneigt , Elemente nach Konzepten zu gruppieren. Diese Konzepten sind denen der Gestalttheorie ähnlich
+					\begin{itemize}
+						\item Proximity : Werden zwei Elemente gleich wahrgenommen?
+						\item Similarity : Haben zwei Elemente Ähnlichkeiten?
+					\end{itemize}
+			\end{itemize}
+		\end{frame}
+
+
+		\begin{frame}
+			\frametitle{MIREX 2005}
+			\begin{itemize}
+				\item PRD : kleines Intervall in eine Richtung impliziert noch ein Intervall in dieselbe Richtung
+				\item PID : kleines Intervall impliziert ein kleines Intervall.
+				\item Nach diesen Prinzipien ist ein Alphabet von Strukturen definiert.
+				\item Mithilfe von Edit Distance wird die Ähnlichkeit festgestellt.
+			\end{itemize}
+		\end{frame}
+
+
+		\begin{frame}[allowframebreaks]
+			\frametitle{MIREX 2005}
+			\begin{figure}[h!]
+					\includegraphics[width=300px,height=30px,keepaspectratio]{mirex_2005_one_img_one}
+			\end{figure}
+			\begin{figure}[h!]
+					\includegraphics[width=300px,height=150px,keepaspectratio]{mirex_2005_one_img_two}
+			\end{figure}
+			\begin{figure}[h!]
+					\includegraphics[width=300px,height=150px,keepaspectratio]{mirex_2005_one_img_three}
+			\end{figure}
+		\end{frame}
+
+
+		\begin{frame}
+			\frametitle{MIREX 2005}
+			\begin{minipage}{0.45\textwidth}
+				\begin{center}
+					\textit{"Combining Multilevel and Multifeature Representation to Compute Melodic Similarity"} 
+					\cite{mirex_2005_two}\\ 
+					Nicola Orio
+				\end{center}
+			\end{minipage}%
+			\begin{minipage}{0.45\textwidth}
+				\begin{figure}[h!]
+					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_two.pdf}}
+				\end{figure}
+			\end{minipage}
+		\end{frame}
+
+		\begin{frame}
+			\begin{itemize}
+				\item N-gram 
+				\item Jede Wahl von N hat Vor- und Nachteile. Um diese zu beseitigen wird Multilevel Segmentation eingesetzt.
+			\end{itemize}
+		\end{frame}
+
+		\begin{frame}
+			\begin{figure}[h!]
+				\includegraphics[width=300px,height=30px,keepaspectratio]{mirex_2005_results}
+			\end{figure}
+		\end{frame}
+
+	
 	
 	\subsection{Urbano MelodyShape}
-	\begin{frame}
-		\frametitle{Insert Title }
-		\begin{minipage}{0.45\textwidth}
-			\begin{center}
-				\textit{"MelodyShape at MIREX 2014 Symbolic Melodic Similarity"} 
-				\cite{fi ve_point_two}  \\ 
-				von Julian Urbano
-			\end{center}
-		\end{minipage}%
-		\begin{minipage}{0.45\textwidth}
-			\begin{figure}[h!]
-				\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{JU1}}
-			\end{figure}
-		\end{minipage}
-	\end{frame}
-	
+		\begin{frame}
+			\frametitle{Urbano MelodyShap}
+			\begin{minipage}{0.45\textwidth}
+				\begin{center}
+					\textit{"MelodyShape at MIREX 2014 Symbolic Melodic Similarity"} 
+					\cite{five_point_two}\\ 
+					von Julian Urbano
+				\end{center}
+			\end{minipage}%
+			\begin{minipage}{0.45\textwidth}
+				\begin{figure}[h!]
+					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{JU1}}
+				\end{figure}
+			\end{minipage}
+		\end{frame}
+		
 	\begin{frame}
         \frametitle{Urbano MelodyShape}
         \begin{minipage}{0.45\textwidth}
@@ -320,47 +399,8 @@
 	
 
 
-	\subsection{MIREX 2005}
-
-<<<<<<< HEAD
-	\begin{frame}
-		\frametitle{MIREX 2005}
-		\begin{itemize}
-			\item \textit{"Retrieving melodically similar incipits from 500,000 notated real world compositions"}\cite{mirex_website}
-		\end{itemize}
-	\end{frame}
-
-	\subsubsection{Ein auf Kognitivwis. beruhender Ansatz}
-		
-		\begin{frame}
-			hey
-		\end{frame}
-	\subsubsection{Levenshtein Distance}
-		\begin{frame}
-			heyho
-		\end{frame}
-
-
 	\section{Bibliographie}
 
-		\begin{frame}[allowframebreaks]
-			\frametitle{Bibliographie}
-			\begin{thebibliography}{5}
-				\setbeamertemplate{bibliography item}[text]
-				\bibitem[1]{duden_melodie} Duden: Melodie: Rechtschreibung, Bedeutung, Definition, Herkunft
-				https://www.duden.de/rechtschreibung/Melodie.
-				\bibitem[2]{duden_harmonie} Duden: Harmonie : Rechtschreibung, Bedeutung, Definition, Herkunft
-				https://www.duden.de/rechtschreibung/Harmonie.
-				\bibitem[3]{def_schlussel} “Notenschlüssel.” Wikipedia, Wikimedia Foundation, 11 Dec. 2019, de.wikipedia.org/wiki/Notenschlüssel.
-				\bibitem[4]{mirex_website} MIREX,Symbolic Melodic Similarity 2005,https://www.music-ir.org/mirex/wiki/2005:Symbolic\_Melodic.
-				\bibitem[5]{mirex_website_2007_results} MIREX,Symbolic Melodic Similarity Results 2007, https://www.music-ir.org/mirex/wiki/2007:Symbolic\_Melodic\_Similarity\_Results.
-				\bibitem[6]{three} Typke, Rainer. (2007). Music Retrieval based on Melodic Similarity.
-				\bibitem[7]{two_point_four} Orio, N., and A. Rodá. 2009. “A Measure of Melodic Similarity Based on a Graph Representation of the Music Structure.” In Proceedings of the International Conference for Music Information Retrieval, pp. 543– 548.
-				\bibitem[8]{functional_degrees_source} Tonal Degrees [Online]. [Accessed 30 Jan 2020]. Available from : http://www.piano-play-it.com/musical-scales.html
-			\end{thebibliography}
-		\end{frame}
-\end{document}
-=======
 	\begin{frame}[allowframebreaks]
 		\frametitle{Bibliographie}
 		\begin{thebibliography}{5}
@@ -378,7 +418,8 @@
 			\bibitem[9]{functional_degrees_source} Tonal Degrees [Online]. [Accessed 30 Jan 2020]. Available from : http://www.piano-play-it.com/musical-scales.html
 			\bibitem[10]{five_point_two} J. Urbano. MelodyShape at MIREX 2014 Symbolic
             Melodic Similarity. Technical report, Music Information Retrieval Evaluation eXchange, 2014
+            \bibitem[11]{mirex_2005_one} Grachten, Maarten \& Arcos, Josep Lluís \& Mántaras, Ramon. (2020). Melody Retrieval using the Implication/Realization Model. 
+           	\bibitem[12]{mirex_2005_two} Orio, Nicola. “Combining Multilevel and Multifeature Representation to Compute Melodic Similarity.” (2005).
 		\end{thebibliography}
 	\end{frame}
 \end{document}
->>>>>>> 52dd6f478a0a94f821aaf70f918820b557b245b2
