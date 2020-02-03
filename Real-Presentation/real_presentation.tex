@@ -8,7 +8,12 @@
 
 \usepackage{graphicx}
 \graphicspath{{./images/}}
+
 \usepackage{verbatim}
+
+\usepackage{media9}
+\addmediapath{./audio_files/}
+
 \usepackage{mathtools}
 
 \usetheme{Antibes}
@@ -196,7 +201,40 @@
 		\end{figure}
 	\end{frame}
 
-	\subsection{Average Dynamic Recall}
+	\subsection{Ground Truth}
+		
+		\begin{frame}
+			\frametitle{Ground Truth}
+			\begin{itemize}
+				\item Experten werden befragt , Stücke aus der RISM A/II Sammlung  nach deren Ähnlichkeiten zu einer Anfrage zu beurteilen.
+				\item Die Sammlungen sind groß deswegen sind einige Techniken zur Eliminierung unrelevanter Elementen vorzunehmen , wie z.B
+					\begin{itemize}
+						\item Nach der Differenz zwischen dem tiefsten und höchsten Ton.
+						\item Nach dem Verhältnis der kürzesten Note zu der längsten.
+						\item usw.
+					\end{itemize}
+				\item Nicht für alle Stücke werden dieselben Elimierungsverfahren vorgenommen. Die Aspekte , durch die sich ein Stück auszeichnet sind beizubehalten. Das ist wiederum für die Experten zu entscheiden.
+			\end{itemize}
+		\end{frame}
+
+		\begin{frame}[allowframebreaks]
+			\frametitle{Ground Truth}
+				\begin{figure}[h!]
+					\includegraphics[width=300px,height=75px,keepaspectratio]{ground_truth_query}
+					\includegraphics[width=300px,height=75px,keepaspectratio]{ground_truth_results_one}
+					\caption{Abbildung: Ergebnisse der Befragung \cite{three}}
+				\end{figure}
+				\begin{figure}[h!]
+					\includegraphics[width=300px,height=150px,keepaspectratio]{ground_truth_results_two}
+				\end{figure}
+				\begin{figure}[h!]
+					\includegraphics[width=300px,height=150px,keepaspectratio]{ground_truth_results_three}
+				\end{figure}
+		\end{frame}
+
+
+
+
 
 	
 	\begin{frame}
@@ -206,28 +244,170 @@
 		\end{figure}
 	\end{frame}
 
-	\begin{frame}
-		\frametitle{Average Dynamic Recall - ADR}
+	\subsection{Average Dynamic Recall}
+
+		\begin{frame}
+			\frametitle{Beispiel : Average Dynamic Recall - ADR}
+			\begin{figure}[h!]
+				\includegraphics[width=300px,height=150px,keepaspectratio]{adr_example}
+				\caption{Abbildung: ADR Berechnung \cite{three}}
+			\end{figure}
+		\end{frame}
+
+	\subsection{MIREX 2005}
+		\begin{frame}
+			\frametitle{MIREX 2005}
+			\begin{minipage}{0.45\textwidth}
+				\begin{center}
+					\textit{"Melody Retrieval using the Implication/Realization Model"} 
+					\cite{mirex_2005_one}\\ 
+					Maarten Grachten, Josep Lluis Arcos and Ramon Lopez de Mantaras 
+				\end{center}
+			\end{minipage}%
+			\begin{minipage}{0.45\textwidth}
+				\begin{figure}[h!]
+					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_one.pdf}}
+				\end{figure}
+			\end{minipage}
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{MIREX 2005}
+			
+			\begin{itemize}
+				\item Ein auf Kognitivwissenschaften basierendes Modell : Implication/Realization Model.
+				\item Dies besagt , dass man nach seinen Erfahrungen (sowohl kulturellen , als auch angeborenen) Erwartungen hat , wie ein Musikstück weitergeht. 
+				\item Wir beschäftigen uns hier mit den angeborenen Aspekten.
+				\item I/R Modell besagt : Wir sind dazu geneigt , Elemente nach Konzepten zu gruppieren. Diese Konzepten sind denen der Gestalttheorie ähnlich
+					\begin{itemize}
+						\item Proximity : Werden zwei Elemente gleich wahrgenommen?
+						\item Similarity : Haben zwei Elemente Ähnlichkeiten?
+					\end{itemize}
+			\end{itemize}
+		\end{frame}
+
+
+		\begin{frame}
+			\frametitle{MIREX 2005}
+			\begin{itemize}
+				\item PRD : kleines Intervall in eine Richtung impliziert noch ein Intervall in dieselbe Richtung
+				\item PID : kleines Intervall impliziert ein kleines Intervall.
+				\item Nach diesen Prinzipien ist ein Alphabet von Strukturen definiert.
+				\item Mithilfe von Edit Distance wird die Ähnlichkeit festgestellt.
+			\end{itemize}
+		\end{frame}
+
+
+		\begin{frame}[allowframebreaks]
+			\frametitle{MIREX 2005}
+			\begin{figure}[h!]
+					\includegraphics[width=300px,height=30px,keepaspectratio]{mirex_2005_one_img_one}
+			\end{figure}
+			\begin{figure}[h!]
+					\includegraphics[width=300px,height=150px,keepaspectratio]{mirex_2005_one_img_two}
+			\end{figure}
+			\begin{figure}[h!]
+					\includegraphics[width=300px,height=150px,keepaspectratio]{mirex_2005_one_img_three}
+			\end{figure}
+		\end{frame}
+
+
+		\begin{frame}
+			\frametitle{MIREX 2005}
+			\begin{minipage}{0.45\textwidth}
+				\begin{center}
+					\textit{"Combining Multilevel and Multifeature Representation to Compute Melodic Similarity"} 
+					\cite{mirex_2005_two}\\ 
+					Nicola Orio
+				\end{center}
+			\end{minipage}%
+			\begin{minipage}{0.45\textwidth}
+				\begin{figure}[h!]
+					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_two.pdf}}
+				\end{figure}
+			\end{minipage}
+		\end{frame}
+
+		\begin{frame}
+			\begin{itemize}
+				\item N-gram 
+				\item Jede Wahl von N hat Vor- und Nachteile. Um diese zu beseitigen wird Multilevel Segmentation eingesetzt.
+			\end{itemize}
+		\end{frame}
+
+		\begin{frame}
+			\begin{figure}[h!]
+				\includegraphics[width=300px,height=30px,keepaspectratio]{mirex_2005_results}
+			\end{figure}
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{Urbano MelodyShap}
+			\begin{minipage}{0.45\textwidth}
+				\begin{center}
+					\textit{"Melody Retrieval using the Implication/Realization Model"} 
+					\cite{mirex_2005_one}\\ 
+					Maarten Grachten, Josep Lluis Arcos and Ramon Lopez de Mantaras 
+				\end{center}
+			\end{minipage}%
+			\begin{minipage}{0.45\textwidth}
+				\begin{figure}[h!]
+					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_one.pdf}}
+				\end{figure}
+			\end{minipage}
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{Urbano MelodyShap}
+			\begin{minipage}{0.45\textwidth}
+				\begin{center}
+					\textit{"Melody Retrieval using the Implication/Realization Model"} 
+					\cite{mirex_2005_one}\\ 
+					Maarten Grachten, Josep Lluis Arcos and Ramon Lopez de Mantaras 
+				\end{center}
+			\end{minipage}%
+			\begin{minipage}{0.45\textwidth}
+				\begin{figure}[h!]
+					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_one.pdf}}
+				\end{figure}
+			\end{minipage}
+		\end{frame}
+
+		\begin{frame}
+			\frametitle{Urbano MelodyShap}
+			\begin{minipage}{0.45\textwidth}
+				\begin{center}
+					\textit{"Melody Retrieval using the Implication/Realization Model"} 
+					\cite{mirex_2005_one}\\ 
+					Maarten Grachten, Josep Lluis Arcos and Ramon Lopez de Mantaras 
+				\end{center}
+			\end{minipage}%
+			\begin{minipage}{0.45\textwidth}
+				\begin{figure}[h!]
+					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_one.pdf}}
+				\end{figure}
+			\end{minipage}
+		\end{frame}
 		
-	\end{frame}
+
 	
 	\subsection{Urbano MelodyShape}
-	\begin{frame}
-		\frametitle{Insert Title }
-		\begin{minipage}{0.45\textwidth}
-			\begin{center}
-				\textit{"MelodyShape at MIREX 2014 Symbolic Melodic Similarity"} 
-				\cite{fi ve_point_two}  \\ 
-				von Julian Urbano
-			\end{center}
-		\end{minipage}%
-		\begin{minipage}{0.45\textwidth}
-			\begin{figure}[h!]
-				\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{JU1}}
-			\end{figure}
-		\end{minipage}
-	\end{frame}
-	
+		\begin{frame}
+			\frametitle{Urbano MelodyShap}
+			\begin{minipage}{0.45\textwidth}
+				\begin{center}
+					\textit{"MelodyShape at MIREX 2014 Symbolic Melodic Similarity"} 
+					\cite{five_point_two}\\ 
+					von Julian Urbano
+				\end{center}
+			\end{minipage}%
+			\begin{minipage}{0.45\textwidth}
+				\begin{figure}[h!]
+					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{JU1}}
+				\end{figure}
+			\end{minipage}
+		\end{frame}
+		
 	\begin{frame}
         \frametitle{Urbano MelodyShape}
         \begin{minipage}{0.45\textwidth}
@@ -297,6 +477,9 @@
 			\bibitem[9]{functional_degrees_source} Tonal Degrees [Online]. [Accessed 30 Jan 2020]. Available from : http://www.piano-play-it.com/musical-scales.html
 			\bibitem[10]{five_point_two} J. Urbano. MelodyShape at MIREX 2014 Symbolic
             Melodic Similarity. Technical report, Music Information Retrieval Evaluation eXchange, 2014
+            \bibitem[11]{mirex_2005_one} Grachten, Maarten \& Arcos, Josep Lluís \& Mántaras, Ramon. (2020). Melody Retrieval using the Implication/Realization Model. 
+           	\bibitem[12]{mirex_2005_two} Orio, Nicola. “COMBINING MULTILEVEL AND MULTIFEATURE REPRESENTATION TO COMPUTE MELODIC SIMILARITY.” (2005).
+
 		\end{thebibliography}
 	\end{frame}
 \end{document}
