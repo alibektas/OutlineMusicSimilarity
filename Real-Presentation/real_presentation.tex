@@ -84,7 +84,7 @@
 	\end{frame}
 
 	
-	\section{A Section Name To Say "Different Approaches"}
+	\section{Die Techniken}
 
 	\begin{frame}
 		\frametitle{Ein graphbasierter Ansatz}
@@ -180,7 +180,80 @@
 			\note[item]<1>{
 				Dies stellt eine Metrik dar: Es ist positiv-definiert , symmetrisch und die Dreieicksungleichung gilt offenbar.
 			}
+	\end{frame}
 
+	\begin{frame}
+		\frametitle{Ein graphbasierter Ansatz}
+		\begin{figure}[h!]
+					\includegraphics[width=300px,height=100px,keepaspectratio]{five_of_two_point_four}
+		\end{figure}
+		\note[item]<1>{
+			$d(c_i,c_j)$ : Wir gucken , was die Distanzen zwischen Segmenten von den beiden Dokumenten sind.
+		}
+		\note[item]<1>{
+			Nehmen dann den Median und der Medianwert bildet dann die Distanz. Dieser Wert wird dann normalisiert , indem er durch die durchschnittliche Distanz des Dokuments $c_i$
+			zu allen anderen Dokumenten in der Sammlung geteilt wird. Die Werte zur Normalisierung können im Voraus berechnet werden.
+		}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Evaluierung}
+		\begin{itemize}
+			\item RISM-Sammlung
+			\item Basiswissen von Experten als Maßstab
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{LBDM}
+		\begin{itemize}
+			\item Local Boundary Detection Model
+			\item Change Rule (CR) : Je größer die Differenz , desto wahrscheinlicher wird die Nichtzusammengehörigkeit.
+			\item Proximity Rule (PR) : Change Rule angewandt auf Intervalle.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{Ähnliche Anwendung der Gestaltstheorie}
+		\begin{minipage}{0.45\textwidth}
+			\begin{figure}[h!]
+				\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_one.pdf}}
+				\footnotemark
+			\end{figure}
+		\end{minipage}%
+		\begin{minipage}{0.45\textwidth}
+			\begin{itemize}
+				\item Implication/Realization Model.
+				\item Dies besagt , dass man nach seinen Erfahrungen (sowohl kulturellen , als auch angeborenen) Erwartungen hat , wie ein Musikstück weitergeht. 
+				\item Wir beschäftigen uns hier mit den angeborenen Aspekten.
+			\end{itemize}
+		\end{minipage}
+		\footnotetext[1]{
+			\textit{"Melody Retrieval using the Implication/Realization Model"} 
+			\cite{mirex_2005_one} Maarten Grachten, Josep Lluis Arcos and Ramon Lopez de Mantaras 
+		}
+	\end{frame}
+	\begin{frame}
+		\frametitle{Ähnliche Anwendungen der Gestaltstheorie}
+		\begin{itemize}
+			\item I/R Modell besagt : Wir sind dazu geneigt , Elemente nach Konzepten zu gruppieren. Diese Konzepten sind denen der Gestalttheorie ähnlich
+					\begin{itemize}
+						\item Proximity : Werden zwei Elemente gleich wahrgenommen?
+						\item Similarity : Haben zwei Elemente Ähnlichkeiten?
+					\end{itemize}
+			\item PRD : kleines Intervall in eine Richtung impliziert noch ein Intervall in dieselbe Richtung
+			\item PID : kleines Intervall impliziert ein kleines Intervall.
+			\item Nach diesen Prinzipien ist ein Alphabet von Strukturen definiert.
+			\item Mithilfe von Edit Distance wird die Ähnlichkeit festgestellt.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frame{Diskussion}
+
+		\begin{itemize}
+			\item hey
+		\end{itemize}
 	\end{frame}
 	
     \begin{frame}
@@ -231,7 +304,7 @@
 		\frametitle{MIREX}
 		\begin{itemize}
 			\item Ein Wettbewerb und Plattform für Interessierte
-			\item Es gibt verschiedene Kategorien
+			\item Verschiedene Kategorien
 				\begin{itemize}
 					\item Real-time Audio to Score Alignment (a.k.a Score Following)
 					\item Discovery of Repeated Themes and Sections
@@ -239,10 +312,7 @@
 					\item \textbf{Symbolic Melodic Similarity}
 					\item ...
 				\end{itemize}
-			\item Gegeben ein Ziel , treten verschiedene Algorithmen gegeneinander zum Wettkampf an. Derjenige, der die besten Ergebnisse hat , gewinnt. 
-			\item \textbf{Nun eine Frage:}Wie kann man Algorithmen miteinander vergleichen?
-			\item Es kommt nicht auf die Laufzeit oder Speicherbedarf an , sondern auf die Qualität der Ergebnisse.
-			\item Welche Messmethoden gibt es , um die Qualität von solcen Ergebnissen zu beurteilen?
+			\item Welche Messmethoden gibt es , um den Erfolgt eines Algorithmus festzustellen?
 		\end{itemize}
 	\end{frame}
 
@@ -250,7 +320,7 @@
 		\frametitle{MIREX}
 		\begin{figure}[h!]
 			\includegraphics[width=300px,height=150px,keepaspectratio]{mirex_result_example}
-			\caption{Source: \cite{mirex_website_2007_results}}
+			\caption{Source: \cite{mirex_website_2015_results}}
 		\end{figure}
 	\end{frame}
 
@@ -310,118 +380,80 @@
 			\end{figure}
 		\end{frame}
 
-	\subsection{MIREX 2005}
-		\begin{frame}
-			\frametitle{MIREX 2005}
-			\begin{minipage}{0.45\textwidth}
-				\begin{center}
-					\textit{"Melody Retrieval using the Implication/Realization Model"} 
-					\cite{mirex_2005_one}\\ 
-					Maarten Grachten, Josep Lluis Arcos and Ramon Lopez de Mantaras 
-				\end{center}
-			\end{minipage}%
-			\begin{minipage}{0.45\textwidth}
-				\begin{figure}[h!]
-					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_one.pdf}}
-				\end{figure}
-			\end{minipage}
-		\end{frame}
-
-		\begin{frame}
-			\frametitle{MIREX 2005}
-			
-			\begin{itemize}
-				\item Ein auf Kognitivwissenschaften basierendes Modell : Implication/Realization Model.
-				\item Dies besagt , dass man nach seinen Erfahrungen (sowohl kulturellen , als auch angeborenen) Erwartungen hat , wie ein Musikstück weitergeht. 
-				\item Wir beschäftigen uns hier mit den angeborenen Aspekten.
-				\item I/R Modell besagt : Wir sind dazu geneigt , Elemente nach Konzepten zu gruppieren. Diese Konzepten sind denen der Gestalttheorie ähnlich
-					\begin{itemize}
-						\item Proximity : Werden zwei Elemente gleich wahrgenommen?
-						\item Similarity : Haben zwei Elemente Ähnlichkeiten?
-					\end{itemize}
-			\end{itemize}
-		\end{frame}
-
-
-		\begin{frame}
-			\frametitle{MIREX 2005}
-			\begin{itemize}
-				\item PRD : kleines Intervall in eine Richtung impliziert noch ein Intervall in dieselbe Richtung
-				\item PID : kleines Intervall impliziert ein kleines Intervall.
-				\item Nach diesen Prinzipien ist ein Alphabet von Strukturen definiert.
-				\item Mithilfe von Edit Distance wird die Ähnlichkeit festgestellt.
-			\end{itemize}
-		\end{frame}
-
-
-		\begin{frame}[allowframebreaks]
-			\frametitle{MIREX 2005}
-			\begin{figure}[h!]
-					\includegraphics[width=300px,height=30px,keepaspectratio]{mirex_2005_one_img_one}
-			\end{figure}
-			\begin{figure}[h!]
-					\includegraphics[width=300px,height=150px,keepaspectratio]{mirex_2005_one_img_two}
-			\end{figure}
-			\begin{figure}[h!]
-					\includegraphics[width=300px,height=150px,keepaspectratio]{mirex_2005_one_img_three}
-			\end{figure}
-		\end{frame}
-
-
-		\begin{frame}
-			\frametitle{MIREX 2005}
-			\begin{minipage}{0.45\textwidth}
-				\begin{center}
-					\textit{"Combining Multilevel and Multifeature Representation to Compute Melodic Similarity"} 
-					\cite{mirex_2005_two}\\ 
-					Nicola Orio
-				\end{center}
-			\end{minipage}%
-			\begin{minipage}{0.45\textwidth}
-				\begin{figure}[h!]
-					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_two.pdf}}
-				\end{figure}
-			\end{minipage}
-		\end{frame}
-
-		\begin{frame}
-			\begin{itemize}
-				\item N-gram 
-				\item Jede Wahl von N hat Vor- und Nachteile. Um diese zu beseitigen wird Multilevel Segmentation eingesetzt.
-			\end{itemize}
-		\end{frame}
-
-		\begin{frame}
-			\begin{figure}[h!]
-				\includegraphics[width=300px,height=30px,keepaspectratio]{mirex_2005_results}
-			\end{figure}
-		\end{frame}
-
 	
-		\begin{frame}
-			\frametitle{MIREX 2005}
-			\begin{minipage}{0.45\textwidth}
-				\begin{center}
-					\textit{"Simple Efficent n-Gram Indexing for Effective Melody Retrieval"} 
-					\cite{mirex_2005_two}\\ 
-					von Iman S. H. Suyoto und Alexandra L. Uitdenbogerd
-				\end{center}
-			\end{minipage}%
-			\begin{minipage}{0.45\textwidth}
-				\begin{figure}[h!]
-					\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{mirex_2005_three.pdf}}
-				\end{figure}
-			\end{minipage}
-		\end{frame}
 
-		\begin{frame}
+
+
+	\subsection{NCD mit LZF}
+	\begin{frame}
+		\frametitle{NCD mit LZF}
+		\begin{minipage}{0.45\textwidth}
+			\begin{figure}[h!]
+				\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{SNT1}}
+				\footnotemark
+			\end{figure}
+		\end{minipage}%
+		\begin{minipage}{0.45\textwidth}
 			\begin{itemize}
-				\item Noten werden zur Vereinfachung auf $x -> x mod 12$ abgebildet.
-				\item Aus dem Angabestring werden distinkte 5-gram Teilstrings entnommen. Dasselbe Verfahren wird für die zu suchenden Dokumenten vorgenommen.
-				\item Je mehr distinkte Elemente sich die Querystring und ein Dokument teilen , desto ähnlicher sind sie. 
+				\item Das Alphabet besteht aus 13 Symbolen
+				\note[item]<1>{12 Symbole werden zur Darstellung der Noten eingesetzt und ein Symbol für die Pause}
+				\item $SIM_s(x,y) = max\{s(x \oplus d , y) | d = 0, \dots ,11 \}$
 			\end{itemize}
-		\end{frame}
+		\end{minipage}
+		\footnotetext[1]{
+			\textit{"MIREX 2015 Symbolic Melodic Similarity : Applying String Similarity Measures to Pitch/Rest Sequences"}
+			\cite{MIREX_2015_one} von Shiho Sugimoto, Yuto  Nakashima, Masayuki Takeda.
+		}
+	\end{frame}
 
+	\begin{frame}
+		\begin{figure}[h!]
+				\includegraphics[width=150px,height=150px,keepaspectratio]{one_of_MIREX_2015_one}
+		\end{figure}
+		\begin{itemize}
+			\item $K(\cdot)$ - Kolmogorov-Komplexität
+			\item $K(\cdot | \cdot)$ - bedingte Kolmogorov-Komplexität
+			\item $K(x|y) \approx K(yx) - K(y)$
+			\item K(x) wird dann komprimiert zu C(x)
+		\end{itemize}
+		\begin{figure}[h!]
+				\includegraphics[width=150px,height=150px,keepaspectratio]{two_of_MIREX_2015_one}
+		\end{figure}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{LZ-Factorisierung}
+		\begin{itemize}
+			\item Lempel-Ziv Algorithmus
+			\item Sei $T$ ein String. Die Faktorisierung dieses Strings ist dann definiert als $T=f_1\dots f_n$ , wo jeder Faktor $f_k \in \Sigma^{+} (k=1,\dots,n)$ induktiv definiert ist als:
+			\begin{flalign*}
+				&f_1 = T[1] \text{erster Index }\\
+				&f_k = 
+				\begin{cases}
+					T[|f_1\dots f_{k-1}| +1] = c \in \Sigma &,\text{wenn $\{c\} \subsetneq f_1\dots f_{k-1}$}\\
+					lcp_{\geq2}(f_k , \dots , f_n) &, \text{sonst.}\\\end{cases}
+			\end{flalign*}
+			Dabei heißt $lcp_{\geq2}$ die Longest-Common-Präfix , die mindestens zweimal in $f_1\dots f_k$ vorkommt.
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{FLDC Kernel}
+			\begin{itemize}
+			\item Seien $m$ und $k$ fest , wobei $m>0$ und $0\leq k \leq m$.
+			\end{itemize}
+			\[
+				F_{(m,k)} = \{q | q \in (\Sigma \cup \{\#\})^m \text{ und } \#(q) \leq k \}
+			\]
+
+			$\#(q) =^{\textit{df.}} \text{Anzahl an $\#$ in q}$ 
+
+			\begin{figure}[h!]
+				\fbox{\includegraphics[width=200px,height=200px,keepaspectratio]{three_of_MIREX_2015_one}}
+			\end{figure}
+
+
+	\end{frame}
 	
 	\subsection{Urbano MelodyShape}
 		\begin{frame}
@@ -503,7 +535,6 @@
 
 
 	\section{Bibliographie}
-
 	\begin{frame}[allowframebreaks]
 		\frametitle{Bibliographie}
 		\begin{thebibliography}{5}
@@ -514,7 +545,7 @@
 			https://www.duden.de/rechtschreibung/Harmonie.
 			\bibitem[3]{def_schlussel} “Notenschlüssel.” Wikipedia, Wikimedia Foundation, 11 Dec. 2019, de.wikipedia.org/wiki/Notenschlüssel.
 			\bibitem[4]{mirex_website} MIREX,Symbolic Melodic Similarity 2005,https://www.music-ir.org/mirex/wiki/2005:Symbolic\_Melodic.
-			\bibitem[5]{mirex_website_2007_results} MIREX,Symbolic Melodic Similarity Results 2007, https://www.music-ir.org/mirex/wiki/2007:Symbolic\_Melodic\_Similarity\_Results.
+			\bibitem[5]{mirex_website_2015_results} MIREX,Symbolic Melodic Similarity Results 2015, https://www.music-ir.org/mirex/wiki/2015:Symbolic\_Melodic\_Similarity\_Results.
 			\bibitem[6]{three} Typke, Rainer. (2007). Music Retrieval based on Melodic Similarity.
 			\bibitem[7]{two_point_four} Orio, N., and A. Rodá. 2009. “A Measure of Melodic Similarity Based on a Graph Representation of the Music Structure.” In Proceedings of the International Conference for Music Information Retrieval, pp. 543– 548.
 			\bibitem[8]{one} Greg Aloupis, Thomas Fevens, Stefan Langerman, Tomomi Matsui, Antonio Mesa, Yurai Nunez, David Rappaport, and Godfried Toussaint, "Algorithms for Computing Geometric Measures of Melodic Similarity" Computer Music Journal, Vol.30, No. 3 (Autumn, 2006), pp. 67-76
@@ -524,6 +555,7 @@
             \bibitem[11]{mirex_2005_one} Grachten, Maarten \& Arcos, Josep Lluís \& Mántaras, Ramon. (2020). Melody Retrieval using the Implication/Realization Model. 
            	\bibitem[12]{mirex_2005_two} Orio, Nicola. “Combining Multilevel and Multifeature Representation to Compute Melodic Similarity.” (2005).
            	\bibitem[13]{wiki_nee_wu} Wikipedia, Needlemann-Wunsch-Algorithmus, https://de.wikipedia.org/wiki/Needleman-Wunsch-Algorithmus, abgerufen am 02.02.20
+           	\bibitem[14]{MIREX_2015_one} Sugimoto  Shiho, Nakashima Yuto, Takeda Masayuki, "MIREX 2015 Symbolic Melodic Similarity : Applying String Similarity Measures to Pitch/Rest Sequences". Technical report, Music Information Retrieval Evaluation eXchange, 2015
 		\end{thebibliography}
 	\end{frame}
 \end{document}
