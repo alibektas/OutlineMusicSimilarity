@@ -1,8 +1,10 @@
 \beamer@sectionintoc {1}{Grundlegendes}{3}{0}{1}
 \beamer@sectionintoc {2}{A Section Name To Say "Different Approaches"}{9}{0}{2}
-\beamer@sectionintoc {3}{MIREX : Algorithmen treten gegeneinander an}{21}{0}{3}
-\beamer@subsectionintoc {3}{1}{Ground Truth}{24}{0}{3}
-\beamer@subsectionintoc {3}{2}{Average Dynamic Recall}{30}{0}{3}
-\beamer@subsectionintoc {3}{3}{MIREX 2005}{32}{0}{3}
-\beamer@subsectionintoc {3}{4}{Urbano MelodyShape}{43}{0}{3}
-\beamer@sectionintoc {4}{Bibliographie}{49}{0}{4}
+\beamer@subsectionintoc {2}{1}{A measure of melodic similarity based on a graph representation of the music structure}{9}{0}{2}
+\beamer@subsectionintoc {2}{2}{Algorithms for Computing Geometric Measures of Melodic Similarity}{20}{0}{2}
+\beamer@subsectionintoc {2}{3}{Urbano MelodyShape}{24}{0}{2}
+\beamer@sectionintoc {3}{MIREX : Algorithmen treten gegeneinander an}{30}{0}{3}
+\beamer@subsectionintoc {3}{1}{Ground Truth}{33}{0}{3}
+\beamer@subsectionintoc {3}{2}{Average Dynamic Recall}{39}{0}{3}
+\beamer@subsectionintoc {3}{3}{MIREX 2005}{41}{0}{3}
+\beamer@sectionintoc {4}{Bibliographie}{53}{0}{4}
