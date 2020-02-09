@@ -319,18 +319,11 @@
 	\begin{frame}
 		\frametitle{MIREX}
 		\begin{figure}[h!]
-			\includegraphics[width=300px,height=150px,keepaspectratio]{mirex_result_example}
-			\caption{Source: \cite{mirex_website_2015_results}}
+			\includegraphics[width=300px,height=150px,keepaspectratio]{MIREX_2014_results}
+			\caption{Source: \cite{mirex_website_2014_results}}
 		\end{figure}
 	\end{frame}
 
-
-	\begin{frame}
-		\frametitle{MIREX}
-		\begin{figure}[h!]
-			\includegraphics[width=300px,height=150px,keepaspectratio]{mirex_result_example_change_one}
-		\end{figure}
-	\end{frame}
 
 	\subsection{Ground Truth}
 		
@@ -366,94 +359,70 @@
 	\begin{frame}
 		\frametitle{MIREX}
 		\begin{figure}[h!]
-			\includegraphics[width=300px,height=150px,keepaspectratio]{mirex_result_example_change_two}
+			\includegraphics[width=300px,height=150px,keepaspectratio]{MIREX_2014_results}
+			\caption{Source: \cite{mirex_website_2014_results}}
 		\end{figure}
 	\end{frame}
+
 
 	\subsection{Average Dynamic Recall}
 
 		\begin{frame}
 			\frametitle{Beispiel : Average Dynamic Recall - ADR}
+
+			Betrachte die Gruppierungen $\langle(1,2),(3,4,5)\rangle$ und die Ergebnisse $(2,3,1,5,7,8,9,4)$
+
 			\begin{figure}[h!]
 				\includegraphics[width=300px,height=150px,keepaspectratio]{adr_example}
 				\caption{Abbildung: ADR Berechnung \cite{three}}
 			\end{figure}
 		\end{frame}
 
-	
 
-
-
-	\subsection{NCD mit LZF}
+	\subsection{MIREX 2014}
 	\begin{frame}
-		\frametitle{NCD mit LZF}
+		\frametitle{Ähnlichkeitssuche durch Pattern Mining}
 		\begin{minipage}{0.45\textwidth}
 			\begin{figure}[h!]
-				\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{SNT1}}
+				\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{YO1}}
 				\footnotemark
 			\end{figure}
 		\end{minipage}%
 		\begin{minipage}{0.45\textwidth}
 			\begin{itemize}
-				\item Das Alphabet besteht aus 13 Symbolen
-				\note[item]<1>{12 Symbole werden zur Darstellung der Noten eingesetzt und ein Symbol für die Pause}
-				\item $SIM_s(x,y) = max\{s(x \oplus d , y) | d = 0, \dots ,11 \}$
+				\item Nur Note-On Events
+				\item Dauer einer Note spielt keine Rolle.
+				\note[item]<1>{
+					Obwohl es nachgewiesen ist , dass die Tonlage wichtigsten Aspekt der Wahrnehmung der Musik bildet , ist es immer noch keine gute Idee die restlichen Aspekte komplett zu vernachlässigen.
+				}
+				\item Grundton spielt keine Rolle. Es werden die Differenzen zwischen Tonlagen in Betracht gezogen. 
+				\item Jede Melodie wird durch primitive 'Items' dargestellt.
 			\end{itemize}
 		\end{minipage}
 		\footnotetext[1]{
-			\textit{"MIREX 2015 Symbolic Melodic Similarity : Applying String Similarity Measures to Pitch/Rest Sequences"}
-			\cite{MIREX_2015_one} von Shiho Sugimoto, Yuto  Nakashima, Masayuki Takeda.
+			\textit{"MIREX 2014 Symbolic Melodic Similarity : Extracting Similar Melodies Based on Top-N Colossal Pattern Mining"}
+			\cite{MIREX_2014_one} von Shiho Sugimoto, Yuto  Nakashima, Masayuki Takeda.
 		}
 	\end{frame}
 
-	\begin{frame}
-		\begin{figure}[h!]
-				\includegraphics[width=150px,height=150px,keepaspectratio]{one_of_MIREX_2015_one}
-		\end{figure}
-		\begin{itemize}
-			\item $K(\cdot)$ - Kolmogorov-Komplexität
-			\item $K(\cdot | \cdot)$ - bedingte Kolmogorov-Komplexität
-			\item $K(x|y) \approx K(yx) - K(y)$
-			\item K(x) wird dann komprimiert zu C(x)
-		\end{itemize}
-		\begin{figure}[h!]
-				\includegraphics[width=150px,height=150px,keepaspectratio]{two_of_MIREX_2015_one}
-		\end{figure}
-	\end{frame}
 
 	\begin{frame}
-		\frametitle{LZ-Factorisierung}
+		\frametitle{Ähnlichkeitssuche durch Pattern Mining}
+
 		\begin{itemize}
-			\item Lempel-Ziv Algorithmus
-			\item Sei $T$ ein String. Die Faktorisierung dieses Strings ist dann definiert als $T=f_1\dots f_n$ , wo jeder Faktor $f_k \in \Sigma^{+} (k=1,\dots,n)$ induktiv definiert ist als:
-			\begin{flalign*}
-				&f_1 = T[1] \text{erster Index }\\
-				&f_k = 
-				\begin{cases}
-					T[|f_1\dots f_{k-1}| +1] = c \in \Sigma &,\text{wenn $\{c\} \subsetneq f_1\dots f_{k-1}$}\\
-					lcp_{\geq2}(f_k , \dots , f_n) &, \text{sonst.}\\\end{cases}
-			\end{flalign*}
-			Dabei heißt $lcp_{\geq2}$ die Longest-Common-Präfix , die mindestens zweimal in $f_1\dots f_k$ vorkommt.
+			\item Einer Melodie werden alle N-Gramme entnommen.
+			\item $TDB_M =  \{ (ID(x) , trans(x)) | x \in M \}$
 		\end{itemize}
 	\end{frame}
 
 	\begin{frame}
-		\frametitle{FLDC Kernel}
-			\begin{itemize}
-			\item Seien $m$ und $k$ fest , wobei $m>0$ und $0\leq k \leq m$.
-			\end{itemize}
-			\[
-				F_{(m,k)} = \{q | q \in (\Sigma \cup \{\#\})^m \text{ und } \#(q) \leq k \}
-			\]
-
-			$\#(q) =^{\textit{df.}} \text{Anzahl an $\#$ in q}$ 
-
-			\begin{figure}[h!]
-				\fbox{\includegraphics[width=200px,height=200px,keepaspectratio]{three_of_MIREX_2015_one}}
-			\end{figure}
-
-
+		\frametitle{Diskussion}
+		\begin{itemize}
+			\item Kann man rhytmische Werte vernachlässigen ?
+			\item Was ist das richtige n für das N-Gramm?
+		\end{itemize}
 	\end{frame}
+	
 	
 	\subsection{Urbano MelodyShape}
 		\begin{frame}
@@ -545,17 +514,15 @@
 			https://www.duden.de/rechtschreibung/Harmonie.
 			\bibitem[3]{def_schlussel} “Notenschlüssel.” Wikipedia, Wikimedia Foundation, 11 Dec. 2019, de.wikipedia.org/wiki/Notenschlüssel.
 			\bibitem[4]{mirex_website} MIREX,Symbolic Melodic Similarity 2005,https://www.music-ir.org/mirex/wiki/2005:Symbolic\_Melodic.
-			\bibitem[5]{mirex_website_2015_results} MIREX,Symbolic Melodic Similarity Results 2015, https://www.music-ir.org/mirex/wiki/2015:Symbolic\_Melodic\_Similarity\_Results.
+			\bibitem[5]{mirex_website_2014_results} MIREX,Symbolic Melodic Similarity Results 2014, https://www.music-ir.org/mirex/wiki/2014:Symbolic\_Melodic\_Similarity\_Results.
 			\bibitem[6]{three} Typke, Rainer. (2007). Music Retrieval based on Melodic Similarity.
 			\bibitem[7]{two_point_four} Orio, N., and A. Rodá. 2009. “A Measure of Melodic Similarity Based on a Graph Representation of the Music Structure.” In Proceedings of the International Conference for Music Information Retrieval, pp. 543– 548.
 			\bibitem[8]{one} Greg Aloupis, Thomas Fevens, Stefan Langerman, Tomomi Matsui, Antonio Mesa, Yurai Nunez, David Rappaport, and Godfried Toussaint, "Algorithms for Computing Geometric Measures of Melodic Similarity" Computer Music Journal, Vol.30, No. 3 (Autumn, 2006), pp. 67-76
 			\bibitem[9]{functional_degrees_source} Tonal Degrees [Online]. [Accessed 30 Jan 2020]. Available from : http://www.piano-play-it.com/musical-scales.html
 			\bibitem[10]{five_point_two} J. Urbano. MelodyShape at MIREX 2014 Symbolic
             Melodic Similarity. Technical report, Music Information Retrieval Evaluation eXchange, 2014
-            \bibitem[11]{mirex_2005_one} Grachten, Maarten \& Arcos, Josep Lluís \& Mántaras, Ramon. (2020). Melody Retrieval using the Implication/Realization Model. 
-           	\bibitem[12]{mirex_2005_two} Orio, Nicola. “Combining Multilevel and Multifeature Representation to Compute Melodic Similarity.” (2005).
            	\bibitem[13]{wiki_nee_wu} Wikipedia, Needlemann-Wunsch-Algorithmus, https://de.wikipedia.org/wiki/Needleman-Wunsch-Algorithmus, abgerufen am 02.02.20
-           	\bibitem[14]{MIREX_2015_one} Sugimoto  Shiho, Nakashima Yuto, Takeda Masayuki, "MIREX 2015 Symbolic Melodic Similarity : Applying String Similarity Measures to Pitch/Rest Sequences". Technical report, Music Information Retrieval Evaluation eXchange, 2015
+           	\bibitem[14]{MIREX_2014_one} Okubo Yoshiaki , Haraguchi Makoyo , "MIREX 2014 Symbolic Melodic Similarity : Extracting Similar Melodies Based on Top-N Colossal Pattern Mining". Technical report, Music Information Retrieval Evaluation eXchange, 2014
 		\end{thebibliography}
 	\end{frame}
 \end{document}
