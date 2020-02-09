@@ -96,15 +96,15 @@
 		\end{minipage}%
 		\begin{minipage}{0.45\textwidth}
 			\begin{itemize}
-				\item Der Inhalt wird schrittweise vereinfacht.
+				\item Inhalt schrittweise vereinfacht.
 				\note[item]<1>{
 							Die Modelle die sich mit der Wahrnehmung von Musik beschäftigt , geht davon aus dass wir Melodien nicht so speichern, wie sie sind sondern vereinfachen wir sie , behalten nur Merkmale.
 						}
-				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung.
+				\item \textbf{Gewichte} der einzelnen Noten von Bedeutung.	
 					\begin{itemize}
-						\item die unterliegende harmonische Funktion 
-						\item die metrische Position 
-						\item die Differenz der Tonlagen zwischen dem Ton und dem Grundton
+						\item unterliegende harmonische Funktion 
+						\item metrische Position 
+						\item Differenz der Tonlagen zwischen dem Ton und dem Grundton
 					\end{itemize}
 			\end{itemize}
 		\end{minipage}
@@ -128,14 +128,14 @@
 	\begin{frame}
 		\frametitle{Ein graphbasierter Ansatz}
 		\begin{itemize}
-				\item Der Inhalt wird schrittweise vereinfacht.
+				\item Inhalt schrittweise vereinfacht.
 				\note[item]<1>{Jeder Takt wird in jedem Schritt dadurch vereinfacht , dass einige Noten eliminiert sind , und die Bleibenden um die Länge der Eliminierten erweitert werden.}
 				\note[item]<1>{Diese Methode heißt Pseudo-Structural Representation (PSR)}
-				\item Dazu sind die \textbf{Gewichte} der einzelnen Noten von Bedeutung.
+				\item \textbf{Gewichte} der einzelnen Noten von Bedeutung.
 					\begin{itemize}
-						\item die unterliegende harmonische Funktion (harmonic weight)
-						\item die metrische Position (metric weight)
-						\item die Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
+						\item unterliegende harmonische Funktion (harmonic weight)
+						\item metrische Position (metric weight)
+						\item Differenz der Tonlagen zwischen dem Ton und dem Grundton(melodic weight)
 					\end{itemize}
 		\end{itemize}
 	\end{frame}
@@ -249,11 +249,28 @@
 	\end{frame}
 
 	\begin{frame}
+		\frametitle{Evaluierung}
+
+		\begin{figure}[h!]
+				\fbox{\includegraphics[width=150px,height=150px,keepaspectratio]{six_of_two_point_three}}
+		\end{figure}
+		\begin{figure}[h!]
+				\fbox{\includegraphics[width=150px,height=150px,keepaspectratio]{seven_of_two_point_three}}
+		\end{figure}
+	\end{frame}
+
+
+	\begin{frame}
 		\frame{Diskussion}
 
 		\begin{itemize}
-			\item hey
+			\item Sublineares Wachstum des Baumes
+			\item Manuelle Annotierung der Akkorde
 		\end{itemize}
+
+		\begin{figure}[h!]
+				\fbox{\includegraphics[width=300px,height=150px,keepaspectratio]{three_of_two_point_four}}
+		\end{figure}
 	\end{frame}
 	
     \begin{frame}
@@ -298,94 +315,13 @@
         \end{figure}
 	\end{frame}
 
-	\section{MIREX : Algorithmen treten gegeneinander an}
-
-	\begin{frame}
-		\frametitle{MIREX}
-		\begin{itemize}
-			\item Ein Wettbewerb und Plattform für Interessierte
-			\item Verschiedene Kategorien
-				\begin{itemize}
-					\item Real-time Audio to Score Alignment (a.k.a Score Following)
-					\item Discovery of Repeated Themes and Sections
-					\item Audio Melody Extraction
-					\item \textbf{Symbolic Melodic Similarity}
-					\item ...
-				\end{itemize}
-			\item Welche Messmethoden gibt es , um den Erfolgt eines Algorithmus festzustellen?
-		\end{itemize}
-	\end{frame}
-
-	\begin{frame}
-		\frametitle{MIREX}
-		\begin{figure}[h!]
-			\includegraphics[width=300px,height=150px,keepaspectratio]{MIREX_2014_results}
-			\caption{Source: \cite{mirex_website_2014_results}}
-		\end{figure}
-	\end{frame}
-
-
-	\subsection{Ground Truth}
-		
-		\begin{frame}
-			\frametitle{Ground Truth}
-			\begin{itemize}
-				\item Experten werden befragt , Stücke aus der RISM A/II Sammlung  nach deren Ähnlichkeiten zu einer Anfrage zu beurteilen.
-				\item Die Sammlungen sind groß deswegen sind einige Techniken zur Eliminierung unrelevanter Elementen vorzunehmen , wie z.B
-					\begin{itemize}
-						\item Nach der Differenz zwischen dem tiefsten und höchsten Ton.
-						\item Nach dem Verhältnis der kürzesten Note zu der längsten.
-						\item usw.
-					\end{itemize}
-				\item Nicht für alle Stücke werden dieselben Elimierungsverfahren vorgenommen. Die Aspekte , durch die sich ein Stück auszeichnet sind beizubehalten. Das ist wiederum für die Experten zu entscheiden.
-			\end{itemize}
-		\end{frame}
-
-		\begin{frame}[allowframebreaks]
-			\frametitle{Ground Truth}
-				\begin{figure}[h!]
-					\includegraphics[width=300px,height=75px,keepaspectratio]{ground_truth_query}
-					\includegraphics[width=300px,height=75px,keepaspectratio]{ground_truth_results_one}
-					\caption{Abbildung: Ergebnisse der Befragung \cite{three}}
-				\end{figure}
-				\begin{figure}[h!]
-					\includegraphics[width=300px,height=150px,keepaspectratio]{ground_truth_results_two}
-				\end{figure}
-				\begin{figure}[h!]
-					\includegraphics[width=300px,height=150px,keepaspectratio]{ground_truth_results_three}
-				\end{figure}
-		\end{frame}
-
-	\begin{frame}
-		\frametitle{MIREX}
-		\begin{figure}[h!]
-			\includegraphics[width=300px,height=150px,keepaspectratio]{MIREX_2014_results}
-			\caption{Source: \cite{mirex_website_2014_results}}
-		\end{figure}
-	\end{frame}
-
-
-	\subsection{Average Dynamic Recall}
-
-		\begin{frame}
-			\frametitle{Beispiel : Average Dynamic Recall - ADR}
-
-			Betrachte die Gruppierungen $\langle(1,2),(3,4,5)\rangle$ und die Ergebnisse $(2,3,1,5,7,8,9,4)$
-
-			\begin{figure}[h!]
-				\includegraphics[width=300px,height=150px,keepaspectratio]{adr_example}
-				\caption{Abbildung: ADR Berechnung \cite{three}}
-			\end{figure}
-		\end{frame}
-
-
 	\subsection{MIREX 2014}
 	\begin{frame}
 		\frametitle{Ähnlichkeitssuche durch Pattern Mining}
 		\begin{minipage}{0.45\textwidth}
 			\begin{figure}[h!]
 				\fbox{\includegraphics[width=100px,height=100px,keepaspectratio,page=1]{YO1}}
-				\footnotemark
+				\footnotemark[1]
 			\end{figure}
 		\end{minipage}%
 		\begin{minipage}{0.45\textwidth}
@@ -408,11 +344,24 @@
 
 	\begin{frame}
 		\frametitle{Ähnlichkeitssuche durch Pattern Mining}
-
 		\begin{itemize}
 			\item Einer Melodie werden alle N-Gramme entnommen.
+			\note[item]<1>{Die entnommenen bezeichnen wir als Transaktionen und dann erstellen wir durch diese Transaktionen eine Datenbank}
 			\item $TDB_M =  \{ (ID(x) , trans(x)) | x \in M \}$
+			\item $TDB_M[Q]$
+			\note[item]<1>{Wir extrahieren eine Menge von Items Q aus der Anfrage und dann suchen nach diesen Items in der Datenbank}
+			\item  $X = \{X_1 , \dots , X_m\}$ die Menge der Matches in der Datenbank , also $X_i \subset Q$
+			\item Hole $M(X_i) \{x | x \in M \land X_i \subset trans(x) \}$
+			\note[item]<1>{Die Menge der geholten Melodien aus der Datenbank sind nun die Kandidaten , aus denen wir eine kleiner Menge wählen}
 		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\[ sim(q,x) = \frac{1}{|Q \cap trans(x) |} \sum_{f\in Q \cap trans(x)} weight(f)\]
+
+		wobei für $f = (d_1 , \dots , d_l)$
+		\note[item]<1>{$l$ bezeichnet die Länge der Sequenz der Differenzen der Tonlagen}
+		\[ weight(f) = \sum^l_{i=1} |d_i| \]
 	\end{frame}
 
 	\begin{frame}
@@ -500,6 +449,89 @@
             \end{figure}
             \end{center}
 	\end{frame}
+	
+
+	\section{MIREX : Algorithmen treten gegeneinander an}
+
+	\begin{frame}
+		\frametitle{MIREX}
+		\begin{itemize}
+			\item Ein Wettbewerb und Plattform für Interessierte
+			\item Verschiedene Kategorien
+				\begin{itemize}
+					\item Real-time Audio to Score Alignment (a.k.a Score Following)
+					\item Discovery of Repeated Themes and Sections
+					\item Audio Melody Extraction
+					\item \textbf{Symbolic Melodic Similarity}
+					\item ...
+				\end{itemize}
+			\item Welche Messmethoden gibt es , um den Erfolgt eines Algorithmus festzustellen?
+		\end{itemize}
+	\end{frame}
+
+	\begin{frame}
+		\frametitle{MIREX}
+		\begin{figure}[h!]
+			\includegraphics[width=300px,height=150px,keepaspectratio]{MIREX_2014_results}
+			\caption{Source: \cite{mirex_website_2014_results}}
+		\end{figure}
+	\end{frame}
+
+
+	\subsection{Ground Truth}
+		
+		\begin{frame}
+			\frametitle{Ground Truth}
+			\begin{itemize}
+				\item Experten werden befragt , Stücke aus der RISM A/II Sammlung  nach deren Ähnlichkeiten zu einer Anfrage zu beurteilen.
+				\item Die Sammlungen sind groß deswegen sind einige Techniken zur Eliminierung unrelevanter Elementen vorzunehmen , wie z.B
+					\begin{itemize}
+						\item Nach der Differenz zwischen dem tiefsten und höchsten Ton.
+						\item Nach dem Verhältnis der kürzesten Note zu der längsten.
+						\item usw.
+					\end{itemize}
+				\item Nicht für alle Stücke werden dieselben Elimierungsverfahren vorgenommen. Die Aspekte , durch die sich ein Stück auszeichnet sind beizubehalten. Das ist wiederum für die Experten zu entscheiden.
+			\end{itemize}
+		\end{frame}
+
+		\begin{frame}[allowframebreaks]
+			\frametitle{Ground Truth}
+				\begin{figure}[h!]
+					\includegraphics[width=300px,height=75px,keepaspectratio]{ground_truth_query}
+					\includegraphics[width=300px,height=75px,keepaspectratio]{ground_truth_results_one}
+					\caption{Abbildung: Ergebnisse der Befragung \cite{three}}
+				\end{figure}
+				\begin{figure}[h!]
+					\includegraphics[width=300px,height=150px,keepaspectratio]{ground_truth_results_two}
+				\end{figure}
+				\begin{figure}[h!]
+					\includegraphics[width=300px,height=150px,keepaspectratio]{ground_truth_results_three}
+				\end{figure}
+		\end{frame}
+
+	\begin{frame}
+		\frametitle{MIREX}
+		\begin{figure}[h!]
+			\includegraphics[width=300px,height=150px,keepaspectratio]{MIREX_2014_results}
+			\caption{Source: \cite{mirex_website_2014_results}}
+		\end{figure}
+	\end{frame}
+
+
+	\subsection{Average Dynamic Recall}
+
+		\begin{frame}
+			\frametitle{Beispiel : Average Dynamic Recall - ADR}
+
+			Betrachte die Gruppierungen $\langle(1,2),(3,4,5)\rangle$ und die Ergebnisse $(2,3,1,5,7,8,9,4)$
+
+			\begin{figure}[h!]
+				\includegraphics[width=300px,height=150px,keepaspectratio]{adr_example}
+				\caption{Abbildung: ADR Berechnung \cite{three}}
+			\end{figure}
+		\end{frame}
+
+
 	
 
 
