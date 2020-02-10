@@ -310,7 +310,15 @@
         \frametitle{Ein mathematischer Ansatz}
         \begin{figure}[h]
        	\fbox{\includegraphics[width=0.7\textwidth]{abb_2}}%
+       	\note[item]<1>{Similarity durch Fläche zwischen Polygonalketten}
+       	\note[item]<1>{Zyklische Melodien betrachtet}
+       	\note[item]<1>{Optimale z-position wird ermittelt über z-events}
+       	\note[item]<1>{Gewichtsmedian in sortiertem array ausgewählt}
+       	\note[item]<1>{Laufzeit O(n)}
         \fbox{\includegraphics[width=0.3\textwidth]{abb_3}}
+        \note[item]<1>{Kritik, wie werden Pausen behandelt.}
+        \note[item]<1>{Was wenn 2 Melodien nicht gleichlang}
+        \note[item]<1>{Keine Evaluierung, nur Laufzeit}
         \caption{Source: \cite{one}}
         \end{figure}
 	\end{frame}
@@ -410,6 +418,7 @@
         \frametitle{Needlemann - Wunsch Algorithmus}
       \begin{figure}[h!]
        \fbox{\includegraphics[width=0.5\textwidth]{abb_7}}%
+       \note[item]<1>{Hier match + 1, sonst -1, deletion,insertion auch -1}
         \fbox{\includegraphics[width=0.5\textwidth]{abb_8}}
          \caption{Source: \cite{wiki_nee_wu}}
         \end{figure}
@@ -422,6 +431,12 @@
              \item Insertion : $ s(-, n) = -(1 - f(n))$
              \item Deletion: $s(n, -) = -(1 - f(n))$
              \item Match: $s(n, n) = 1 - f(n)$
+             \note[item]<1>{Hybrid Alignment Aproach, heißt lokales maximum wird genommen nicht globales.}
+             \note[item]<1>{Lokales maximum dann similarity score}
+             \note[item]<1>{Bei mismatch folgende Malusregeln : }
+             \note[item]<1>{1.Ableitung betrachtet,  vorzeichen der beiden Melodien am Anfang und Ende identisch kaum malus}
+             \note[item]<1>{Anfang oder Ende unterschiedlich, anderes gleich größere Malus}
+             \note[item]<1>{Beides unterschiedlich größter Malus}
      %        \item Sequence Alignment $H(i,j) = max \{H(i - 1, j - 1) + s(a_i,b_j) \n
         %     H(i - 1, j) + s(a_i, -) \n H(i, j - 1) + s(i, b_j) \}$
             \end{itemize}
@@ -440,7 +455,7 @@
              \item Insertion : $ s(-, n) = -diff_p(n,\Theta (n)) - \lambda k_t * diff_t(n,\Theta (n))$
              \item Deletion: $s(n, -) = -diff_p(n,\Theta (n)) - \lambda k_t * diff_t(n,\Theta (n))$
              \item Match: $2\mu_p + 2\lambda k_t\mu_t = 2\mu_p(1+k_t)$
-             \item Substitution $s(n,m) = -diff_p(n,m) - \lambda k_t * diff_t(n,m)$
+             \item Substitution: $s(n,m) = -diff_p(n,m) - \lambda k_t * diff_t(n,m)$
             \end{itemize}
             \begin{center}
             \begin{figure}[h!]
