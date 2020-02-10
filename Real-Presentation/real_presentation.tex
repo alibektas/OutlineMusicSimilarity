@@ -11,6 +11,7 @@
 
 \usepackage{verbatim}
 \setbeameroption{show notes}
+\setbeamertemplate{footline}[frame number]
 %\usepackage{media9}
 %\addmediapath{./audio_files/}
 
@@ -310,15 +311,15 @@
         \frametitle{Ein mathematischer Ansatz}
         \begin{figure}[h]
        	\fbox{\includegraphics[width=0.7\textwidth]{abb_2}}%
-       	\note[item]<1>{Similarity durch Fläche zwischen Polygonalketten}
-       	\note[item]<1>{Zyklische Melodien betrachtet}
-       	\note[item]<1>{Optimale z-position wird ermittelt über z-events}
-       	\note[item]<1>{Gewichtsmedian in sortiertem array ausgewählt}
-       	\note[item]<1>{Laufzeit O(n)}
+%        	\note[item]<1>{Similarity durch Fläche zwischen Polygonalketten}
+%        	\note[item]<1>{Zyklische Melodien betrachtet}
+%        	\note[item]<1>{Optimale z-position wird ermittelt über z-events}
+%        	\note[item]<1>{Gewichtsmedian in sortiertem array ausgewählt}
+%        	\note[item]<1>{Laufzeit O(n)}
         \fbox{\includegraphics[width=0.3\textwidth]{abb_3}}
-        \note[item]<1>{Kritik, wie werden Pausen behandelt.}
-        \note[item]<1>{Was wenn 2 Melodien nicht gleichlang}
-        \note[item]<1>{Keine Evaluierung, nur Laufzeit}
+%         \note[item]<1>{Kritik, wie werden Pausen behandelt.}
+%         \note[item]<1>{Was wenn 2 Melodien nicht gleichlang}
+%         \note[item]<1>{Keine Evaluierung, nur Laufzeit}
         \caption{Source: \cite{one}}
         \end{figure}
 	\end{frame}
@@ -418,7 +419,7 @@
         \frametitle{Needlemann - Wunsch Algorithmus}
       \begin{figure}[h!]
        \fbox{\includegraphics[width=0.5\textwidth]{abb_7}}%
-       \note[item]<1>{Hier match + 1, sonst -1, deletion,insertion auch -1}
+%        \note[item]<1>{Hier match + 1, sonst -1, deletion,insertion auch -1}
         \fbox{\includegraphics[width=0.5\textwidth]{abb_8}}
          \caption{Source: \cite{wiki_nee_wu}}
         \end{figure}
@@ -437,8 +438,8 @@
              \note[item]<1>{1.Ableitung betrachtet,  vorzeichen der beiden Melodien am Anfang und Ende identisch kaum malus}
              \note[item]<1>{Anfang oder Ende unterschiedlich, anderes gleich größere Malus}
              \note[item]<1>{Beides unterschiedlich größter Malus}
-     %        \item Sequence Alignment $H(i,j) = max \{H(i - 1, j - 1) + s(a_i,b_j) \n
-        %     H(i - 1, j) + s(a_i, -) \n H(i, j - 1) + s(i, b_j) \}$
+%             \item Sequence Alignment $H(i,j) = max \{H(i - 1, j - 1) + s(a_i,b_j) \n
+%             H(i - 1, j) + s(a_i, -) \n H(i, j - 1) + s(i, b_j) \}$
             \end{itemize}
         \end{minipage}
         \begin{minipage}{0.45\textwidth}
@@ -453,6 +454,14 @@
         \frametitle{Time}
             \begin{itemize}
              \item Insertion : $ s(-, n) = -diff_p(n,\Theta (n)) - \lambda k_t * diff_t(n,\Theta (n))$
+%              \note[item]<1>{The constantsμpandμtarethe mean scores returned by thediffpanddifftfunctionsover  a  random  sample  of  100,000  pairs  of  spline  spans
+%             drawn  from  the  Essen  Collection  (μp=  2.1838andμt= 0.4772)}
+%              \note[item]<1>{k t = 0.5 is a constant that weights
+%             the time dissimilarity with respect to the pitch dissimilar-
+%                 ity; and λ = μ p /μ t is a constant that normalizes time
+%                 dissimilarity scores with respect to the pitch dissimilarity
+%                 scores.}
+            
              \item Deletion: $s(n, -) = -diff_p(n,\Theta (n)) - \lambda k_t * diff_t(n,\Theta (n))$
              \item Match: $2\mu_p + 2\lambda k_t\mu_t = 2\mu_p(1+k_t)$
              \item Substitution: $s(n,m) = -diff_p(n,m) - \lambda k_t * diff_t(n,m)$
@@ -546,6 +555,19 @@
 			\end{figure}
 		\end{frame}
 
+		
+%     \subsection{Mirex Results}
+%     	\begin{frame}
+% 			\frametitle{Urbano's Results}
+% 
+% 			\begin{figure}[h!]
+% 				\includegraphics[width=150px,height=150px,keepaspectratio]{urbano_mirex_2012_results}
+% 				\includegraphics[width=150px,height=150px,keepaspectratio]{urbano_mirex_2013_results}
+% 				\includegraphics[width=150px,height=150px,keepaspectratio]{urbano_mirex_2014_results}
+% 				
+% 				\caption{Mirex Ergebnisse der Urbano-Algorithmen 2012,2013,2014\cite{five_point_two},\cite{five_point_three},\cite{five_point_four}}
+% 			\end{figure}
+% 		\end{frame}
 
 	
 
@@ -568,6 +590,9 @@
 			\bibitem[9]{functional_degrees_source} Tonal Degrees [Online]. [Accessed 30 Jan 2020]. Available from : http://www.piano-play-it.com/musical-scales.html
 			\bibitem[10]{five_point_two} J. Urbano. MelodyShape at MIREX 2014 Symbolic
             Melodic Similarity. Technical report, Music Information Retrieval Evaluation eXchange, 2014
+            \bibitem[11}{five_point_three} J. Urbano, MIREX 2013 Symbolic Melodic Similarity  A Geometric Model supported with Hybrid Sequence Alignment, Music Information Retrieval Evaluation eXchange, 2013
+            \bibitem[12]{five_point_four} J.Urbano, J. Llorens, J. Morato and S. Sanchez-Cuadrado, MIREX 2012 Symbolic Melodic Similarity, Music Information Retrieval Evaluation eXchange, 2012
+            Hybrid Sequence Alignment with Geometric Representations
            	\bibitem[13]{wiki_nee_wu} Wikipedia, Needlemann-Wunsch-Algorithmus, https://de.wikipedia.org/wiki/Needleman-Wunsch-Algorithmus, abgerufen am 02.02.20
            	\bibitem[14]{MIREX_2014_one} Okubo Yoshiaki , Haraguchi Makoyo , "MIREX 2014 Symbolic Melodic Similarity : Extracting Similar Melodies Based on Top-N Colossal Pattern Mining". Technical report, Music Information Retrieval Evaluation eXchange, 2014
 		\end{thebibliography}
