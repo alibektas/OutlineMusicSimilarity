@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.29)  10 FEB 2020 11:55
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019) (preloaded format=pdflatex 2019.10.29)  10 FEB 2020 12:02
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -881,16 +881,8 @@ ex/updmap/pdftex.map}
 ] (./real_presentation.toc) [2
 
 ]
-
-LaTeX Warning: Citation `duden_melodie' on page 3 undefined on input line 57.
-
-
-LaTeX Warning: Citation `duden_harmonie' on page 3 undefined on input line 57.
-
-
-LaTeX Warning: Citation `def_schlussel' on page 3 undefined on input line 57.
-
 LaTeX Font Info:    Try loading font information for U+msa on input line 57.
+
 (/usr/local/texlive/2019/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
@@ -906,24 +898,16 @@ line 57.
 File: ot1mathkerncmss.fd 2013/03/27 Fontinst v1.933 font definitions for OT1/ma
 thkerncmss.
 )
-<./images/clefs_chord.png, id=114, 1609.51312pt x 314.67563pt>
+<./images/clefs_chord.png, id=128, 1609.51312pt x 314.67563pt>
 File: ./images/clefs_chord.png Graphic file (type png)
 <use ./images/clefs_chord.png>
 Package pdftex.def Info: ./images/clefs_chord.png  used on input line 57.
 (pdftex.def)             Requested size: 100.37329pt x 19.62396pt.
-
-
-LaTeX Warning: Citation `def_schlussel' on page 3 undefined on input line 57.
-
-[3
+ [3
 
  <./images/clefs_chord.png>] [4
 
-]
-
-LaTeX Warning: Citation `three' on page 5 undefined on input line 65.
-
-[5
+] [5
 
 ] [6
 
@@ -931,7 +915,7 @@ LaTeX Warning: Citation `three' on page 5 undefined on input line 65.
 
 pdfTeX warning: pdflatex (file ./images/bach_adagio.pdf): PDF inclusion: found 
 PDF version <1.6>, but at most version <1.5> allowed
-<./images/bach_adagio.pdf, id=192, 599.12836pt x 806.64362pt>
+<./images/bach_adagio.pdf, id=216, 599.12836pt x 806.64362pt>
 File: ./images/bach_adagio.pdf Graphic file (type pdf)
 <use ./images/bach_adagio.pdf>
 Package pdftex.def Info: ./images/bach_adagio.pdf  used on input line 85.
@@ -946,7 +930,7 @@ Overfull \vbox (4.06639pt too high) detected at line 85
 
 ]
 <./images/a_measure_of_melodic_similarity_based_on_a_graoh_representation_of_th
-e_music_structure.pdf, id=231, page=1, 597.50786pt x 845.04686pt>
+e_music_structure.pdf, id=255, page=1, 597.50786pt x 845.04686pt>
 File: ./images/a_measure_of_melodic_similarity_based_on_a_graoh_representation_
 of_the_music_structure.pdf Graphic file (type pdf)
 <use ./images/a_measure_of_melodic_similarity_based_on_a_graoh_representation_o
@@ -954,29 +938,19 @@ f_the_music_structure.pdf, page 1>
 Package pdftex.def Info: ./images/a_measure_of_melodic_similarity_based_on_a_gr
 aoh_representation_of_the_music_structure.pdf , page1 used on input line 116.
 (pdftex.def)             Requested size: 70.96846pt x 100.36969pt.
-
-
-LaTeX Warning: Citation `two_point_four' on page 9 undefined on input line 116.
-
-
-[9
+ [9
 
  <./images/a_measure_of_melodic_similarity_based_on_a_graoh_representation_of_t
 he_music_structure.pdf>] [10
 
 ]
-<./images/functional_degrees.png, id=309, 607.26875pt x 190.7125pt>
+<./images/functional_degrees.png, id=337, 607.26875pt x 190.7125pt>
 File: ./images/functional_degrees.png Graphic file (type png)
 <use ./images/functional_degrees.png>
 Package pdftex.def Info: ./images/functional_degrees.png  used on input line 12
 6.
 (pdftex.def)             Requested size: 250.93697pt x 78.80664pt.
-
-
-LaTeX Warning: Citation `functional_degrees_source' on page 11 undefined on inp
-ut line 126.
-
-[11
+ [11
 
  <./images/functional_degrees.png>] [12
 
@@ -985,29 +959,24 @@ ut line 126.
 ] [14
 
 ]
-<./images/four_of_two_point_four.png, id=384, 327.2225pt x 325.215pt>
+<./images/four_of_two_point_four.png, id=416, 327.2225pt x 325.215pt>
 File: ./images/four_of_two_point_four.png Graphic file (type png)
 <use ./images/four_of_two_point_four.png>
 Package pdftex.def Info: ./images/four_of_two_point_four.png  used on input lin
 e 165.
 (pdftex.def)             Requested size: 151.49281pt x 150.56342pt.
-
-
-LaTeX Warning: Citation `two_point_four' on page 15 undefined on input line 165
-.
-
-[15
+ [15
 
  <./images/four_of_two_point_four.png>] [16
 
 ]
-<./images/one_of_two_point_four.png, id=424, 450.68375pt x 237.88875pt>
+<./images/one_of_two_point_four.png, id=457, 450.68375pt x 237.88875pt>
 File: ./images/one_of_two_point_four.png Graphic file (type png)
 <use ./images/one_of_two_point_four.png>
 Package pdftex.def Info: ./images/one_of_two_point_four.png  used on input line
  184.
 (pdftex.def)             Requested size: 190.1661pt x 100.37721pt.
-<./images/two_of_two_point_four.png, id=425, 443.6575pt x 276.03125pt>
+<./images/two_of_two_point_four.png, id=458, 443.6575pt x 276.03125pt>
 File: ./images/two_of_two_point_four.png Graphic file (type png)
 <use ./images/two_of_two_point_four.png>
 Package pdftex.def Info: ./images/two_of_two_point_four.png  used on input line
@@ -1023,7 +992,7 @@ Overfull \vbox (13.01768pt too high) detected at line 184
 [18
 
 ]
-<./images/five_of_two_point_four.png, id=464, 403.5075pt x 104.39pt>
+<./images/five_of_two_point_four.png, id=497, 403.5075pt x 104.39pt>
 File: ./images/five_of_two_point_four.png Graphic file (type png)
 <use ./images/five_of_two_point_four.png>
 Package pdftex.def Info: ./images/five_of_two_point_four.png  used on input lin
@@ -1038,7 +1007,7 @@ e 198.
 ] [22
 
 ]
-<./images/mirex_2005_one.pdf, id=564, page=1, 597.50829pt x 845.0471pt>
+<./images/mirex_2005_one.pdf, id=597, page=1, 597.50829pt x 845.0471pt>
 File: ./images/mirex_2005_one.pdf Graphic file (type pdf)
 <use ./images/mirex_2005_one.pdf, page 1>
 Package pdftex.def Info: ./images/mirex_2005_one.pdf , page1 used on input line
@@ -1054,13 +1023,13 @@ LaTeX Warning: Citation `mirex_2005_one' on page 23 undefined on input line 236
  <./images/mirex_2005_one.pdf>] [24
 
 ]
-<./images/six_of_two_point_three.png, id=633, 315.1775pt x 123.46124pt>
+<./images/six_of_two_point_three.png, id=666, 315.1775pt x 123.46124pt>
 File: ./images/six_of_two_point_three.png Graphic file (type png)
 <use ./images/six_of_two_point_three.png>
 Package pdftex.def Info: ./images/six_of_two_point_three.png  used on input lin
 e 261.
 (pdftex.def)             Requested size: 150.56209pt x 58.97813pt.
-<./images/seven_of_two_point_three.png, id=634, 313.17pt x 126.4725pt>
+<./images/seven_of_two_point_three.png, id=667, 313.17pt x 126.4725pt>
 File: ./images/seven_of_two_point_three.png Graphic file (type png)
 <use ./images/seven_of_two_point_three.png>
 Package pdftex.def Info: ./images/seven_of_two_point_three.png  used on input l
@@ -1069,7 +1038,7 @@ ine 261.
  [25
 
  <./images/six_of_two_point_three.png> <./images/seven_of_two_point_three.png>]
-<./images/three_of_two_point_four.png, id=666, 512.91624pt x 330.23375pt>
+<./images/three_of_two_point_four.png, id=699, 512.91624pt x 330.23375pt>
 File: ./images/three_of_two_point_four.png Graphic file (type png)
 <use ./images/three_of_two_point_four.png>
 Package pdftex.def Info: ./images/three_of_two_point_four.png  used on input li
@@ -1078,11 +1047,8 @@ ne 275.
  [26
 
  <./images/three_of_two_point_four.png>]
-
-LaTeX Warning: Citation `one' on page 27 undefined on input line 291.
-
 <./images/algorithms_for_computing_geometric_measures_of_melodic_similarity.pdf
-, id=696, page=2, 596.2275pt x 803.0pt>
+, id=730, page=2, 596.2275pt x 803.0pt>
 File: ./images/algorithms_for_computing_geometric_measures_of_melodic_similarit
 y.pdf Graphic file (type pdf)
 <use ./images/algorithms_for_computing_geometric_measures_of_melodic_similarity
@@ -1090,11 +1056,11 @@ y.pdf Graphic file (type pdf)
 Package pdftex.def Info: ./images/algorithms_for_computing_geometric_measures_o
 f_melodic_similarity.pdf , page2 used on input line 291.
 (pdftex.def)             Requested size: 74.52824pt x 100.37476pt.
-[27
+ [27
 
  <./images/algorithms_for_computing_geometric_measures_of_melodic_similarity.pd
 f>]
-<./images/abb_1.png, id=731, 492.84125pt x 402.50375pt>
+<./images/abb_1.png, id=767, 492.84125pt x 402.50375pt>
 File: ./images/abb_1.png Graphic file (type png)
 <use ./images/abb_1.png>
 Package pdftex.def Info: ./images/abb_1.png  used on input line 308.
@@ -1104,51 +1070,39 @@ Overfull \hbox (19.08125pt too wide) in paragraph at lines 308--308
  [] 
  []
 
-
-LaTeX Warning: Citation `one' on page 28 undefined on input line 308.
-
 [28
 
  <./images/abb_1.png>]
-<./images/abb_2.png, id=761, 795.97375pt x 264.99pt>
+<./images/abb_2.png, id=798, 795.97375pt x 264.99pt>
 File: ./images/abb_2.png Graphic file (type png)
 <use ./images/abb_2.png>
 Package pdftex.def Info: ./images/abb_2.png  used on input line 325.
 (pdftex.def)             Requested size: 215.10196pt x 71.6089pt.
-<./images/abb_3.png, id=762, 127.22531pt x 115.18031pt>
+<./images/abb_3.png, id=799, 127.22531pt x 115.18031pt>
 File: ./images/abb_3.png Graphic file (type png)
 <use ./images/abb_3.png>
 Package pdftex.def Info: ./images/abb_3.png  used on input line 325.
 (pdftex.def)             Requested size: 92.1879pt x 83.46402pt.
 
-Overfull \hbox (13.59996pt too wide) in paragraph at lines 325--325
- [][] 
+Overfull \vbox (3.63557pt too high) detected at line 325
  []
-
-
-LaTeX Warning: Citation `one' on page 29 undefined on input line 325.
 
 [29
 
- <./images/abb_2.png> <./images/abb_3.png (PNG copy)>]
-(./real_presentation.toc) [30
+ <./images/abb_2.png> <./images/abb_3.png (PNG copy)>] [30
 
 ]
-<./images/YO1.pdf, id=830, page=1, 597.51233pt x 845.0471pt>
+(./real_presentation.toc) [31
+
+]
+<./images/YO1.pdf, id=879, page=1, 597.51233pt x 845.0471pt>
 File: ./images/YO1.pdf Graphic file (type pdf)
 <use ./images/YO1.pdf, page 1>
 Package pdftex.def Info: ./images/YO1.pdf , page1 used on input line 351.
 (pdftex.def)             Requested size: 70.969pt x 100.36972pt.
+ [32
 
-
-LaTeX Warning: Citation `MIREX_2014_one' on page 31 undefined on input line 351
-.
-
-[31
-
- <./images/YO1.pdf>] [32
-
-] [33
+ <./images/YO1.pdf>] [33
 
 ] [34
 
@@ -1156,24 +1110,23 @@ LaTeX Warning: Citation `MIREX_2014_one' on page 31 undefined on input line 351
 
 ] [36
 
-] [37
+]
+[37
 
-] (./real_presentation.toc) [38
+] [38
+
+] (./real_presentation.toc) [39
 
 ]
-
-LaTeX Warning: Citation `five_point_two' on page 39 undefined on input line 400
-.
-
-<./images/JU1.pdf, id=1083, page=1, 597.50829pt x 845.0471pt>
+<./images/JU1.pdf, id=1136, page=1, 597.50829pt x 845.0471pt>
 File: ./images/JU1.pdf Graphic file (type pdf)
 <use ./images/JU1.pdf, page 1>
 Package pdftex.def Info: ./images/JU1.pdf , page1 used on input line 400.
 (pdftex.def)             Requested size: 70.96852pt x 100.36972pt.
-[39
+ [40
 
  <./images/JU1.pdf>]
-<./images/abb_4.png, id=1144, 228.855pt x 106.89937pt>
+<./images/abb_4.png, id=1197, 228.855pt x 106.89937pt>
 File: ./images/abb_4.png Graphic file (type png)
 <use ./images/abb_4.png>
 Package pdftex.def Info: ./images/abb_4.png  used on input line 416.
@@ -1183,35 +1136,29 @@ Overfull \hbox (19.09033pt too wide) in paragraph at lines 416--416
  [] 
  []
 
-
-LaTeX Warning: Citation `five_point_two' on page 40 undefined on input line 416
-.
-
-[40
+[41
 
  <./images/abb_4.png (PNG copy)>]
-<./images/abb_7.png, id=1175, 243.15843pt x 146.04562pt>
+<./images/abb_7.png, id=1229, 243.15843pt x 146.04562pt>
 File: ./images/abb_7.png Graphic file (type png)
 <use ./images/abb_7.png>
 Package pdftex.def Info: ./images/abb_7.png  used on input line 426.
 (pdftex.def)             Requested size: 153.64493pt x 92.28108pt.
-<./images/abb_8.png, id=1176, 223.58531pt x 124.96687pt>
+<./images/abb_8.png, id=1230, 223.58531pt x 124.96687pt>
 File: ./images/abb_8.png Graphic file (type png)
 <use ./images/abb_8.png>
 Package pdftex.def Info: ./images/abb_8.png  used on input line 426.
 (pdftex.def)             Requested size: 153.64493pt x 85.87637pt.
 
-Overfull \hbox (13.59996pt too wide) in paragraph at lines 426--426
- [][] 
+Overfull \vbox (26.72011pt too high) detected at line 426
  []
 
+[42
 
-LaTeX Warning: Citation `wiki_nee_wu' on page 41 undefined on input line 426.
+ <./images/abb_7.png (PNG copy)> <./images/abb_8.png (PNG copy)>] [43
 
-[41
-
- <./images/abb_7.png (PNG copy)> <./images/abb_8.png (PNG copy)>]
-<./images/abb_5.png, id=1207, 246.9225pt x 85.82062pt>
+]
+<./images/abb_5.png, id=1275, 246.9225pt x 85.82062pt>
 File: ./images/abb_5.png Graphic file (type png)
 <use ./images/abb_5.png>
 Package pdftex.def Info: ./images/abb_5.png  used on input line 451.
@@ -1221,83 +1168,68 @@ Overfull \hbox (19.0827pt too wide) in paragraph at lines 451--451
  [] 
  []
 
+[44
 
-LaTeX Warning: Citation `five_point_two' on page 42 undefined on input line 451
-.
-
-[42
-
- <./images/abb_5.png (PNG copy)>] [43
+ <./images/abb_5.png (PNG copy)>] [45
 
 ]
-<./images/abb_6.png, id=1249, 191.21437pt x 98.61844pt>
+<./images/abb_6.png, id=1317, 191.21437pt x 98.61844pt>
 File: ./images/abb_6.png Graphic file (type png)
 <use ./images/abb_6.png>
 Package pdftex.def Info: ./images/abb_6.png  used on input line 475.
 (pdftex.def)             Requested size: 150.57043pt x 77.65639pt.
+ [46
 
+ <./images/abb_6.png (PNG copy)>]
+[47
 
-LaTeX Warning: Citation `five_point_two' on page 44 undefined on input line 475
-.
-
-[44
-
- <./images/abb_6.png (PNG copy)>] [45
+] [48
 
 ]
-<./images/MIREX_2014_results.png, id=1308, 348.30125pt x 326.21875pt>
+<./images/MIREX_2014_results.png, id=1390, 348.30125pt x 326.21875pt>
 File: ./images/MIREX_2014_results.png Graphic file (type png)
 <use ./images/MIREX_2014_results.png>
 Package pdftex.def Info: ./images/MIREX_2014_results.png  used on input line 50
 2.
 (pdftex.def)             Requested size: 160.7573pt x 150.56519pt.
+ [49
 
+ <./images/MIREX_2014_results.png>] (./real_presentation.toc)
+[50
 
-LaTeX Warning: Citation `mirex_website_2014_results' on page 46 undefined on in
-put line 502.
-
-[46
-
- <./images/MIREX_2014_results.png>] (./real_presentation.toc) [47
-
-] [48
+] [51
 
 ]
-<./images/ground_truth_query.png, id=1407, 581.17125pt x 90.3375pt>
+<./images/ground_truth_query.png, id=1494, 581.17125pt x 90.3375pt>
 File: ./images/ground_truth_query.png Graphic file (type png)
 <use ./images/ground_truth_query.png>
 Package pdftex.def Info: ./images/ground_truth_query.png  used on input line 53
 4.
 (pdftex.def)             Requested size: 301.12889pt x 46.80759pt.
-<./images/ground_truth_results_one.png, id=1408, 595.22375pt x 125.46875pt>
+<./images/ground_truth_results_one.png, id=1495, 595.22375pt x 125.46875pt>
 File: ./images/ground_truth_results_one.png Graphic file (type png)
 <use ./images/ground_truth_results_one.png>
 Package pdftex.def Info: ./images/ground_truth_results_one.png  used on input l
 ine 534.
 (pdftex.def)             Requested size: 301.12602pt x 63.47511pt.
-
-
-LaTeX Warning: Citation `three' on page 49 undefined on input line 534.
-
-<./images/ground_truth_results_two.png, id=1409, 652.4375pt x 431.6125pt>
+<./images/ground_truth_results_two.png, id=1497, 652.4375pt x 431.6125pt>
 File: ./images/ground_truth_results_two.png Graphic file (type png)
 <use ./images/ground_truth_results_two.png>
 Package pdftex.def Info: ./images/ground_truth_results_two.png  used on input l
 ine 534.
 (pdftex.def)             Requested size: 227.58998pt x 150.55952pt.
-<./images/ground_truth_results_three.png, id=1410, 627.34375pt x 436.63126pt>
+<./images/ground_truth_results_three.png, id=1498, 627.34375pt x 436.63126pt>
 File: ./images/ground_truth_results_three.png Graphic file (type png)
 <use ./images/ground_truth_results_three.png>
 Package pdftex.def Info: ./images/ground_truth_results_three.png  used on input
  line 534.
 (pdftex.def)             Requested size: 216.32852pt x 150.56465pt.
-[49
+ [52
 
- <./images/ground_truth_query.png> <./images/ground_truth_results_one.png>]
-[50
+ <./images/ground_truth_query.png> <./images/ground_truth_results_one.png>] [53
 
 
- <./images/ground_truth_results_two.png>] [51
+ <./images/ground_truth_results_two.png>] [54
 
 
  <./images/ground_truth_results_three.png>]
@@ -1306,36 +1238,56 @@ File: ./images/MIREX_2014_results.png Graphic file (type png)
 Package pdftex.def Info: ./images/MIREX_2014_results.png  used on input line 54
 2.
 (pdftex.def)             Requested size: 160.7573pt x 150.56519pt.
+ [55
 
-
-LaTeX Warning: Citation `mirex_website_2014_results' on page 52 undefined on in
-put line 542.
-
-[52
-
-] (./real_presentation.toc) [53
+] (./real_presentation.toc) [56
 
 ]
-<./images/adr_example.png, id=1573, 426.59375pt x 152.57pt>
+<./images/adr_example.png, id=1662, 426.59375pt x 152.57pt>
 File: ./images/adr_example.png Graphic file (type png)
 <use ./images/adr_example.png>
 Package pdftex.def Info: ./images/adr_example.png  used on input line 556.
 (pdftex.def)             Requested size: 301.14569pt x 107.70387pt.
+ [57
+
+ <./images/adr_example.png>] (./real_presentation.toc) [58
+
+]
+<./images/urbano_mirex_2012_results.png, id=1735, 434.37282pt x 197.98969pt>
+File: ./images/urbano_mirex_2012_results.png Graphic file (type png)
+<use ./images/urbano_mirex_2012_results.png>
+Package pdftex.def Info: ./images/urbano_mirex_2012_results.png  used on input 
+line 570.
+(pdftex.def)             Requested size: 150.56134pt x 68.62674pt.
+<./images/urbano_mirex_2013_results.png, id=1736, 246.9225pt x 158.84344pt>
+File: ./images/urbano_mirex_2013_results.png Graphic file (type png)
+<use ./images/urbano_mirex_2013_results.png>
+Package pdftex.def Info: ./images/urbano_mirex_2013_results.png  used on input 
+line 570.
+(pdftex.def)             Requested size: 150.56221pt x 96.85558pt.
+<./images/urbano_mirex_2014_results.png, id=1737, 249.18094pt x 136.25906pt>
+File: ./images/urbano_mirex_2014_results.png Graphic file (type png)
+<use ./images/urbano_mirex_2014_results.png>
+Package pdftex.def Info: ./images/urbano_mirex_2014_results.png  used on input 
+line 570.
+(pdftex.def)             Requested size: 150.56671pt x 82.33406pt.
+
+Overfull \vbox (27.9523pt too high) detected at line 570
+ []
+
+[59
+
+ <./images/urbano_mirex_2012_results.png (PNG copy)> <./images/urbano_mirex_201
+3_results.png (PNG copy)> <./images/urbano_mirex_2014_results.png (PNG copy)>] 
+[60
+
+] [61
 
 
-LaTeX Warning: Citation `three' on page 54 undefined on input line 556.
-
-[54
-
- <./images/adr_example.png>] [55
-
-] [56
+] [62
 
 
-] [57
-
-
-] [58
+] [63
 
 
 ]
@@ -1360,51 +1312,57 @@ Package rerunfilecheck Warning: File `real_presentation.out' has changed.
 (rerunfilecheck)                or use package `bookmark'.
 
 Package rerunfilecheck Info: Checksums for `real_presentation.out':
-(rerunfilecheck)             Before: 0C984D5D6CA605C81F35C32C3876B02A;436
-(rerunfilecheck)             After:  4F9A4E0EE7DC766CF5C83A8CCF804475;484.
+(rerunfilecheck)             Before: F2BE57BF2422BA5E862E71146B169679;547
+(rerunfilecheck)             After:  D64E9C3B99F609381963E9D61C16ABA3;547.
 
 LaTeX Warning: There were undefined references.
 
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
- 18398 strings out of 492616
- 355197 string characters out of 6129480
- 424173 words of memory out of 5000000
- 21726 multiletter control sequences out of 15000+600000
+ 18443 strings out of 492616
+ 356133 string characters out of 6129480
+ 425226 words of memory out of 5000000
+ 21752 multiletter control sequences out of 15000+600000
  17732 words of font info for 64 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  56i,14n,55p,786b,591s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb>
-</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb><
-/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></u
-sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr
-/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/l
-ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/loca
-l/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local
-/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/
-texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/te
-xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/tex
-live/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texl
-ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texli
-ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texliv
-e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/
-2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/20
-19/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf
--dist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2019/texmf-dist/f
-onts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/ty
-pe1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/ti
-mes/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8
-a.pfb>
-Output written on real_presentation.pdf (58 pages, 2430065 bytes).
+pdfTeX warning (dest): name{Outline0.3.3.56} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.2.54} has been referenced but does not e
+xist, replaced by a fixed one
+
+pdfTeX warning (dest): name{Outline0.3.1.48} has been referenced but does not e
+xist, replaced by a fixed one
+
+</usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></
+usr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></u
+sr/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr
+/local/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/l
+ocal/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/loc
+al/texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/
+texlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss10.pfb></usr/local/t
+exlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss12.pfb></usr/local/te
+xlive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss8.pfb></usr/local/texl
+ive/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmss9.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssbx10.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi10.pfb></usr/local/texli
+ve/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi8.pfb></usr/local/texliv
+e/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmssi9.pfb></usr/local/texlive
+/2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/
+2019/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/local/texlive/20
+19/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy8.pfb></usr/local/texlive/2019
+/texmf-dist/fonts/type1/urw/courier/ucrr8a.pfb></usr/local/texlive/2019/texmf-d
+ist/fonts/type1/urw/helvetic/uhvb8a.pfb></usr/local/texlive/2019/texmf-dist/fon
+ts/type1/urw/helvetic/uhvr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type
+1/urw/times/utmb8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/time
+s/utmr8a.pfb></usr/local/texlive/2019/texmf-dist/fonts/type1/urw/times/utmri8a.
+pfb>
+Output written on real_presentation.pdf (63 pages, 2550921 bytes).
 PDF statistics:
- 1815 PDF objects out of 2073 (max. 8388607)
- 1569 compressed objects within 16 object streams
- 139 named destinations out of 1000 (max. 500000)
- 244 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1976 PDF objects out of 2073 (max. 8388607)
+ 1708 compressed objects within 18 object streams
+ 153 named destinations out of 1000 (max. 500000)
+ 275 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -262,7 +262,7 @@
 
 
 	\begin{frame}
-		\frame{Diskussion}
+		\frametitle{Diskussion}
 
 		\begin{itemize}
 			\item Sublineares Wachstum des Baumes
@@ -311,15 +311,15 @@
         \frametitle{Ein mathematischer Ansatz}
         \begin{figure}[h]
        	\fbox{\includegraphics[width=0.7\textwidth]{abb_2}}%
-%        	\note[item]<1>{Similarity durch Fläche zwischen Polygonalketten}
-%        	\note[item]<1>{Zyklische Melodien betrachtet}
-%        	\note[item]<1>{Optimale z-position wird ermittelt über z-events}
-%        	\note[item]<1>{Gewichtsmedian in sortiertem array ausgewählt}
-%        	\note[item]<1>{Laufzeit O(n)}
+    	\note[item]<1>{Similarity durch Fläche zwischen Polygonalketten}
+        	\note[item]<1>{Zyklische Melodien betrachtet}
+        	\note[item]<1>{Optimale z-position wird ermittelt über z-events}
+       	\note[item]<1>{Gewichtsmedian in sortiertem array ausgewählt}
+        	\note[item]<1>{Laufzeit O(n)}
         \fbox{\includegraphics[width=0.3\textwidth]{abb_3}}
-%         \note[item]<1>{Kritik, wie werden Pausen behandelt.}
-%         \note[item]<1>{Was wenn 2 Melodien nicht gleichlang}
-%         \note[item]<1>{Keine Evaluierung, nur Laufzeit}
+         \note[item]<1>{Kritik, wie werden Pausen behandelt.}
+         \note[item]<1>{Was wenn 2 Melodien nicht gleichlang}
+         \note[item]<1>{Keine Evaluierung, nur Laufzeit}
         \caption{Source: \cite{one}}
         \end{figure}
 	\end{frame}
@@ -419,7 +419,7 @@
         \frametitle{Needlemann - Wunsch Algorithmus}
       \begin{figure}[h!]
        \fbox{\includegraphics[width=0.5\textwidth]{abb_7}}%
-%        \note[item]<1>{Hier match + 1, sonst -1, deletion,insertion auch -1}
+      \note[item]<1>{Hier match + 1, sonst -1, deletion,insertion auch -1}
         \fbox{\includegraphics[width=0.5\textwidth]{abb_8}}
          \caption{Source: \cite{wiki_nee_wu}}
         \end{figure}
@@ -454,13 +454,13 @@
         \frametitle{Time}
             \begin{itemize}
              \item Insertion : $ s(-, n) = -diff_p(n,\Theta (n)) - \lambda k_t * diff_t(n,\Theta (n))$
-%              \note[item]<1>{The constantsμpandμtarethe mean scores returned by thediffpanddifftfunctionsover  a  random  sample  of  100,000  pairs  of  spline  spans
-%             drawn  from  the  Essen  Collection  (μp=  2.1838andμt= 0.4772)}
-%              \note[item]<1>{k t = 0.5 is a constant that weights
-%             the time dissimilarity with respect to the pitch dissimilar-
-%                 ity; and λ = μ p /μ t is a constant that normalizes time
-%                 dissimilarity scores with respect to the pitch dissimilarity
-%                 scores.}
+           \note[item]<1>{The constants $\mu$ pand $\mu$ tarethe mean scores returned by thediffpanddifftfunctionsover  a  random  sample  of  100,000  pairs  of  spline  spans
+             drawn  from  the  Essen  Collection  ($\mu$p=  2.1838 and $\mu$t= 0.4772)}
+              \note[item]<1>{k t = 0.5 is a constant that weights
+             the time dissimilarity with respect to the pitch dissimilar-
+                 ity; and $\lambda$ = $\mu$ p /$\mu$ t is a constant that normalizes time
+                 dissimilarity scores with respect to the pitch dissimilarity
+                 scores.}
             
              \item Deletion: $s(n, -) = -diff_p(n,\Theta (n)) - \lambda k_t * diff_t(n,\Theta (n))$
              \item Match: $2\mu_p + 2\lambda k_t\mu_t = 2\mu_p(1+k_t)$
@@ -556,18 +556,18 @@
 		\end{frame}
 
 		
-%     \subsection{Mirex Results}
-%     	\begin{frame}
-% 			\frametitle{Urbano's Results}
-% 
-% 			\begin{figure}[h!]
-% 				\includegraphics[width=150px,height=150px,keepaspectratio]{urbano_mirex_2012_results}
-% 				\includegraphics[width=150px,height=150px,keepaspectratio]{urbano_mirex_2013_results}
-% 				\includegraphics[width=150px,height=150px,keepaspectratio]{urbano_mirex_2014_results}
-% 				
-% 				\caption{Mirex Ergebnisse der Urbano-Algorithmen 2012,2013,2014\cite{five_point_two},\cite{five_point_three},\cite{five_point_four}}
-% 			\end{figure}
-% 		\end{frame}
+    \subsection{Mirex Results}
+     	\begin{frame}
+ 			\frametitle{Urbano's Results}
+ 
+ 			\begin{figure}[h!]
+ 				\includegraphics[width=150px,height=150px,keepaspectratio]{urbano_mirex_2012_results}
+ 				\includegraphics[width=150px,height=150px,keepaspectratio]{urbano_mirex_2013_results}
+ 				\includegraphics[width=150px,height=150px,keepaspectratio]{urbano_mirex_2014_results}
+ 				
+ 				\caption{Mirex Ergebnisse der Urbano-Algorithmen 2012,2013,2014\cite{five_point_two},\cite{five_point_three},\cite{five_point_four}}
+ 			\end{figure}
+ 		\end{frame}
 
 	
 

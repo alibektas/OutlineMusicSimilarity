@@ -1,8 +1,9 @@
 \beamer@sectionintoc {1}{Grundlegendes}{3}{0}{1}
 \beamer@sectionintoc {2}{Die Techniken}{9}{0}{2}
-\beamer@subsectionintoc {2}{1}{MIREX 2014}{30}{0}{2}
-\beamer@subsectionintoc {2}{2}{Urbano MelodyShape}{38}{0}{2}
-\beamer@sectionintoc {3}{MIREX : Algorithmen treten gegeneinander an}{45}{0}{3}
-\beamer@subsectionintoc {3}{1}{Ground Truth}{47}{0}{3}
-\beamer@subsectionintoc {3}{2}{Average Dynamic Recall}{53}{0}{3}
-\beamer@sectionintoc {4}{Bibliographie}{55}{0}{4}
+\beamer@subsectionintoc {2}{1}{MIREX 2014}{31}{0}{2}
+\beamer@subsectionintoc {2}{2}{Urbano MelodyShape}{39}{0}{2}
+\beamer@sectionintoc {3}{MIREX : Algorithmen treten gegeneinander an}{48}{0}{3}
+\beamer@subsectionintoc {3}{1}{Ground Truth}{50}{0}{3}
+\beamer@subsectionintoc {3}{2}{Average Dynamic Recall}{56}{0}{3}
+\beamer@subsectionintoc {3}{3}{Mirex Results}{58}{0}{3}
+\beamer@sectionintoc {4}{Bibliographie}{60}{0}{4}
