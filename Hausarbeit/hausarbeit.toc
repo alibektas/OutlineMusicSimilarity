@@ -1,0 +1,2 @@
+\contentsline {title}{Hausarbeit: Symbolic Music Similarity}{1}% 
+\contentsline {author}{Ali Bektas (Humboldt Universit\IeC {\"a}t zu Berlin), Paul Kr\IeC {\"o}ger(Humboldt Universit\IeC {\"a}t zu Berlin)}{1}% 
