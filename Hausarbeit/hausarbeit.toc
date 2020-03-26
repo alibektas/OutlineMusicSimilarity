@@ -1,2 +1,7 @@
-\contentsline {title}{Hausarbeit: Symbolic Music Similarity}{1}% 
+\contentsline {title}{Symbolic Melodic Music Similarity}{1}% 
 \contentsline {author}{Ali Bektas (Humboldt Universit\IeC {\"a}t zu Berlin), Paul Kr\IeC {\"o}ger(Humboldt Universit\IeC {\"a}t zu Berlin)}{1}% 
+\contentsline {section}{\numberline {1}Introduction}{1}% 
+\contentsline {section}{\numberline {2}Algorithms}{2}% 
+\contentsline {section}{\numberline {3}MIREX}{2}% 
+\contentsline {section}{\numberline {4}Evaluation}{2}% 
+\contentsline {section}{\numberline {5}Conclusion}{2}% 

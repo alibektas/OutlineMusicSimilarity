@@ -12,9 +12,6 @@
 \usepackage{mathtools}
 
 
-
-
-
 \begin{document}
 	
 	\frontmatter  
@@ -34,6 +31,7 @@
 	\tocauthor{Ali Bektas (Humboldt Universität zu Berlin),
 	Paul Kröger(Humboldt Universität zu Berlin)}
 	\institute{Humboldt Universität zu Berlin\\}
+	
 	\maketitle
 
 
@@ -47,9 +45,73 @@
 	\end{abstract}
 
 	\section{Introduction}
+		Similarity measures lie at the heart of Information Retrieval. This is also for Music Similarity the case. For a subscriber of a music streaming application like Spotify , Last.fm etc. to recommend latest albums or a musicologist to find related documents in a database , similarity measures are crucial. In comparison to its counterpart Audio Music Similarity , Symbolic Music Similarity algorithms use symbols that represent the data , where in Audio Music Similarity one has pitch-time related values. Within Symbolic Music Similarity we find algorithms that deal with harmony and those that deal with melody. What differs harmony from melody is that by harmony we see chords , that is multiple notes played at a discrete time $t$ that together form a unity.  
+
+		Representation of music dates back to as early as 2000 BC \cite{kil:civ}. Representing music over an alphabet consists in describing the pitch and the rhythm. Since we are mainly concerned with Western music , we can restrict ourselves to 12 tones of an octave , other cultures however may use more or less notes. In Middle Eastern countries ,for instance , we see that there are 9 tones between two notes of an whole tone interval.
+
+		In further sections we will introduce some algorithms which implement basic text-similarity related operations to conclude similarity between melodies. That being said , we will also introduce  algorithms , that treat musical data different than text-similarity algorithms would treat  strings. The MelodyShape Algorithm of J. Urbano \cite{five_point_two}  and its variations give the best results in MIREX's annual competitions ,an EXchange group for Music Information Retrieval , between years 201
+		%TODO
+		Urbano's MelodyShape forms a spline for the query melody and compares it with other splines to determine similarity between pieces. We will conclude from this , that the field evolved in recent years in such a way that the text-based approaches are less promising for the future of the field.
+
+		Other than MelodyShape and its variations we will also present a graph-based approach \cite{two_point_four} , which incorporates routines to generalize the melody, that heavily depend on Music Theory , a geometrical approach which use polygonal chains that are built by projecting the melody onto a plain of pitch and duration.
+
+		In our paper we will follow the classification used by Velardo et al. \cite{two}. According to Velardo et al. a melodic music similarity algorithm belongs to either of the four classes (1) Music Theory , (2) Cognition , (3) Mathematics , (4) Hybrid. Hybrid algorithms are usually formed by taking a linear combination of different similarity measures. 
+
+		Our main emphases are that the field suffers from the subjectivity of music similarity and that one single algorithms fails to answer all needs , which is especially the case when algorithms are tested only against a narrow range of data. In order to reduce these drawbacks we will show how MIREX , an EXchange group for Music Information Retrieval , took statistical approaches to form a Ground Truth for the data , that were collected from experts' evaluations. 
+	
+	\section{Algorithms}
+
+		\subsection{A Graph Based Approach}
+
+		Orio et al. \cite{two_point_four} introduces in their paper a series of operations to reduce two melodies into a single large tree. Melodies are placed into the tree as terminal nodes. The intermediate nodes represent generialization of the melodies. Generalization 
 
 
-	\section
+
+		, on which the similarity of the melodies can be described as the shortest path between the two terminal nodes.
+		
+	\section{MIREX}
+		MIREX is an important platform form enthusiasts of this field to exchange ideas. It arranges annual competition where researchers present their algorithms. The subbranch "Symbolic Melodic Music Similarity" doesn't take place since 2016. 
+
+
+		As we have mentioned in Introduction , one of the main problems of Symbolic Melodic Music Similarity is that there is no consensus over a universal measure of similarity. To circumvent this problem MIREX consults human listeners' ratings on relevance of songs in a database to a given query. The results are then grouped into smaller units.  
+
+
+
+
+
+
+	\section{Evaluation}
+		Sth Not so boring tho.
+
+	\section{Conclusion}
+
+	
+
+	\begin{thebibliography}{5}
+	
+	\bibitem {kil:civ}
+	A. D. Kilmer and M. Civil, 
+	"Old Babylonian Musical Instructions Relating to Hymnody" 
+	Journal of Cuneiform Studies 38, 
+	no. 1 (Spring 1986): 94-98.
+
+	\bibitem{five_point_two} 
+	J. Urbano. MelodyShape at 
+	MIREX 2014 Symbolic Melodic Similarity. 
+	Technical report, Music Information Retrieval Evaluation eXchange, 2014.
+
+	\bibitem{two}
+	Symbolic Melodic Similarity: State of the Art and Future Challenges
+	Valerio Velardo,Mauro Vallati and Steven Jan
+	Computer Music Journal, 40:2, pp. 70–83, Summer 2016 doi:10.1162/COMJ a 00359
+	2016 , Massachusetts Institute of Technology.v
+
+	\bibitem{two_point_four} Orio, N., and A. Rodá. 2009. “A Measure of Melodic Similarity Based on a Graph Representation of the Music Structure.” In Proceedings of the International Conference for Music Information Retrieval, pp. 543– 548.
+
+
+	\bibitem{one} Greg Aloupis, Thomas Fevens, Stefan Langerman, Tomomi Matsui, Antonio Mesa, Yurai Nunez, David Rappaport, and Godfried Toussaint, "Algorithms for Computing Geometric Measures of Melodic Similarity" Computer Music Journal, Vol.30, No. 3 (Autumn, 2006), pp. 67-76
+
+	\end{thebibliography}
 
 	
 \end{document}
