@@ -12,25 +12,23 @@
 \usepackage{mathtools}
 
 
+%Eine Ausarbeitung hat einen Titel, einen (oder mehrere) Verfasser, einen Betreuer, ein
+%Erstellungsdatum und ist in einem Seminar in einem Jahr verfasst worden. Geben Sie das
+%alles auf einer Titelseite an. 
+\title{Symbolic Melodic Music Similarity}
+\titlerunning{Symbolic Music Similarity}
+	\author{Ali Bektas \and Paul Kröger \\ \textbf{Betruer :} Prof. Dr. Ulf Leser \\ Similarity Search \\ WS19-20}
+	%TODO : Man sollte hier noch das Datum einfügen.
+	\date{\today}
+  	\institute{ \vspace{5px} 
+  	Humboldt Universität zu Berlin\\}
+	
+
+
 \begin{document}
-	
-	\frontmatter  
-
-	
-	%Die Arbeit muss ein Inhaltsverzeichnis enthalten. Bitte halten Sie es schlicht. 
-	\tableofcontents
-
+	 
 	\mainmatter
-	%Eine Ausarbeitung hat einen Titel, einen (oder mehrere) Verfasser, einen Betreuer, ein
-	%Erstellungsdatum und ist in einem Seminar in einem Jahr verfasst worden. Geben Sie das
-	%alles auf einer Titelseite an. 
-	\title{Symbolic Melodic Music Similarity}
-	\titlerunning{Symbolic Music Similarity}
-	\author{Ali Bektas\inst{1} \and Paul Kröger\inst{1}}
-	\authorrunning{Bektas \and Kröger} 	% abbreviated author list (for running head)
-	\tocauthor{Ali Bektas (Humboldt Universität zu Berlin),
-	Paul Kröger(Humboldt Universität zu Berlin)}
-	\institute{Humboldt Universität zu Berlin\\}
+
 	
 	\maketitle
 
@@ -63,17 +61,30 @@
 
 		\subsection{A Graph Based Approach}
 
-		Orio et al. \cite{two_point_four} introduces in their paper a series of operations to reduce two melodies into a single large tree. Melodies are placed into the tree as terminal nodes. The intermediate nodes represent generialization of the melodies. Generalization 
+		Orio et al. \cite{two_point_four} introduce in their paper a series of operations to reduce melodies into a single large tree. Melodies are segmentated and then these segments are added into the tree as terminal nodes. The intermediate nodes represent generalization of the segments. 
+		In a single step of generalization a segment is transformed into a simpler segment by deleting less important notes in the given segment. Which notes are less important is decided by three coefficients : \textit{(1)} its underlying harmonic function , \textit{(2)} its metric position  and \textit{(3)} the interval between the tone and the root of the underlying chord . 
+		In order to determine these coefficients , harmonic analysis must be applied. Harmonic analysis is the process of making statements about in which way notes of a sequence are related to each other. These three coefficents must then be determined in such a way that it reflects the priorities of the human when considering two songs to be similar. 
+		In their paper Orio et al. state that they chose to manually annotate the functions of notes in order to prevent any problems that could have otherwise arised during automated annotation , which could cause wrong simplification steps. We see this as a serious challange for the data , that only contain melody in comparison to data with harmonic elements , which could give better results of the underlying harmony. 
+
+		The distance between two documents is expressed as the median of shortest distance between all segments. The similarity function $s(c_i , q)$ between a document $c_i$ from a collection of $N$ documents and a query document q is calculated as :
+		
+		\begin{equation}
+			s(c_i , q)= (1 + \frac{d(c_i , q)}{\sum_{j=1}^{N} \frac{d(c_i,c_j)}{N-1}}) 
+		\end{equation}
+
+		In order to apply simplification proces 
 
 
 
 		, on which the similarity of the melodies can be described as the shortest path between the two terminal nodes.
 		
 	\section{MIREX}
-		MIREX is an important platform form enthusiasts of this field to exchange ideas. It arranges annual competition where researchers present their algorithms. The subbranch "Symbolic Melodic Music Similarity" doesn't take place since 2016. 
+		MIREX is a platform for enthusiasts of this field to exchange ideas. It arranges annual competition where researchers present their algorithms. The subbranch "Symbolic Melodic Music Similarity" doesn't take place since 2016. 
 
 
-		As we have mentioned in Introduction , one of the main problems of Symbolic Melodic Music Similarity is that there is no consensus over a universal measure of similarity. To circumvent this problem MIREX consults human listeners' ratings on relevance of songs in a database to a given query. The results are then grouped into smaller units.  
+		As we have mentioned in Introduction , one of the main problems of Symbolic Melodic Music Similarity is that there is no consensus over a universal measure of similarity. To circumvent this problem MIREX consults human listeners' ratings on relevance of songs in a database to a given query. The results are then grouped into smaller units. 
+
+		Taipke et al.  
 
 
 
