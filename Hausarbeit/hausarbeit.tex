@@ -7,7 +7,8 @@
 
 
 \usepackage{graphicx}
-\graphicspath{{./images/}}
+\graphicspath{{./img/}}
+
 \usepackage{verbatim}
 \usepackage{mathtools}
 
@@ -26,20 +27,20 @@
 
 
 \begin{document}
-	 
+	
+
 	\mainmatter
 
-	
 	\maketitle
 
 
 	\begin{abstract}
-	With an increasing need to classify musical data in terms of their content 
+	With an increasing need to classify symbolic musical data in terms of their content 
 	the question of similarity between musical objects becomes a challange. While 
 	there is not a single similarity function to answer all different needs , various approaches
 	have been introduced to the field in recent decades. In our paper , we introduce the approaches
-	which mainly focus on symbolic data , that is , a representation of the content based on an alphabet
-	of symbols and syntax.
+	which focus on symbolic melodic data , that is , a representation of the melody of a piece based on an alphabet
+	of symbols and syntax. We discuss why this particular field had seen a trend to move towards geometrical approaches rather than those that are used by text-based similarity measures. As the leading algorithm in this field , we examine Melody-Shape algorithm and its success in MIREX competitions.
 	\end{abstract}
 
 	\section{Introduction}
@@ -47,7 +48,7 @@
 
 		Representation of music dates back to as early as 2000 BC \cite{kil:civ}. Representing music over an alphabet consists in describing the pitch and the rhythm. Since we are mainly concerned with Western music , we can restrict ourselves to 12 tones of an octave , other cultures however may use more or less notes. In Middle Eastern countries ,for instance , we see that there are 9 tones between two notes of an whole tone interval.
 
-		In further sections we will introduce some algorithms which implement basic text-similarity related operations to conclude similarity between melodies. That being said , we will also introduce  algorithms , that treat musical data different than text-similarity algorithms would treat  strings. The MelodyShape Algorithm of J. Urbano \cite{five_point_two}  and its variations give the best results in MIREX's annual competitions ,an EXchange group for Music Information Retrieval , between years 201
+		In further sections we will introduce some algorithms which implement basic text-similarity related operations to conclude similarity between melodies. That being said , we will also introduce  algorithms , that treat musical data different than text-similarity algorithms would treat  strings. The MelodyShape Algorithm of J. Urbano \cite{five_point_two}  and its variations give the best results in MIREX's (Music Information Retrieval Evaluation EXchange) annual competitions , between years 201
 		%TODO
 		Urbano's MelodyShape forms a spline for the query melody and compares it with other splines to determine similarity between pieces. We will conclude from this , that the field evolved in recent years in such a way that the text-based approaches are less promising for the future of the field.
 
@@ -62,21 +63,21 @@
 		\subsection{A Graph Based Approach}
 
 		Orio et al. \cite{two_point_four} introduce in their paper a series of operations to reduce melodies into a single large tree. Melodies are segmentated and then these segments are added into the tree as terminal nodes. The intermediate nodes represent generalization of the segments. 
-		In a single step of generalization a segment is transformed into a simpler segment by deleting less important notes in the given segment. Which notes are less important is decided by three coefficients : \textit{(1)} its underlying harmonic function , \textit{(2)} its metric position  and \textit{(3)} the interval between the tone and the root of the underlying chord . 
-		In order to determine these coefficients , harmonic analysis must be applied. Harmonic analysis is the process of making statements about in which way notes of a sequence are related to each other. These three coefficents must then be determined in such a way that it reflects the priorities of the human when considering two songs to be similar. 
-		In their paper Orio et al. state that they chose to manually annotate the functions of notes in order to prevent any problems that could have otherwise arised during automated annotation , which could cause wrong simplification steps. We see this as a serious challange for the data , that only contain melody in comparison to data with harmonic elements , which could give better results of the underlying harmony. 
+		In a single step of generalization a segment is transformed into a simpler segment by deleting less important notes in the given segment. Which notes are less important is decided by three weight coefficents : \textit{(1)} its underlying harmonic function, \textit{(2)} its metric position  and \textit{(3)} the interval between the tone and the root of the underlying chord. 
+		In order to determine these coefficients, harmonic analysis must be applied. Harmonic analysis is the process of making statements about in which way notes of a sequence are related to each other. These three coefficents must then be determined in such a way that it reflects the priorities of the human when considering two songs to be similar. 
+		In their paper Orio et al. state that they chose to manually annotate the functions of notes in order to prevent any problems that could have otherwise arised during automated annotation , which could cause wrong simplification steps. We see this as a serious challange for the data , that only contain melody in comparison to data with harmonic elements, which could give better results of the underlying harmony. 
 
 		The distance between two documents is expressed as the median of shortest distance between all segments. The similarity function $s(c_i , q)$ between a document $c_i$ from a collection of $N$ documents and a query document q is calculated as :
 		
 		\begin{equation}
-			s(c_i , q)= (1 + \frac{d(c_i , q)}{\sum_{j=1}^{N} \frac{d(c_i,c_j)}{N-1}}) 
+			s(c_i , q)= 1 + \frac{d(c_i , q)}{\sum_{j=1}^{N} \frac{d(c_i,c_j)}{N-1}} 
 		\end{equation}
 
 		The similarity function is normalized and authors mention that 'the normalization factors can be computed off-line to speed up retrieval'. Authors also mention that the tree representation can offer novel ways to view a collection and see visually to what extent two songs were considered to be similar.
 
 		\subsection{Polygonal Chains}
 
-		\subsection{}
+		\subsection{Urbano Melody-Shape}
 
 
 		
@@ -84,42 +85,83 @@
 		MIREX is a platform for enthusiasts of this field to exchange ideas. It arranges annual competition where researchers present their algorithms. The subbranch "Symbolic Melodic Music Similarity" doesn't take place since 2016. 
 
 
-		As we have mentioned in Introduction , one of the main problems of Symbolic Melodic Music Similarity is that there is no consensus over a universal measure of similarity. In order to circumvent this issue , MIREX consults ratings given by experts of the field. The results of the comptetitors were then compared against this so-called Ground Truth. As a new way to measure recall R. Typke introduces Average Dynamic Recall in his report \cite{three}.       
+		As we mentioned in Introduction, one of the main problems of Symbolic Melodic Music Similarity is that there is no consensus over a universal measure of similarity. In order to circumvent this issue, MIREX consults ratings given by experts of the field. The results of the comptetitors were then compared against this so-called Ground Truth. As a new way to measure recall R. Typke introduces Average Dynamic Recall in his report \cite{three}.       
 
 
 		\subsection{The Ground Truth}
- 		The RISM A/II collection which was used as the collection on the competition in year 2005 contains 476,000. Experts were asked to rate similarity of documents in this collection to given queries. The experts were not asked all the documents , since it would take much time. A series of filtering processes were then applied to reduce the number of relevant documents. 
+ 		The RISM A/II collection which was used as the collection on the competition in year 2005 contains 476,000 documents. Experts were asked to rate similarity of documents in this collection to given queries. The experts were not asked all the documents, since it would take much time. A series of filtering processes were then applied to reduce the number of relevant documents. 
 
  		Among several of them documents were filtered based on: 
 
  		\begin{itemize}
  			\item The interval between the highest and lowest note in the incipit
  			\item The largest interval between subsequent notes.
- 			\item The editing distance between the query and the document. In order to find the editing distance , a document is projected onto a string , that contains the alphabet U("up") , D("down") , R("repeat"). 
+ 			\item The editing distance between the query and the document. In order to find the editing distance, a document is projected onto a string, that contains the alphabet U("up") , D("down") , R("repeat"). 
  		\end{itemize} 
 
- 		Different filtering steps are used based on characteristic features of the documents. In order to prevent relevent documents from being filtered out , a limit of 300 documents were set. To come at a convenient number of documents , residual documents were then manually reduced to a collection of 50 documents.
+ 		Different filtering steps are used based on characteristic features of the documents. In order to prevent relevent documents from being filtered out, a limit of 300 documents were set. To come at a convenient number of documents, residual documents were then manually reduced to a collection of 50 documents.
 
- 		The relevant documents were then given to the experts to be ordered. Experts were given the freedom to choose which documents were to include at all.  
+ 		The relevant documents were then given to the experts to be ordered. Experts were given the freedom to choose which documents were to include at all. The rankings were then grouped together for each document , ordered by their by median rank and then by mean rank. Every document is then compared against higher ranked documents by Wilcoxon rank sum test , that measures the probability of the null-hypothesis , that is , the probability that the relatively small group of experts reflect those of a larger group. When there is no compelling evidence that documents actually differ in terms of median ranks , they are grouped together. As a consequence of this there is no total order among ranked documents. 
 
+ 		\begin{figure}[h!]
+			\centering
+			\includegraphics[width=200px,height=100px,keepaspectratio]{one_of_two_point_four_point_four}
+			\caption{Ground Truth for Winter: “Domus Israel speravit \cite{two_point_four_point_four}}
+		\end{figure}
+
+
+ 		In \cite{two_point_four_point_four} 31 experts were asked to order relevant documents to the given query in \textbf{Fig. 1}. The second and the third documents in the resulting list differ from the given query in such small ways , that it was hard to conclude a total order among results.
+
+ 		To emphasize the group boundaries better , Typke, Veltkamp, Wiering \cite{two_point_four_point_four} introduces a new measure called Average Dynamic Recall. 
 
 		\subsection{Average Dynamic Recall}
+			
+			
+			Authors mention nine criteria that they considered when they introduced ADR , among which we want to list the following :
 
+			\begin{itemize}
+				\item The measure doesn't need the ground truth to be completely ordered
+				\item Violations of the correct order should be punished if they happen across group boundaries.
+				\item Groups closer to the beginning of the list should have a higher influence on the overall scoring.
+			\end{itemize}
 
+			In comparison to standard measures such as recall and precision , ADR is specifically tailored for partially ordered lists. As to how the overall scores are given , the number of relevant documents is at the beginning is so much as there are documents within the first group. When this group of elements is completely retrieved , the number of relevant documents will get larger by adding the next group about which it is known that there is evidence that documents do differ in terms of median ranks.
 
-
-
-
+			The ADR is calculated over the sum of recall values over number of iterations.     
 
 	\section{Evaluation}
-		Sth Not so boring tho.
+		\subsection{The graph based algorithm of Orio et al.}
+			For the evaluation author used the RISM A/II collection from MIREX 2005  , which we  presented in the previous section.
+
+
+			\begin{figure}[h!]
+			\centering
+			\includegraphics[width=200px,height=100px,keepaspectratio]{one_of_two_point_four}
+			\caption{Manual segmentation using alphabets of different sizes \cite{two_point_four}}
+			\end{figure}
+
+
+			Figure 1 shows the results of quantization with alphabets of various sizes. Quantization can be seen as a function that projects a given melody onto another. As an example to a quantization with 3 symbols can be a function that projects onto the alphabet {'up','down','repeat'}. We observe that reducing a melody into simpler melody , results in loss of result quality , though not significant enough in some cases. Where memory size plays a significant role , quantization can be a preferrable process.   
+
+			\begin{figure}[h!]
+			\centering
+			\includegraphics[width=200px,height=100px,keepaspectratio]{three_of_two_point_four}
+			\caption{Different segmentation techniques with no quantization \cite{two_point_four}}
+			\end{figure}
+
+			Figure 2 shows use of different weight measures. As aforementioned weight measures are important when choosing the more important note among other notes in a measure. For harmonic weight the authors experimented with groupings of 3M,4M or 7M. While reducing the different harmonic functionalities into one larger group , it is important to make such assumptions , that result in a grouping with the least amount information loss. With the same consideration melodic weights have been grouped together in terms of their intervalic function. As to metric weight , there are two different schemes that are proposed : (1) A simple subdivision in terms of strong and weak beats and (2) \textit{"a hierarchical organization depending on the position in the measure"}. It can be observed that , even though the differences are not significant enough , the better results are obtained when weighting is based on more generalizing schemes.
+
+			Authors observe that the size of the graph grows in a sublinear fashion , when new documents are introduced to the graph.   
+
+
+
 
 	\section{Conclusion}
 		Bluh bluh
 		
 	
 
-	\begin{thebibliography}{5}
+	\begin{thebibliography}{7}
 	
 	\bibitem {kil:civ}
 	A. D. Kilmer and M. Civil, 
@@ -143,6 +185,8 @@
 	\bibitem{three} Typke, Rainer. (2007). Music Retrieval based on Melodic Similarity.
 
 	\bibitem{one} Greg Aloupis, Thomas Fevens, Stefan Langerman, Tomomi Matsui, Antonio Mesa, Yurai Nunez, David Rappaport, and Godfried Toussaint, "Algorithms for Computing Geometric Measures of Melodic Similarity" Computer Music Journal, Vol.30, No. 3 (Autumn, 2006), pp. 67-76
+
+	\bibitem{two_point_four_point_four} R. Typke, R. C. Veltkamp and F. Wiering, "A Measure for Evaluating Retrieval Techniques based on Partially Ordered Ground Truth Lists," 2006 IEEE International Conference on Multimedia and Expo, Toronto, Ont., 2006, pp. 1793-1796.
 
 	\end{thebibliography}
 
