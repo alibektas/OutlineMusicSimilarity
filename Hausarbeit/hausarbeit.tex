@@ -78,9 +78,58 @@
 		\subsection{Polygonal Chains}
 
 		\subsection{Urbano Melody-Shape}
-
-
+        In 2010 J.Urbano et al. proposed a new method to calculate similarity between symbolic melodic pieces, comparing the shapes of melodies created by looking at notes as points on a pitch-time plane and interpolating a curve through those points \cite{five_point_five}.
+        \includegraphics[width=200px,height=100px,keepaspectratio]{one_of_five_point_one}
+        Based on this method Urbano developed two algorithms for the MIREX Competition, ShapeH and Time \cite{five_point_two}. Both algorithms seperate melodies into sequences of notes, and use Uniform B-Splines to get a spline sequence representation. Two spline sequences are then compared using sequence alignment.
+        \subsubsection{ShapeH} 
+        This system ignores the time dimension and only focuses on the shape of a melody. It uses spline-span sequences 3 notes long which results in a polynomial of degree 2 for each spline. They are then differentiated, resulting in polynomials of degree 1. 
+        A dynamic programming table is then filled using a global alignment algorithm. The score of a cell (i,j) is computed by : \\ \\
+        $H(i,j) = max $
+       $\begin{Bmatrix*}[c]
+        H(i-1, j-1) + s(a_i, b_j) \\
+        H(i-1,j) + s(a_i, -) \\
+        H(i, j-1) + s(-,b_j)
+        \end{Bmatrix*}$
+		\\
+		where H is the dynamic programming table, a and b the compared spline-span sequences. The highest score from the table is then used as the similarity score between the melodies. This hybrid alignment approach is used in favor of just the global alignment algorithm because Urbano argues that listeners put more emphasis on the beginning of a melody rather than the end when determining similarity. \\
+		The operations are defined as follows : 
+        \begin{itemize}
+         \item Insertion : 
+        $ s(-,n) = -(1-f(n)).$
+        \item Deletion : 
+         $s(n,-) = -(1 - f(n))$
+        \item Match : 
+        $s(n,n) = 1-f(n)$
+        \end{itemize}
+        
+        Where f(n) denotes the frequency of a spline in the spline-span sequence. Urbano argues that the more often a spline occurs, the less important it is for the comparison. \\
+        The substitution or mismatch score is calculated based on the shape of the spans where two melodies with a similar shape only get a small penalization. There are three possible scenarios : 
+        \begin{itemize}
+         \item If the derivative sign at the start and at the end of the splines are the same, they are considered to have a similar shape and there is only a small penalization.
+         \item If the derivative sign only matches at the start or the end of the splines, they are considered to be less similar and there is a medium penalization.
+         \item If the derivative sign at the start and the end of the spline does not match, they are considered to be not similar and there is a large penalization.
+        \end{itemize}
+        Due to looking at polynomials of degree 2 it is sufficient to only regard the start and end points of the splines, because they can only change their direction once within the span.
+  
 		
+		\subsubsection{Time}
+		
+		  \includegraphics[width=200px,height=100px,keepaspectratio]{two_of_five_point_one}
+        This system uses the time dimension as well and calculates the area between splines to determine similarity. It uses spline-span sequences 4 notes long which results in a polynomial of degree 3 for each spline. They are then differentiated, resulting in polynomials of degree 2. Each span duration is normalized to the same length. (fig x)
+        It uses the same hybrid allignement approach as the ShapeH system. 
+		The operations are defined as follows : 
+        \begin{itemize}
+         \item Insertion : 
+        $ s(-,n) = -diff _p(n, \phi(n)) - \lambda k_t * diff_t(n, \phi(n)).$
+        \item Deletion : 
+         $s(n,-) = -diff_p(n, \phi(n)) - \lambda k_t * diff_t (n, \phi(n)).$
+       \item substitution : 
+       $s(n,m) = - diff_p (n,m) - \lambda k_t * diff_t (n,m) $
+       \item Match : 
+        $s(n,n) = 2\mu_p + 2\lambda k_t \mu_t = 2\mu_p (1+k_t).$
+        \end{itemize}
+        
+        $diff_p$ and $diff_t$ are defined as the area of the compared first derivatives from the splines pitch and time function.$ \phi(n)$ describes the area between n and the x-axis. $\mu_p$, $\mu_t$ as well as $k_t$ are weighting constants where $\mu_p$ and $\mu_t$ being the mean scores returned by $diff_p$ and $diff_t$ respectively and $k_t$ weighing time dissimilarity corresponding to pitch dissimilarity.$ \lambda = \mu_p / \mu_t$ is a constant used to normalize time dissimilarity scores with respect to pitch dissimilarity scores.
 	\section{MIREX}
 		MIREX is a platform for enthusiasts of this field to exchange ideas. It arranges annual competition where researchers present their algorithms. The subbranch "Symbolic Melodic Music Similarity" doesn't take place since 2016. 
 
@@ -187,6 +236,8 @@
 	\bibitem{one} Greg Aloupis, Thomas Fevens, Stefan Langerman, Tomomi Matsui, Antonio Mesa, Yurai Nunez, David Rappaport, and Godfried Toussaint, "Algorithms for Computing Geometric Measures of Melodic Similarity" Computer Music Journal, Vol.30, No. 3 (Autumn, 2006), pp. 67-76
 
 	\bibitem{two_point_four_point_four} R. Typke, R. C. Veltkamp and F. Wiering, "A Measure for Evaluating Retrieval Techniques based on Partially Ordered Ground Truth Lists," 2006 IEEE International Conference on Multimedia and Expo, Toronto, Ont., 2006, pp. 1793-1796.
+	
+	\bibitem{five_point_five} To be added
 
 	\end{thebibliography}
 
