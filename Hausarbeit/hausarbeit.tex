@@ -48,7 +48,7 @@
 
 		Representation of music dates back to as early as 2000 BC \cite{kil:civ}. Representing music over an alphabet consists in describing the pitch and the rhythm. Since we are mainly concerned with Western music , we can restrict ourselves to 12 tones of an octave , other cultures however may use more or less notes. In Middle Eastern countries ,for instance , we see that there are 9 tones between two notes of a whole tone interval.
 
-		In further sections we will introduce some algorithms which implement basic text-similarity related operations to conclude similarity between melodies. That being said , we will also introduce  algorithms , that treat musical data different than text-similarity algorithms would treat  strings. The MelodyShape Algorithm of J. Urbano \cite{five_point_two}  and its variations give the best results in MIREX's (Music Information Retrieval Evaluation EXchange) annual competitions , between years 201
+		In further sections we will introduce some algorithms which implement basic text-similarity related operations to conclude similarity between melodies. That being said , we will also introduce  algorithms , that treat musical data different than text-similarity algorithms would treat  strings. The MelodyShape Algorithm of J. Urbano \cite{five_point_two}  and its variations give the best results in MIREX's (Music Information Retrieval Evaluation EXchange) annual competitions , between years 2010-2015
 		%TODO
 		Urbano's MelodyShape forms spline-sequence for the query melody and compares it with other spline-sequences to determine similarity between pieces. We will conclude from this , that the field evolved in recent years in such a way that the text-based approaches are less promising for the future of the field.
 
@@ -79,8 +79,12 @@
 
 		\subsection{Urbano Melody-Shape}
         In 2010 J.Urbano et al. proposed a new method to calculate similarity between symbolic melodic pieces, comparing the shapes of melodies created by looking at notes as points on a pitch-time plane and interpolating a curve through those points \cite{five_point_five}.
+           \begin{figure}[h!]
+			\centering
         \includegraphics[width=200px,height=100px,keepaspectratio]{one_of_five_point_one}
-        Based on this method Urbano developed two algorithms for the MIREX Competition, ShapeH and Time \cite{five_point_two}. Both algorithms seperate melodies into sequences of notes, and use Uniform B-Splines to get a spline sequence representation. Two spline sequences are then compared using sequence alignment. Based upon the results of the first Mirex competitions Urbano entered he also developed the ShapeTime system, which collects the n most relevant documents out of the data set, against which the query is run, using the ShapeH system and then ranks those documents using the time system. This was done because the ShapeH system performed better in rank unaware measures, whilst the time system performed better in rank aware measures in the competition. The ShapeTime system usually achieved the best overall results, as we will show later in the evaluation section.
+			\caption{Manual segmentation using alphabets of different sizes \cite{two_point_four}}
+        \end{figure}
+        Based on this method Urbano developed two algorithms for the MIREX Competition, Shape (in three variants: ShapeL, ShapeG and ShapeH) which only uses the pitch dimension and Time which uses both the pitch and the time dimension \cite{five_point_two}. Both algorithms seperate melodies into sequences of notes, and use Uniform B-Splines to get a spline sequence representation. Two spline sequences are then compared using sequence alignment. Based upon the results of the first Mirex competitions Urbano entered he also developed the ShapeTime system, which collects the n most relevant documents out of the data set, against which the query is run, using the ShapeH system and then ranks those documents using the time system. This was done because the ShapeH system performed better in rank unaware measures, whilst the time system performed better in rank aware measures in the competition. The ShapeTime system usually achieved the best overall results, as we will show later in the evaluation section.
         \subsubsection{ShapeH} 
         This system ignores the time dimension and only focuses on the shape of a melody. It uses spline-span sequences 3 notes long which results in a polynomial of degree 2 for each spline. They are then differentiated, resulting in polynomials of degree 1. 
         A dynamic programming table is then filled using a global alignment algorithm. The score of a cell (i,j) is computed by : \\
@@ -114,8 +118,11 @@
   
 		
 		\subsubsection{Time}
-		
+        \begin{figure}[h!]
+			\centering
 		  \includegraphics[width=200px,height=100px,keepaspectratio]{two_of_five_point_one}
+			\caption{Manual segmentation using alphabets of different sizes \cite{two_point_four}}
+        \end{figure}
         This system uses the time dimension as well and calculates the area between splines to determine similarity. It uses spline-span sequences 4 notes long which results in a polynomial of degree 3 for each spline. They are then differentiated, resulting in polynomials of degree 2. Each span duration is normalized to the same length. (fig x)
         It uses the same hybrid allignement approach as the ShapeH system. 
 		The operations are defined as follows : 
@@ -204,14 +211,39 @@
 			Authors observe that the size of the graph grows in a sublinear fashion , when new documents are introduced to the graph.   
 
 \subsection{Urbano MelodyShape}
-            In the initial paper of 2011, where Urbano et al. first proposed to compare melodies based on their shape, the authors tested their implementation against the RISM A/II collection from MIREX 2005 and compared their results to the results of the competing algorithms from 2005 \cite{five_point_five}. As can be seen in Fig x, they performed best in 5 out of 11 categories and averaged the highest ADR score overall. 
-            \includegraphics[width=400px,height=200px,keepaspectratio]{one_of_five_point_five}
-            The algorithm used was later improved upon and very similar to the time system we presented earlier, using the area between two splines and a local alignment approach to determine similarity. Based upon this system Urbano developed the ShapeH and Time systems  and competed in the 2011-2015 editions of the MIREX Competition placing first in every iteration. 
+            In the initial paper of 2011, where Urbano et al. first proposed to compare melodies based on their shape, the authors tested their implementation against the RISM A/II collection from MIREX 2005 and compared their results to the results of the competing algorithms from 2005 \cite{five_point_five}. As can be seen in Fig x, they performed best in 5 out of 11 queries and averaged the highest ADR score overall. 
+        \begin{figure}[h!]
+			\centering
+            \includegraphics[width=350px,height=160px,keepaspectratio]{one_of_five_point_five}
+			\caption{Spline based approach tested against the evaluation set of the MIREX 2005 competition and compared to the other contestants. \cite{five_point_five}}
+        \end{figure}
+            The algorithm used was later improved upon and very similar to the time system we presented earlier, using the area between two splines and a local alignment approach to determine similarity. Based upon this system Urbano developed the ShapeH and Time systems  and competed in the 2010-2015 editions of the MIREX Competition placing first in every iteration. 
+        \begin{figure}[h!]
+			\centering
+            \includegraphics[width=250px,height=125px,keepaspectratio]{urbano_mirex_2012_results}
+			\caption{Results for the submissions by Urbano to the 2012 MIREX Competition \cite{five_point_four}}
+        \end{figure}
+        \begin{figure}[h!]
+			\centering
+            \includegraphics[width=250px,height=125px,keepaspectratio]{urbano_mirex_2013_results}
+			\caption{Results for the submissions by Urbano to the 2013 MIREX Competition \cite{five_point_three}}
+        \end{figure}
+        \begin{figure}[h!]
+			\centering
+            \includegraphics[width=250px,height=125px,keepaspectratio]{urbano_mirex_2014_results}
+			\caption{Results for the submissions by Urbano to the 2014 MIREX Competition \cite{five_point_two}}
+        \end{figure}
+
+
 
 
 	\section{Conclusion}
-		Bluh bluh
-		
+
+	We conclude from this that there are several problems in the field of symbolic melodic music similarity.
+	Seeing as there is no definitive definiton for what exactly constitutes music similarity and no agreed upon data set existing, against which methods can be evaluated and compared to each other, comparing different methods is challenging, if not impossible. Even results from different years of the MIREX competition can hardly be compared to each other. The algorithms Urbano entered in the competition achieved varying results over the years, with the systems themselves not really having changed. Furthermore there are only limited real world applications for only monophonic algorithms, as most music consists of polyphonic compositions. 
+	- Field suffers from no Ground Truths -- big database needs to be established against which all algorithms are evaluated. 
+	- Most methods are monophonic in nature -- need for shift to more polyphonic oriented algorithms.
+	- MIREX Results inconclusive. 
 	
 
 	\begin{thebibliography}{7}
@@ -242,6 +274,10 @@
 	\bibitem{two_point_four_point_four} R. Typke, R. C. Veltkamp and F. Wiering, "A Measure for Evaluating Retrieval Techniques based on Partially Ordered Ground Truth Lists," 2006 IEEE International Conference on Multimedia and Expo, Toronto, Ont., 2006, pp. 1793-1796.
 	
 	\bibitem{five_point_five} To be added
+	
+	\bibitem{five_point_three} To be added
+	
+	\bibitem{five_point_two} To be added
 
 	\end{thebibliography}
 
