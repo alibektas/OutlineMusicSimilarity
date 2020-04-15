@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  15 APR 2020 16:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Arch Linux) (preloaded format=pdflatex 2020.4.8)  15 APR 2020 16:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -252,18 +252,18 @@ LaTeX Info: Thecontrolsequence`\]'isalreadyrobust on input line 129.
 ) (./hausarbeit.aux)
 \openout1 = `hausarbeit.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 29.
-LaTeX Font Info:    ... okay on input line 29.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 30.
+LaTeX Font Info:    ... okay on input line 30.
 
 (/usr/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
@@ -331,77 +331,79 @@ e
 )) [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
-<./img/one_of_five_point_one.png, id=16, 228.855pt x 106.89937pt>
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./hausarbeit.toc)
+\tf@toc=\write3
+\openout3 = `hausarbeit.toc'.
+
+ [2
+
+] [3]
+<./img/one_of_five_point_one.png, id=19, 228.855pt x 106.89937pt>
 File: ./img/one_of_five_point_one.png Graphic file (type png)
 <use ./img/one_of_five_point_one.png>
-Package pdftex.def Info: ./img/one_of_five_point_one.png  used on input line 83
+Package pdftex.def Info: ./img/one_of_five_point_one.png  used on input line 89
 .
 (pdftex.def)             Requested size: 200.75746pt x 93.77484pt.
- [3 <./img/one_of_five_point_one.png (PNG copy)>]
-<./img/two_of_five_point_one.png, id=25, 191.21437pt x 98.61844pt>
+ [4 <./img/one_of_five_point_one.png (PNG copy)>]
+<./img/two_of_five_point_one.png, id=28, 191.21437pt x 98.61844pt>
 File: ./img/two_of_five_point_one.png Graphic file (type png)
 <use ./img/two_of_five_point_one.png>
 Package pdftex.def Info: ./img/two_of_five_point_one.png  used on input line 12
-2.
+8.
 (pdftex.def)             Requested size: 194.62175pt x 100.37578pt.
-
-
-LaTeX Warning: `!h' float specifier changed to `!ht'.
-
-[4] [5 <./img/two_of_five_point_one.png (PNG copy)>]
-<./img/one_of_two_point_four_point_four.png, id=33, 946.53625pt x 692.5875pt>
+ [5] [6 <./img/two_of_five_point_one.png (PNG copy)>]
+<./img/one_of_two_point_four_point_four.png, id=36, 946.53625pt x 692.5875pt>
 File: ./img/one_of_two_point_four_point_four.png Graphic file (type png)
 <use ./img/one_of_two_point_four_point_four.png>
 Package pdftex.def Info: ./img/one_of_two_point_four_point_four.png  used on in
-put line 164.
+put line 170.
 (pdftex.def)             Requested size: 137.17924pt x 100.37505pt.
- [6 <./img/one_of_two_point_four_point_four.png>]
-<./img/one_of_two_point_four.png, id=39, 378.41376pt x 149.55875pt>
+ [7 <./img/one_of_two_point_four_point_four.png>]
+<./img/one_of_two_point_four.png, id=43, 378.41376pt x 149.55875pt>
 File: ./img/one_of_two_point_four.png Graphic file (type png)
 <use ./img/one_of_two_point_four.png>
-Package pdftex.def Info: ./img/one_of_two_point_four.png  used on input line 19
-5.
+Package pdftex.def Info: ./img/one_of_two_point_four.png  used on input line 20
+1.
 (pdftex.def)             Requested size: 200.74887pt x 79.34106pt.
-<./img/three_of_two_point_four.png, id=40, 389.455pt x 188.705pt>
+<./img/three_of_two_point_four.png, id=44, 389.455pt x 188.705pt>
 File: ./img/three_of_two_point_four.png Graphic file (type png)
 <use ./img/three_of_two_point_four.png>
 Package pdftex.def Info: ./img/three_of_two_point_four.png  used on input line 
-204.
+210.
 (pdftex.def)             Requested size: 200.74686pt x 97.26909pt.
 
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[7 <./img/one_of_two_point_four.png>]
-<./img/one_of_five_point_five.png, id=46, 444.15938pt x 179.92218pt>
+[8 <./img/one_of_two_point_four.png>]
+<./img/one_of_five_point_five.png, id=49, 444.15938pt x 179.92218pt>
 File: ./img/one_of_five_point_five.png Graphic file (type png)
 <use ./img/one_of_five_point_five.png>
 Package pdftex.def Info: ./img/one_of_five_point_five.png  used on input line 2
-16.
+22.
 (pdftex.def)             Requested size: 351.30902pt x 142.30992pt.
 
-Overfull \hbox (4.18549pt too wide) in paragraph at lines 216--217
+Overfull \hbox (4.18549pt too wide) in paragraph at lines 222--223
  [][] 
  []
 
-<./img/urbano_mirex_2012_results.png, id=47, 434.37282pt x 197.98969pt>
+<./img/urbano_mirex_2012_results.png, id=50, 434.37282pt x 197.98969pt>
 File: ./img/urbano_mirex_2012_results.png Graphic file (type png)
 <use ./img/urbano_mirex_2012_results.png>
 Package pdftex.def Info: ./img/urbano_mirex_2012_results.png  used on input lin
-e 222.
+e 228.
 (pdftex.def)             Requested size: 250.9422pt x 114.38092pt.
-<./img/urbano_mirex_2013_results.png, id=48, 246.9225pt x 158.84344pt>
+<./img/urbano_mirex_2013_results.png, id=51, 246.9225pt x 158.84344pt>
 File: ./img/urbano_mirex_2013_results.png Graphic file (type png)
 <use ./img/urbano_mirex_2013_results.png>
 Package pdftex.def Info: ./img/urbano_mirex_2013_results.png  used on input lin
-e 227.
+e 233.
 (pdftex.def)             Requested size: 156.04048pt x 100.3797pt.
-<./img/urbano_mirex_2014_results.png, id=49, 249.18094pt x 136.25906pt>
+<./img/urbano_mirex_2014_results.png, id=52, 249.18094pt x 136.25906pt>
 File: ./img/urbano_mirex_2014_results.png Graphic file (type png)
 <use ./img/urbano_mirex_2014_results.png>
 Package pdftex.def Info: ./img/urbano_mirex_2014_results.png  used on input lin
-e 232.
+e 238.
 (pdftex.def)             Requested size: 183.5583pt x 100.37477pt.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
@@ -415,33 +417,33 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 LaTeX Warning: `!h' float specifier changed to `!ht'.
 
-[8 <./img/three_of_two_point_four.png>] [9 <./img/one_of_five_point_five.png (P
-NG copy)> <./img/urbano_mirex_2012_results.png (PNG copy)> <./img/urbano_mirex_
-2013_results.png (PNG copy)>] [10 <./img/urbano_mirex_2014_results.png (PNG cop
-y)>] [11] (./hausarbeit.aux) ) 
+[9 <./img/three_of_two_point_four.png>] [10 <./img/one_of_five_point_five.png (
+PNG copy)> <./img/urbano_mirex_2012_results.png (PNG copy)> <./img/urbano_mirex
+_2013_results.png (PNG copy)>] [11 <./img/urbano_mirex_2014_results.png (PNG co
+py)>] [12] (./hausarbeit.aux) ) 
 Here is how much of TeX's memory you used:
- 3150 strings out of 492167
- 44659 string characters out of 6131559
+ 3156 strings out of 492167
+ 44731 string characters out of 6131559
  126334 words of memory out of 5000000
- 7487 multiletter control sequences out of 15000+600000
+ 7490 multiletter control sequences out of 15000+600000
  6565 words of font info for 24 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 46i,8n,30p,1047b,260s stack positions out of 5000i,500n,10000p,200000b,80000s
-</usr/share/texmf-dist/fonts/type1/public/amsfont
-s/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pf
-b></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/t
-exmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/font
-s/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/public
-/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cm
-mi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/s
-hare/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/publ
-ic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm
-/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on hausarbeit.pdf (11 pages, 645022 bytes).
+ 46i,8n,30p,1047b,258s stack positions out of 5000i,500n,10000p,200000b,80000s
+</usr/share/texmf-dist/fonts/type1/public/amsfon
+ts/cm/cmbx10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.p
+fb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx9.pfb></usr/share/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/share/texmf-dist/fon
+ts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texmf-dist/fonts/type1/publi
+c/amsfonts/cm/cmmi5.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/c
+mmi7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/
+share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/share/texmf-dist/fonts/type1/pub
+lic/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/c
+m/cmsy7.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on hausarbeit.pdf (12 pages, 645959 bytes).
 PDF statistics:
- 105 PDF objects out of 1000 (max. 8388607)
- 66 compressed objects within 1 object stream
+ 108 PDF objects out of 1000 (max. 8388607)
+ 68 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  46 words of extra memory for PDF output out of 10000 (max. 10000000)
 

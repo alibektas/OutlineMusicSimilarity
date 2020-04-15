@@ -1,6 +1,6 @@
 \documentclass{llncs}
 \usepackage{makeidx}
-
+\setcounter{tocdepth}{2}
 \title{Symbolic Music Similarity}
 \author{Ali Bektas \and Paul Kröger}
 \date{April 2020}
@@ -26,14 +26,20 @@
 	
 
 
+
 \begin{document}
+
+
+
+    
+    \let\oldaddcontentsline\addcontentsline
+    \def\addcontentsline#1#2#3{}
+    \mainmatter
+    \maketitle
+    \def\addcontentsline#1#2#3{\oldaddcontentsline{#1}{#2}{#3}}
+
+	\tableofcontents
 	
-
-	\mainmatter
-
-	\maketitle
-
-
 	\begin{abstract}
 	With an increasing need to compare symbolic musical data in terms of their content 
 	the question of similarity between musical objects becomes a challenge. While 
