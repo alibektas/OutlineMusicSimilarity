@@ -2,12 +2,12 @@
 \contentsline {section}{\numberline {2}Algorithms}{3}% 
 \contentsline {subsection}{\numberline {2.1}A Graph Based Approach}{3}% 
 \contentsline {subsection}{\numberline {2.2}Urbano Melody-Shape}{4}% 
-\contentsline {subsubsection}{ShapeH}{5}% 
-\contentsline {subsubsection}{Time}{6}% 
+\contentsline {subsubsection}{ShapeH}{4}% 
+\contentsline {subsubsection}{Time}{5}% 
 \contentsline {section}{\numberline {3}MIREX}{6}% 
 \contentsline {subsection}{\numberline {3.1}The Ground Truth}{6}% 
 \contentsline {subsection}{\numberline {3.2}Average Dynamic Recall}{8}% 
 \contentsline {section}{\numberline {4}Evaluation}{8}% 
 \contentsline {subsection}{\numberline {4.1}The graph based algorithm of Orio et al.}{8}% 
-\contentsline {subsection}{\numberline {4.2}Urbano MelodyShape}{9}% 
+\contentsline {subsection}{\numberline {4.2}Urbano Melody-Shape}{10}% 
 \contentsline {section}{\numberline {5}Discussion}{11}% 
